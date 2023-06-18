@@ -1,4 +1,4 @@
-body {
+/* body {
     scroll-behavior: smooth;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -142,7 +142,6 @@ footer {
     clear: both;
 }
 
-/* Responsivo */
 @media (max-width: 768px) {
 
     .service,
@@ -162,4 +161,4 @@ footer {
     .services-container2 {
         margin-bottom: 20px;
     }
-}
+} */
