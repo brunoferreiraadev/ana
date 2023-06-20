@@ -13,3 +13,16 @@ window.addEventListener('beforeunload', function () {
         behavior: 'smooth'
     });
 });
+
+const heading = document.getElementById('color-changing-heading');
+const colors = ['blue', 'green'];
+let currentIndex = 0;
+
+function changeColor() {
+    heading.style.color = colors[currentIndex];
+    currentIndex = (currentIndex + 1) % colors.length;
+}
+
+setInterval(changeColor, 1000);
+
+
