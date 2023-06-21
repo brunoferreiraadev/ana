@@ -121,6 +121,7 @@
             color: #fff;
             padding: 20px;
             text-align: center;
+            /* margin-top: 400px; */
         }
 
         .social-icons {
@@ -157,6 +158,77 @@
             text-align: center;
             align-items: center;
         }
+
+
+
+        .container {
+            width: 768px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* grid-gap: 20px; */
+            padding: 20px;
+            background-color: #fff;
+            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+            /* margin-top: 150px; */
+            margin-left: 20px;
+            grid-auto-rows: minmax(min-content, max-content);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 100px;
+            color: mediumblue;
+            letter-spacing: 2px;
+        }
+
+        label {
+            letter-spacing: 2px;
+            display: block;
+            margin-bottom: 5px;
+            margin-top: 25px;
+            margin-left: 5px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            letter-spacing: 2px;
+            width: 60%;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 15px;
+        }
+
+        button {
+            display: block;
+            width: 25%;
+            padding: 20px;
+            margin-top: 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        input[type="text"]:focus,
+        input[type="tel"]:focus,
+        input[type="email"]:focus {
+            outline: none;
+            border-color: red;
+            box-shadow: none;
+        }
+
+
+
 
         @media (max-width: 768px) {
 
@@ -270,6 +342,48 @@
             </div>
         </div>
     </section>
+
+    <div class="container">
+        <form action="https://api.staticforms.xyz/submit" method="POST">
+            <input type="hidden" name="accessKey" value="c3a3d404-c8f0-41e9-9648-84419315f76f">
+            <h1>Formulário de Contato</h1>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="name" required>
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" name="phone" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <input type="hidden" name="redirectTo" value="https://brunoferreiraadev.github.io/ana/pages/home.html">
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <br><br><br>
+    <!-- <div class="raw">
+        <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
+            <h2>Entre em contato</h2>
+
+            <input type="hidden" name="accessKey" value="c3a3d404-c8f0-41e9-9648-84419315f76f">
+            <input type="hidden" name="redirectTo" value="https://brunoferreiraadev.github.io/ana/pages/home.html">
+
+            <label for="inputNome">Nome:</label>
+            <input name="name" type="text" id="inputNome" required maxlength="30" minlength="3">
+            <span></span>
+
+            <label for="inputFone">Telefone:</label>
+            <input name="phone" type="text" id="inputFone" required maxlength="8" minlength="11">
+            <span></span>
+
+            <label for="inputEmail">E-mail:</label>
+            <input name="email" type="email" id="inputNome" required maxlength="50" minlength="3">
+            <span></span>
+            <button>Enviar mensagem</button>
+
+        </form>
+    </div> -->
+
 
     <footer>
         <div class="social-icons">
