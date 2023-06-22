@@ -9,7 +9,7 @@
         content="Descubra o poder das mídias sociais e do marketing digital conosco. Oferecemos mentorias presenciais e online, além de cursos especializados para ajudá-lo a impulsionar sua presença online. Aprenda estratégias eficazes de mídias sociais e descubra como expandir seu alcance, aumentar seguidores e converter fãs em clientes. Junte-se a nós e transforme seu negócio na era digital.">
     <meta name="keywords" content="social, media, divulgação">
     <meta name="author" content="Ana Julia">
-    <link rel="stylesheet" href="../style/hover-min.css">
+    <!-- <link rel="stylesheet" href="../style/hover-min.css"> -->
     <!-- <link rel="stylesheet" href="../style/home.css"> -->
     <title>Ana Julia | Social Media</title>
 
@@ -34,6 +34,7 @@
             width: 100%;
             z-index: 9999;
             padding: 60px 0px 40px 0px;
+            transition: 0.5s;
         }
 
         header h3 {
@@ -121,7 +122,6 @@
             color: #fff;
             padding: 20px;
             text-align: center;
-            /* margin-top: 400px; */
         }
 
         .social-icons {
@@ -138,11 +138,11 @@
 
         .social-icons a {
             margin-bottom: 15px;
-            margin-left: 5px;
-            margin-right: 20px;
+            margin-left: 0px;
             display: inline-block;
             text-decoration: none;
             color: #666;
+            margin: 0px 12px;
         }
 
         .clearfix::after {
@@ -159,76 +159,106 @@
             align-items: center;
         }
 
-
-
-        .container {
-            width: 768px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            /* grid-gap: 20px; */
-            padding: 20px;
-            background-color: #fff;
-            /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
-            /* margin-top: 150px; */
-            margin-left: 20px;
-            grid-auto-rows: minmax(min-content, max-content);
+        .principais {
+            width: 100%;
+            height: 500px;
+            margin: 200px 0px;
         }
 
-        h1 {
+
+        .principais h2 {
             text-align: center;
-            margin-bottom: 100px;
-            color: mediumblue;
-            letter-spacing: 2px;
+            margin-top: 50px;
+            margin-bottom: 50px;
+            letter-spacing: 1px;
         }
 
-        label {
-            letter-spacing: 2px;
+        .filho1,
+        .filho2 {
+            height: 100%;
+            width: 50%;
+            float: left;
+        }
+
+        .filho1 {
+            background-color: LightGrey;
+        }
+
+        .filho2 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .filho2 img {
+            max-width: 100%;
+            max-height: 100%;
+            width: auto;
+            height: auto;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .form-contato {
+            padding-left: 50px;
+        }
+
+        .form-contato label {
             display: block;
-            margin-bottom: 5px;
-            margin-top: 25px;
-            margin-left: 5px;
-            font-weight: bold;
+            margin-top: 10px;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 3px;
+            margin-left: 10px;
         }
 
-        input[type="text"],
-        input[type="tel"],
-        input[type="email"] {
-            letter-spacing: 2px;
-            width: 60%;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
+        .form-contato input[type="text"],
+        .form-contato input[type="tel"],
+        .form-contato input[type="email"] {
+            padding: 10px;
+            letter-spacing: 1px;
+            width: 70%;
+            margin-bottom: 20px;
+            border: 1px solid blue;
+            border-radius: 5px;
             font-size: 15px;
         }
 
-        button {
-            display: block;
-            width: 25%;
-            padding: 20px;
-            margin-top: 20px;
-            font-size: 16px;
-            font-weight: bold;
-            color: #fff;
-            background-color: #4CAF50;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-
-        button:hover {
-            background-color: #45a049;
-        }
-
-        input[type="text"]:focus,
-        input[type="tel"]:focus,
-        input[type="email"]:focus {
+        .form-contato input[type="text"]:focus,
+        .form-contato input[type="tel"]:focus,
+        .form-contato input[type="email"]:focus {
             outline: none;
-            border-color: red;
+            border-color: #4CAF50;
             box-shadow: none;
+            color: #333;
         }
 
+        .form-contato button {
+            padding: 10px 50px;
+            border-radius: 5px;
+            margin-top: 10px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin-left: 0px;
+            margin-right: 0px;
+            letter-spacing: 1px;
+            transition: 0.5s;
+        }
 
+        .form-contato button:hover {
+            background-color: #4CAF50;
+            color: white;
+            transition: 0.5s;
+        }
 
+        header.rolagem {
+            padding: 20px 0px 0px 0px;
+            transition: 0.5s;
+            background-color: #4CAF50;
+        }
 
         @media (max-width: 768px) {
 
@@ -236,7 +266,6 @@
                 padding-top: 15px;
                 padding-bottom: 0px;
                 position: absolute;
-
             }
 
             section h1 {
@@ -269,7 +298,98 @@
 
             .services-container {
                 margin-top: 100px;
-                margin-bottom: 20px;
+            }
+
+            .principais {
+                color: #333;
+                font-family: Arial, Helvetica, sans-serif;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 100px;
+            }
+
+            .principais .filho1 {
+                margin-bottom: 100px;
+            }
+
+            .filho1 h2 {
+                font-size: 19px;
+                margin-top: 0px;
+                margin-bottom: 60px;
+            }
+
+            .principais .filho1,
+            .filho2 {
+                width: 100%;
+            }
+
+            .principais .filho1 {
+                text-align: center;
+                padding-bottom: 60px;
+                padding-top: 60px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .principais .filho2 {
+                margin: 0px;
+                padding: 0px;
+            }
+
+            .form-contato input[type="text"],
+            .form-contato input[type="tel"],
+            .form-contato input[type="email"] {
+                padding: 10px;
+                letter-spacing: 1px;
+                width: 242px;
+                border-radius: 5px;
+                font-size: 15px;
+                padding-left: 10px;
+                text-align: left;
+            }
+
+            .form-contato {
+                width: 100%;
+                text-align: center;
+                padding: 0px;
+            }
+
+            .form-contato label {
+                text-align: center;
+                font-size: 15px;
+                letter-spacing: 1px;
+            }
+
+            .form-contato button {
+                padding: 10px 50px;
+                border-radius: 5px;
+                margin-top: 10px;
+                background-color: #4CAF50;
+                color: white;
+                background-color: blue;
+                border: none;
+                cursor: pointer;
+                margin-left: 0px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+                letter-spacing: 1px;
+                transition: 0.5s;
+            }
+
+            .form-contato button:hover {
+                background-color: #4CAF50;
+                transition: 0.5s;
+                color: white;
+            }
+
+            footer {
+                margin-top: 500px;
             }
 
         }
@@ -277,7 +397,7 @@
 </head>
 
 <body>
-    <header>
+    <header id="header">
         <nav>
             <ul class="clearfix">
                 <li><a class="header-link" href="../pages/home.html"><img class="logo" src="../icons/casa.png" alt="">
@@ -343,47 +463,34 @@
         </div>
     </section>
 
-    <div class="container">
-        <form action="https://api.staticforms.xyz/submit" method="POST">
-            <input type="hidden" name="accessKey" value="c3a3d404-c8f0-41e9-9648-84419315f76f">
-            <h1>Formulário de Contato</h1>
+    <div class="principais">
+        <div class="filho1">
+            <h2>Entraremos em contato!</h2>
 
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="name" required>
+            <div class="form-contato">
+                <form>
 
-            <label for="telefone">Telefone:</label>
-            <input type="tel" id="telefone" name="phone" required>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <input type="hidden" name="redirectTo" value="https://brunoferreiraadev.github.io/ana/pages/home.html">
-            <button type="submit">Enviar</button>
-        </form>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" required>
+                    <br>
+                    <button type="submit">Enviar</button>
+
+                </form>
+            </div>
+        </div>
+
+        <div class="filho2">
+            <img src="../image/marketing.jpg" alt="Imagem" style="max-height: 100%;">
+        </div>
+
     </div>
-    <br><br><br>
-    <!-- <div class="raw">
-        <form action="https://api.staticforms.xyz/submit" method="POST" class="card">
-            <h2>Entre em contato</h2>
-
-            <input type="hidden" name="accessKey" value="c3a3d404-c8f0-41e9-9648-84419315f76f">
-            <input type="hidden" name="redirectTo" value="https://brunoferreiraadev.github.io/ana/pages/home.html">
-
-            <label for="inputNome">Nome:</label>
-            <input name="name" type="text" id="inputNome" required maxlength="30" minlength="3">
-            <span></span>
-
-            <label for="inputFone">Telefone:</label>
-            <input name="phone" type="text" id="inputFone" required maxlength="8" minlength="11">
-            <span></span>
-
-            <label for="inputEmail">E-mail:</label>
-            <input name="email" type="email" id="inputNome" required maxlength="50" minlength="3">
-            <span></span>
-            <button>Enviar mensagem</button>
-
-        </form>
-    </div> -->
-
 
     <footer>
         <div class="social-icons">
@@ -393,11 +500,13 @@
             <a href="#"><img title="Facebook" src="../icons/1/facebook.png"></a>
             <a href="#"><img title="Linkedin" src="../icons/1/linkedin.png"></a>
         </div>
-        <p>Empresa XYZ - Serviços de Tecnologia</p>
-        <p>Endereço: Av. Exemplo, 1234 - Cidade - Estado</p>
-        <p>Telefone: (00) 1234-5678 | Email: info@empresa.com</p>
-    </footer>
 
+        <p>Ana Julia | Social Media</p>
+        <p>Francisco Beltrão - Parná</p>
+        <p>Telefone: (00) 1234-5678</p>
+        <p>Email: info@empresa.com</p>
+
+    </footer>
 
     <script src="../javascript/pagina.js"></script>
 
