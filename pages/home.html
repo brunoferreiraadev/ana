@@ -22,10 +22,11 @@
             background-position: center;
             background-repeat: no-repeat;
             background-color: #f2f2f2;
+            height: 200vh;
         }
 
         header {
-            background-color: mediumblue;
+            background-image: linear-gradient(to right, green, blue, green);
             color: #fff;
             text-align: center;
             position: fixed;
@@ -35,6 +36,18 @@
             z-index: 9999;
             padding: 60px 0px 40px 0px;
             transition: 0.5s;
+            animation: gradientAnimation 5s linear infinite alternate;
+            background-size: 400% 400%;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background-position: 0% 50%;
+            }
+
+            100% {
+                background-position: 100% 50%;
+            }
         }
 
         header h3 {
@@ -263,33 +276,21 @@
         @media (max-width: 768px) {
 
             header {
+                position: absolute;
                 padding-top: 15px;
                 padding-bottom: 0px;
-                position: absolute;
             }
 
             section h1 {
-                margin-top: 350px;
+                margin-top: 300px;
                 font-size: 25px;
                 letter-spacing: 3px;
                 line-height: 40px;
             }
 
-            nav ul {
-                flex-direction: column;
-                align-items: center;
-            }
-
             nav a {
                 margin-bottom: 15px;
-                display: inline-flex;
-                align-items: center;
-                width: 140px;
-            }
-
-            .logo {
-                display: flex;
-                margin-right: 15px;
+                margin-top: 0px;
             }
 
             .service {
@@ -297,7 +298,7 @@
             }
 
             .services-container {
-                margin-top: 100px;
+                margin-top: 50px;
             }
 
             .principais {
@@ -346,7 +347,6 @@
                 width: 242px;
                 border-radius: 5px;
                 font-size: 15px;
-                padding-left: 10px;
                 text-align: left;
             }
 
@@ -357,13 +357,15 @@
             }
 
             .form-contato label {
-                text-align: center;
+                margin-left: 0px;
+                padding: 0px;
+                justify-content: center;
                 font-size: 15px;
                 letter-spacing: 1px;
             }
 
             .form-contato button {
-                padding: 10px 50px;
+                /* padding: 10px 50px; */
                 border-radius: 5px;
                 margin-top: 10px;
                 background-color: #4CAF50;
@@ -389,7 +391,7 @@
             }
 
             footer {
-                margin-top: 500px;
+                margin-top: 650px;
             }
 
         }
@@ -471,14 +473,13 @@
                 <form>
 
                     <label for="nome">Nome:</label>
-                    <input type="text" id="nome" name="nome" required>
+                    <input placeholder="Nome completo" type="text" id="nome" name="nome" required>
 
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required>
-
+                    <input placeholder="E-mail de sua preferência" type="email" id="email" name="email" required>
 
                     <label for="telefone">Telefone:</label>
-                    <input type="tel" id="telefone" name="telefone" required>
+                    <input placeholder="Fone/WhatsApp" type="tel" id="telefone" name="telefone" required>
                     <br>
                     <button type="submit">Enviar</button>
 
@@ -507,8 +508,62 @@
         <p>Email: info@empresa.com</p>
 
     </footer>
+    <script>
+        // função do header para ser executada somente acima de 768px
+        window.addEventListener('load', function () {
+            function handleScroll() {
+                let header = document.querySelector('#header');
+                header.classList.toggle('rolagem', window.scrollY > 0);
+            }
 
-    <script src="../javascript/pagina.js"></script>
+            function addScrollListener() {
+                window.addEventListener('scroll', handleScroll);
+            }
+
+            function removeScrollListener() {
+                window.removeEventListener('scroll', handleScroll);
+            }
+
+            function handleResize() {
+                if (window.innerWidth > 768) {
+                    addScrollListener();
+                } else {
+                    removeScrollListener();
+                }
+            }
+
+            window.addEventListener('resize', handleResize);
+            handleResize();
+        });
+        // função do header para ser executada somente acima de 768px
+
+        // função para recarregar a página e voltar no início do site
+        window.addEventListener('beforeunload', function () {
+            window.scrollTo(0, 0);
+        });
+
+        window.addEventListener('beforeunload', function () {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+        // função para recarregar a página e voltar no início do site
+
+        // função para mudar de cor no titulo abaixo do header
+        const heading = document.getElementById('color-changing-heading');
+        const colors = ['blue', 'green'];
+        let currentIndex = 0;
+
+        function changeColor() {
+            heading.style.color = colors[currentIndex];
+            currentIndex = (currentIndex + 1) % colors.length;
+        }
+
+        setInterval(changeColor, 1000);
+// função para mudar de cor no titulo abaixo do header
+    </script>
+    <!-- <script src="../javascript/pagina.js"></script> -->
 
 </body>
 

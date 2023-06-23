@@ -1,8 +1,4 @@
-// window.addEventListener('scroll', function () {
-//     let header = this.document.querySelector('#header')
-//     header.classList.toggle('rolagem', this.window.scrollY > 0)
-// })
-
+// função do header para ser executada somente acima de 768px
 window.addEventListener('load', function () {
     function handleScroll() {
         let header = document.querySelector('#header');
@@ -18,7 +14,7 @@ window.addEventListener('load', function () {
     }
 
     function handleResize() {
-        if (window.innerWidth > 769) {
+        if (window.innerWidth > 768) {
             addScrollListener();
         } else {
             removeScrollListener();
@@ -28,7 +24,9 @@ window.addEventListener('load', function () {
     window.addEventListener('resize', handleResize);
     handleResize();
 });
+// função do header para ser executada somente acima de 768px
 
+// função para recarregar a página e voltar no início do site
 window.addEventListener('beforeunload', function () {
     window.scrollTo(0, 0);
 });
@@ -39,7 +37,9 @@ window.addEventListener('beforeunload', function () {
         behavior: 'smooth'
     });
 });
+// função para recarregar a página e voltar no início do site
 
+// função para mudar de cor no titulo abaixo do header
 const heading = document.getElementById('color-changing-heading');
 const colors = ['blue', 'green'];
 let currentIndex = 0;
@@ -50,5 +50,4 @@ function changeColor() {
 }
 
 setInterval(changeColor, 1000);
-
-
+// função para mudar de cor no titulo abaixo do header
