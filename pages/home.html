@@ -98,9 +98,9 @@
         section h1 {
             font-family: "Arial", sans-serif;
             font-size: 45px;
-            color: rgba(0, 0, 0, 0.7);
+            color: blue;
             text-align: center;
-            margin-top: 300px;
+            margin-top: 340px;
         }
 
         h2 {
@@ -174,16 +174,17 @@
 
         .principais {
             width: 100%;
-            height: 500px;
+            height: 600px;
             margin: 200px 0px;
         }
 
-
-        .principais h2 {
-            text-align: center;
+        .principais h1 {
             margin-top: 50px;
-            margin-bottom: 50px;
+            margin-bottom: 80px;
             letter-spacing: 1px;
+            font-size: 35px;
+            color: rgba(0, 0, 0, 0.7);
+            margin-left: 60px;
         }
 
         .filho1,
@@ -217,8 +218,9 @@
         }
 
         .form-contato label {
+            color: rgba(0, 0, 0, 0.7);
             display: block;
-            margin-top: 10px;
+            margin-top: 40px;
             letter-spacing: 1px;
             display: block;
             margin-bottom: 3px;
@@ -228,10 +230,10 @@
         .form-contato input[type="text"],
         .form-contato input[type="tel"],
         .form-contato input[type="email"] {
+            color: rgba(0, 0, 0, 0.7);
             padding: 10px;
             letter-spacing: 1px;
             width: 70%;
-            margin-bottom: 20px;
             border: 1px solid blue;
             border-radius: 5px;
             font-size: 15px;
@@ -249,7 +251,8 @@
         .form-contato button {
             padding: 10px 50px;
             border-radius: 5px;
-            margin-top: 10px;
+            margin-top: 30px;
+            margin-bottom: 50px;
             background-color: blue;
             color: white;
             border: none;
@@ -281,11 +284,15 @@
                 padding-bottom: 0px;
             }
 
+            header h3 {
+                font-size: 13px;
+            }
+
             section h1 {
-                margin-top: 300px;
+                margin-top: 350px;
                 font-size: 25px;
                 letter-spacing: 3px;
-                line-height: 40px;
+                line-height: 35px;
             }
 
             nav a {
@@ -298,7 +305,7 @@
             }
 
             .services-container {
-                margin-top: 50px;
+                margin-top: 100px;
             }
 
             .principais {
@@ -314,10 +321,12 @@
                 margin-bottom: 100px;
             }
 
-            .filho1 h2 {
-                font-size: 19px;
+            .filho1 h1 {
+                font-size: 27px;
+                /* font-weight: bold; */
                 margin-top: 0px;
-                margin-bottom: 60px;
+                margin-left: 0px;
+                margin-bottom: 40px;
             }
 
             .principais .filho1,
@@ -327,7 +336,7 @@
 
             .principais .filho1 {
                 text-align: center;
-                padding-bottom: 60px;
+                padding-bottom: 30px;
                 padding-top: 60px;
                 display: flex;
                 flex-direction: column;
@@ -344,7 +353,7 @@
             .form-contato input[type="email"] {
                 padding: 10px;
                 letter-spacing: 1px;
-                width: 242px;
+                width: 270px;
                 border-radius: 5px;
                 font-size: 15px;
                 text-align: left;
@@ -365,9 +374,9 @@
             }
 
             .form-contato button {
-                /* padding: 10px 50px; */
+                padding: 10px 50px;
                 border-radius: 5px;
-                margin-top: 10px;
+                margin-top: 30px;
                 background-color: #4CAF50;
                 color: white;
                 background-color: blue;
@@ -391,7 +400,7 @@
             }
 
             footer {
-                margin-top: 650px;
+                margin-top: 550px;
             }
 
         }
@@ -467,22 +476,21 @@
 
     <div class="principais">
         <div class="filho1">
-            <h2>Entraremos em contato!</h2>
+            <h1>Entraremos em contato!</h1>
 
             <div class="form-contato">
                 <form>
 
                     <label for="nome">Nome:</label>
-                    <input placeholder="Nome completo" type="text" id="nome" name="nome" required>
+                    <input placeholder="Somente letras" type="text" id="nome" name="nome" required>
 
                     <label for="email">Email:</label>
                     <input placeholder="E-mail de sua preferência" type="email" id="email" name="email" required>
 
-                    <label for="telefone">Telefone:</label>
-                    <input placeholder="Fone/WhatsApp" type="tel" id="telefone" name="telefone" required>
+                    <label for="telefone">Telefone celular:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="Somente números" required>
                     <br>
                     <button type="submit">Enviar</button>
-
                 </form>
             </div>
         </div>
@@ -503,7 +511,7 @@
         </div>
 
         <p>Ana Julia | Social Media</p>
-        <p>Francisco Beltrão - Parná</p>
+        <p>Francisco Beltrão - Paraná</p>
         <p>Telefone: (00) 1234-5678</p>
         <p>Email: info@empresa.com</p>
 
@@ -561,7 +569,56 @@
         }
 
         setInterval(changeColor, 1000);
-// função para mudar de cor no titulo abaixo do header
+        // função para mudar de cor no titulo abaixo do header
+
+        // função para aceitar somente letras
+        const nomeInput = document.getElementById('nome');
+
+        nomeInput.addEventListener('input', function (event) {
+            const inputValue = event.target.value;
+
+            const regex = /^[A-Za-z]+$/;
+
+            if (!regex.test(inputValue)) {
+                event.target.value = inputValue.replace(/[^A-Za-z]+/g, '');
+            }
+        });
+        // função para aceitar somente letras
+
+        // função para validar somente 11 numeros
+        function formatarTelefone(event) {
+            const input = event.target;
+            const phoneNumber = input.value.replace(/\D/g, '');
+            const phoneNumberLength = phoneNumber.length;
+            let formattedPhoneNumber = '';
+
+            if (phoneNumberLength > 0) {
+                formattedPhoneNumber += '(' + phoneNumber.substring(0, 2) + ')';
+            }
+
+            if (phoneNumberLength > 2) {
+                formattedPhoneNumber += ' ' + phoneNumber.substring(2, 7);
+            }
+
+            if (phoneNumberLength > 7) {
+                formattedPhoneNumber += '-' + phoneNumber.substring(7, 11);
+            }
+
+            input.value = formattedPhoneNumber;
+        }
+
+        function validarTelefone(event) {
+            const input = event.target;
+            const phoneNumber = input.value.replace(/\D/g, '');
+            const valid = phoneNumber.length === 11;
+            input.setCustomValidity(valid ? '' : 'Digite um número de telefone válido (11 dígitos).');
+        }
+
+        const telefoneInput = document.getElementById('telefone');
+        telefoneInput.addEventListener('input', formatarTelefone);
+        telefoneInput.addEventListener('blur', validarTelefone);
+        // função para validar somente 11 numeros
+
     </script>
     <!-- <script src="../javascript/pagina.js"></script> -->
 
