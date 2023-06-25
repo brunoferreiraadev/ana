@@ -6,10 +6,11 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-color: #f2f2f2;
+    height: 200vh;
 }
 
 header {
-    background-color: mediumblue;
+    background-image: linear-gradient(to right, green, blue, green);
     color: #fff;
     text-align: center;
     position: fixed;
@@ -19,6 +20,18 @@ header {
     z-index: 9999;
     padding: 60px 0px 40px 0px;
     transition: 0.5s;
+    animation: gradientAnimation 5s linear infinite alternate;
+    background-size: 400% 400%;
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
 }
 
 header h3 {
@@ -69,9 +82,9 @@ section {
 section h1 {
     font-family: "Arial", sans-serif;
     font-size: 45px;
-    color: rgba(0, 0, 0, 0.7);
+    color: blue;
     text-align: center;
-    margin-top: 300px;
+    margin-top: 340px;
 }
 
 h2 {
@@ -145,16 +158,17 @@ footer {
 
 .principais {
     width: 100%;
-    height: 500px;
+    height: 600px;
     margin: 200px 0px;
 }
 
-
-.principais h2 {
-    text-align: center;
+.principais h1 {
     margin-top: 50px;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
     letter-spacing: 1px;
+    font-size: 35px;
+    color: rgba(0, 0, 0, 0.7);
+    margin-left: 60px;
 }
 
 .filho1,
@@ -188,8 +202,9 @@ footer {
 }
 
 .form-contato label {
+    color: rgba(0, 0, 0, 0.7);
     display: block;
-    margin-top: 10px;
+    margin-top: 40px;
     letter-spacing: 1px;
     display: block;
     margin-bottom: 3px;
@@ -199,10 +214,10 @@ footer {
 .form-contato input[type="text"],
 .form-contato input[type="tel"],
 .form-contato input[type="email"] {
+    color: rgba(0, 0, 0, 0.7);
     padding: 10px;
     letter-spacing: 1px;
     width: 70%;
-    margin-bottom: 20px;
     border: 1px solid blue;
     border-radius: 5px;
     font-size: 15px;
@@ -220,7 +235,8 @@ footer {
 .form-contato button {
     padding: 10px 50px;
     border-radius: 5px;
-    margin-top: 10px;
+    margin-top: 30px;
+    margin-bottom: 50px;
     background-color: blue;
     color: white;
     border: none;
@@ -247,33 +263,25 @@ header.rolagem {
 @media (max-width: 768px) {
 
     header {
+        position: absolute;
         padding-top: 15px;
         padding-bottom: 0px;
-        position: absolute;
+    }
+
+    header h3 {
+        font-size: 13px;
     }
 
     section h1 {
         margin-top: 350px;
         font-size: 25px;
         letter-spacing: 3px;
-        line-height: 40px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
+        line-height: 35px;
     }
 
     nav a {
         margin-bottom: 15px;
-        display: inline-flex;
-        align-items: center;
-        width: 140px;
-    }
-
-    .logo {
-        display: flex;
-        margin-right: 15px;
+        margin-top: 0px;
     }
 
     .service {
@@ -297,10 +305,11 @@ header.rolagem {
         margin-bottom: 100px;
     }
 
-    .filho1 h2 {
-        font-size: 19px;
+    .filho1 h1 {
+        font-size: 27px;
         margin-top: 0px;
-        margin-bottom: 60px;
+        margin-left: 0px;
+        margin-bottom: 40px;
     }
 
     .principais .filho1,
@@ -310,7 +319,7 @@ header.rolagem {
 
     .principais .filho1 {
         text-align: center;
-        padding-bottom: 60px;
+        padding-bottom: 30px;
         padding-top: 60px;
         display: flex;
         flex-direction: column;
@@ -327,10 +336,9 @@ header.rolagem {
     .form-contato input[type="email"] {
         padding: 10px;
         letter-spacing: 1px;
-        width: 242px;
+        width: 270px;
         border-radius: 5px;
         font-size: 15px;
-        padding-left: 10px;
         text-align: left;
     }
 
@@ -341,7 +349,9 @@ header.rolagem {
     }
 
     .form-contato label {
-        text-align: center;
+        margin-left: 0px;
+        padding: 0px;
+        justify-content: center;
         font-size: 15px;
         letter-spacing: 1px;
     }
@@ -349,7 +359,7 @@ header.rolagem {
     .form-contato button {
         padding: 10px 50px;
         border-radius: 5px;
-        margin-top: 10px;
+        margin-top: 30px;
         background-color: #4CAF50;
         color: white;
         background-color: blue;
@@ -373,7 +383,6 @@ header.rolagem {
     }
 
     footer {
-        margin-top: 500px;
+        margin-top: 650px;
     }
-
 }
