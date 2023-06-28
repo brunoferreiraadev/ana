@@ -17,7 +17,7 @@
     <style>
         body {
             scroll-behavior: smooth;
-            font-family: Arial, sans-serif;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             margin: 0;
             padding: 0;
             background-position: center;
@@ -27,7 +27,8 @@
         }
 
         header {
-            background-image: linear-gradient(to right, green, blue, green);
+            /* background-image: linear-gradient(to right, green, blue, green); */
+            background-color: blue;
             color: #fff;
             text-align: center;
             position: fixed;
@@ -35,10 +36,15 @@
             left: 0;
             width: 100%;
             z-index: 9999;
-            padding: 60px 0px 40px 0px;
+            padding: 40px 0px 20px 0px;
             transition: 0.5s;
             animation: gradientAnimation 5s linear infinite alternate;
             background-size: 400% 400%;
+        }
+
+        header.rolagem {
+            padding: 20px 0px 0px 0px;
+            transition: 0.5s;
         }
 
         @keyframes gradientAnimation {
@@ -175,47 +181,28 @@
 
         .principais {
             width: 100%;
-            height: 600px;
+            padding: 50px 0px;
             margin: 200px 0px;
+            background-color: LightGrey;
+            display: flex;
         }
 
         .principais h1 {
-            margin-top: 50px;
+            margin-top: 0px;
             margin-bottom: 80px;
             letter-spacing: 1px;
             font-size: 35px;
             color: rgba(0, 0, 0, 0.7);
-            margin-left: 60px;
+            margin-left: 50px;
         }
 
         .filho1,
         .filho2 {
-            height: 100%;
             width: 50%;
-            float: left;
-        }
-
-        .filho1 {
-            background-color: LightGrey;
         }
 
         .filho2 {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .filho2 img {
-            max-width: 100%;
-            max-height: 100%;
-            width: auto;
-            height: auto;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .form-contato {
-            padding-left: 50px;
+            background-color: blue;
         }
 
         .form-contato label {
@@ -225,7 +212,7 @@
             letter-spacing: 1px;
             display: block;
             margin-bottom: 3px;
-            margin-left: 10px;
+            margin-left: 60px;
         }
 
         .form-contato input[type="text"],
@@ -234,10 +221,15 @@
             color: rgba(0, 0, 0, 0.7);
             padding: 10px;
             letter-spacing: 1px;
-            width: 70%;
+            width: 300px;
             border: 1px solid blue;
             border-radius: 5px;
             font-size: 15px;
+            margin-left: 50px;
+        }
+
+        .form-contato input[type="tel"] {
+            width: 130px;
         }
 
         .form-contato input[type="text"]:focus,
@@ -253,13 +245,13 @@
             padding: 10px 50px;
             border-radius: 5px;
             margin-top: 30px;
-            margin-bottom: 50px;
+            /* margin-bottom: 50px; */
             background-color: blue;
             color: white;
             border: none;
             cursor: pointer;
             display: block;
-            margin-left: 0px;
+            margin-left: 50px;
             margin-right: 0px;
             letter-spacing: 1px;
             transition: 0.5s;
@@ -271,12 +263,6 @@
             transition: 0.5s;
         }
 
-        header.rolagem {
-            padding: 20px 0px 0px 0px;
-            transition: 0.5s;
-            background-color: #4CAF50;
-        }
-
         @media (max-width: 768px) {
 
             header {
@@ -286,7 +272,8 @@
             }
 
             header h3 {
-                font-size: 13px;
+                font-size: 15px;
+
             }
 
             section h1 {
@@ -315,37 +302,38 @@
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                margin-top: 100px;
+                margin-top: 200px 0px
             }
 
             .principais .filho1 {
-                margin-bottom: 100px;
+                margin-bottom: 50px;
+                padding: 0px;
+                background-color: blu;
+
             }
 
             .filho1 h1 {
                 font-size: 27px;
                 margin-top: 0px;
                 margin-left: 0px;
-                margin-bottom: 40px;
+                margin-bottom: 20px;
             }
 
-            .principais .filho1,
-            .filho2 {
+            .principais .filho1 {
                 width: 100%;
             }
 
             .principais .filho1 {
                 text-align: center;
-                padding-bottom: 30px;
-                padding-top: 60px;
+                padding-bottom: 0px;
+                padding-top: 50px;
                 display: flex;
                 flex-direction: column;
                 align-items: center;
             }
 
             .principais .filho2 {
-                margin: 0px;
-                padding: 0px;
+                display: none;
             }
 
             .form-contato input[type="text"],
@@ -353,10 +341,10 @@
             .form-contato input[type="email"] {
                 padding: 10px;
                 letter-spacing: 1px;
-                width: 270px;
+                margin: 0px;
+                width: 90%;
                 border-radius: 5px;
                 font-size: 15px;
-                text-align: left;
             }
 
             .form-contato {
@@ -400,7 +388,7 @@
             }
 
             footer {
-                margin-top: 650px;
+                margin-top: 0px;
             }
 
         }
@@ -455,25 +443,12 @@
                     computadores e dispositivos.</p>
                 <p>Entre em contato para obter assistência técnica rápida e confiável.</p>
             </div>
-            <div class="service">
-                <h2>Desenvolvimento Web</h2>
-                <p>Oferecemos serviços de desenvolvimento web, criando sites modernos e responsivos.</p>
-                <p>Entre em contato para discutir seus requisitos e obter um orçamento personalizado.</p>
-            </div>
-            <div class="service">
-                <h2>Consultoria em TI</h2>
-                <p>Nossa equipe de especialistas em TI pode fornecer consultoria para ajudar sua empresa a tomar
-                    decisões estratégicas relacionadas à tecnologia.</p>
-                <p>Entre em contato para agendar uma reunião e discutir suas necessidades específicas.</p>
-            </div>
-            <div class="service">
-                <h2>Suporte Técnico</h2>
-                <p>Oferecemos suporte técnico especializado para resolver problemas de hardware e software em
-                    computadores e dispositivos.</p>
-                <p>Entre em contato para obter assistência técnica rápida e confiável.</p>
-            </div>
         </div>
     </section>
+
+    <div class="testes">
+        <p>aewgehrh</p>
+    </div>
 
     <div class="principais">
         <div class="filho1">
@@ -496,10 +471,9 @@
             </div>
         </div>
 
-        <div class="filho2">
-            <img src="../image/marketing.jpg" alt="marketing">
-        </div>
+        <div class="filho2">teste</div>
     </div>
+
 
     <footer>
         <div class="social-icons">
