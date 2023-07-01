@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+<!-- sentido horário 5px cima, 5px direita, 5px baixo, 5px esquerda -->
 
 <head>
     <meta charset="UTF-8">
@@ -16,259 +17,324 @@
     <title>Ana Julia | Social Media</title>
 
     <style>
-        @media (min-width: 768px) {
-            body {
-                scroll-behavior: smooth;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                margin: 0;
-                padding: 0;
-                background-color: #f2f2f2;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
+        /* @media (min-width: 1000px) { */
+        body {
+            scroll-behavior: smooth;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        header {
+            width: 100%;
+            top: 0px;
+            background-color: crimson;
+            position: fixed;
+            padding: 30px 0px;
+            z-index: 99999;
+            transition: 0.7s;
+        }
+
+        header.rolagem {
+            padding: 10px 0px 10px 0px;
+            transition: 0.7s;
+        }
+
+        .cabecalho {
+            width: 100%;
+        }
+
+        .cabecalho a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+            letter-spacing: 1px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        .div1 a {
+            padding: 8px 5px 1px 8px;
+            margin-left: 20px;
+            font-family: arial;
+            color: white;
+            opacity: 100%;
+            font-weight: bold;
+            letter-spacing: 2px;
+            border-bottom: 1px solid white;
+        }
+
+        .div2 a {
+            padding: 6px 10px 6px 10px;
+            margin-right: 20px;
+            background-color: #f2f2f2;
+            color: black;
+            opacity: 100%;
+            border-radius: 15px;
+        }
+
+        .div1 a:hover {
+            color: white;
+            opacity: 90%;
+        }
+
+        .div2 a:hover {
+            background-color: white;
+            color: black;
+            opacity: 80%;
+        }
+
+        .div1 i {
+            margin-right: 10px;
+        }
+
+        .div2 i {
+            margin-right: 10px;
+        }
+
+        .div1 {
+            width: 35%;
+            float: left;
+            display: flex;
+        }
+
+        .div2 {
+            width: 65%;
+            float: left;
+            display: flex;
+            justify-content: end;
+        }
+
+        .sidebar {
+            position: fixed;
+            margin-left: 0px;
+            top: 100px;
+            left: 0;
+            width: 200px;
+            background-color: #f2f2f2;
+            z-index: 99999;
+        }
+
+        .sidebar h3 {
+            text-align: center;
+            color: #333;
+        }
+
+        .sidebar p {
+            text-align: center;
+            color: #666;
+            text-align: left;
+            letter-spacing: 1px;
+            line-height: 24px;
+            font-size: 14px;
+            margin: 0px 20px;
+        }
+
+        .inclinado-esquerda {
+            transform: skewX(-10deg);
+        }
+
+        section {
+            padding: 0px 100px 0px 240px;
+            /* background-color: #4CAF50; */
+        }
+
+        .titulo-animado {
+            justify-content: center;
+            text-align: center;
+            display: flex;
+            width: 100%;
+            margin-top: 150px;
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            background: linear-gradient(40deg, #DC143C, #B22222, #FF4500, #A52A2A);
+            background-size: 400% 100%;
+            animation: degrade 15s linear infinite alternate;
+            -webkit-text-fill-color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+
+        @keyframes degrade {
+            0% {
+                background-position-x: 0%;
             }
 
-            section {
-                padding: 0px 20px 0px 120px;
+            100% {
+                background-position: 400%;
             }
+        }
 
-            section h1 {
-                font-family: "Arial", sans-serif;
-                font-size: 45px;
-                color: blue;
-                text-align: center;
-                margin-top: 340px;
-            }
 
-            h2 {
-                color: #333;
-            }
 
-            p {
-                color: #666;
-                margin-bottom: 20px;
-            }
 
-            .services-container {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                gap: 20px;
-                margin-bottom: 20px;
-                margin-top: 200px;
-            }
 
-            .service {
-                flex: 1 1 300px;
-                padding: 20px;
-                border: 1px solid #ccc;
-                border-radius: 5px;
-                text-align: left;
-                background-color: #fff;
-            }
 
-            footer {
-                background-color: #333;
-                color: #fff;
-                padding: 20px;
-                text-align: center;
-            }
 
-            .social-icons {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                flex-wrap: wrap;
-            }
 
-            .social-icons img {
-                display: inline-block;
-                vertical-align: middle;
-            }
 
-            .social-icons a {
-                margin-bottom: 15px;
-                margin-left: 0px;
-                display: inline-block;
-                text-decoration: none;
-                color: #666;
-                margin: 0px 12px;
-            }
 
-            .principais {
-                width: 100%;
-                padding: 50px 0px;
-                margin: 200px 0px;
-                background-color: LightGrey;
-                display: flex;
-            }
 
-            .principais h1 {
-                margin-top: 0px;
-                margin-bottom: 80px;
-                letter-spacing: 1px;
-                font-size: 35px;
-                color: rgba(0, 0, 0, 0.7);
-                margin-left: 50px;
-            }
 
-            .filho1,
-            .filho2 {
-                width: 50%;
-            }
 
-            .filho2 {
-                background-color: blue;
-            }
 
-            .form-contato label {
-                color: rgba(0, 0, 0, 0.7);
-                display: block;
-                margin-top: 40px;
-                letter-spacing: 1px;
-                display: block;
-                margin-bottom: 3px;
-                margin-left: 60px;
-            }
+        h2 {
+            color: #333;
+        }
 
-            .form-contato input[type="text"],
-            .form-contato input[type="tel"],
-            .form-contato input[type="email"] {
-                color: rgba(0, 0, 0, 0.7);
-                padding: 10px;
-                letter-spacing: 1px;
-                width: 300px;
-                border: 1px solid blue;
-                border-radius: 5px;
-                font-size: 15px;
-                margin-left: 50px;
-            }
+        p {
+            color: #666;
+            margin-bottom: 20px;
+        }
 
-            .form-contato input[type="tel"] {
-                width: 130px;
-            }
+        .services-container {
+            padding-top: 50px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin-bottom: 20px;
+            margin-top: 200px;
+        }
 
-            .form-contato input[type="text"]:focus,
-            .form-contato input[type="tel"]:focus,
-            .form-contato input[type="email"]:focus {
-                outline: none;
-                border-color: #4CAF50;
-                box-shadow: none;
-                color: #333;
-            }
+        .service {
+            flex: 1 1 300px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: left;
+            background-color: #fff;
+        }
 
-            .form-contato button {
-                padding: 10px 50px;
-                border-radius: 5px;
-                margin-top: 30px;
-                background-color: blue;
-                color: white;
-                border: none;
-                cursor: pointer;
-                display: block;
-                margin-left: 50px;
-                margin-right: 0px;
-                letter-spacing: 1px;
-                transition: 0.5s;
-            }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
 
-            .form-contato button:hover {
-                background-color: #4CAF50;
-                color: white;
-                transition: 0.5s;
-            }
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
 
-            header {
-                width: 100%;
-                top: 0px;
-                background-color: crimson;
-                position: fixed;
-                padding: 20px 0px;
-            }
+        .social-icons img {
+            display: inline-block;
+            vertical-align: middle;
+        }
 
-            .cabecalho {
-                width: 100%;
-            }
+        .social-icons a {
+            margin-bottom: 15px;
+            margin-left: 0px;
+            display: inline-block;
+            text-decoration: none;
+            color: #666;
+            margin: 0px 12px;
+        }
 
-            .cabecalho a {
-                color: white;
-                text-decoration: none;
-                font-size: 16px;
-                letter-spacing: 1px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            }
+        .principais {
+            width: 100%;
+            padding: 50px 0px;
+            margin: 200px 0px;
+            background-color: LightGrey;
+            display: flex;
+        }
 
-            .div1 a {
-                padding: 12px;
-                margin-left: 20px;
-                border: 1px solid #f2f2f2;
-                background-color: #f2f2f2;
-                color: black;
-                opacity: 90%;
-            }
+        .principais h1 {
+            margin-top: 0px;
+            margin-bottom: 80px;
+            letter-spacing: 1px;
+            font-size: 30px;
+            color: rgba(0, 0, 0, 0.7);
+            text-align: center;
+        }
 
-            .div2 a {
-                margin-top: 4px;
-                padding: 8px;
-                margin-right: 20px;
-                border: 1px solid #f2f2f2;
-                background-color: #f2f2f2;
-                color: black;
-                opacity: 90%;
-            }
+        .filho1 {
+            width: 100%;
+        }
 
-            .div1 i {
-                margin-right: 10px;
-            }
+        .form-contato label {
+            color: rgba(0, 0, 0, 0.7);
+            display: block;
+            margin-top: 40px;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 3px;
+            margin-left: 40px;
+        }
 
-            .div2 i {
-                margin-right: 10px;
-            }
+        .form-contato input[type="text"],
+        .form-contato input[type="tel"],
+        .form-contato input[type="email"] {
+            color: rgba(0, 0, 0, 0.7);
+            padding: 10px;
+            letter-spacing: 1px;
+            width: 350px;
+            border: 1px solid blue;
+            border-radius: 5px;
+            font-size: 15px;
+            margin-left: 30px;
+        }
 
-            .div1 a:hover {
-                background-color: crimson;
-                color: white;
-                border: 1px solid white;
-                opacity: 100%;
-            }
 
-            .div2 a:hover {
-                background-color: crimson;
-                color: white;
-                border: 1px solid white;
-                opacity: 100%;
-            }
 
-            .div1 {
-                width: 35%;
-                float: left;
-                display: flex;
-            }
+        .form-contato input[type="text"]:focus,
+        .form-contato input[type="tel"]:focus,
+        .form-contato input[type="email"]:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: none;
+            color: #333;
+        }
 
-            .div2 {
-                width: 65%;
-                float: left;
-                display: flex;
-                justify-content: end;
-            }
+        .form-contato button {
+            padding: 10px 50px;
+            border-radius: 5px;
+            margin-top: 30px;
+            background-color: blue;
+            color: white;
+            border: none;
+            cursor: pointer;
+            display: block;
+            margin-left: 50px;
+            margin-right: 0px;
+            letter-spacing: 1px;
+            transition: 0.5s;
+        }
 
-            .sidebar {
-                position: fixed;
-                top: 108px;
-                left: 0;
-                width: 100px;
-                height: 500px;
-                background-color: red;
-            }
+        .form-contato button:hover {
+            background-color: #4CAF50;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .descricao {
+            color: #666;
+            font-size: 18px;
+            letter-spacing: 1px;
+            line-height: 27px;
+            margin-top: 40px;
+            width: 100%;
+            text-align: left;
+
         }
     </style>
 </head>
 
 <body>
-
-    <header>
+    <!-- <i class="fas fa-home"></i> -->
+    <header id="header">
         <div class="cabecalho">
             <div class="div1">
                 <a title="Início" href="../pages/home.html">
-                    <div class="home">
-                        <i class="fas fa-home"></i>Ana Julia | Social Media
+                    <div class="home inclinado-esquerda">ANA JULIA
                     </div>
                 </a>
             </div>
@@ -280,7 +346,7 @@
                     </div>
                 </a>
 
-                <a title="Me segue no Instagram!" href=" #">
+                <a title="Me segue no Instagram!" href="#">
                     <div class="instagram">
                         <i class="fab fa-instagram"></i>Instagram
                     </div>
@@ -295,13 +361,32 @@
         </div>
     </header>
 
-    <div class="sidebar">teste</div>
+    <div class="sidebar">
+        <h3>Marketing Digital<h3>
+                <p>
+                    Marketing digital são ações de comunicação que as empresas podem utilizar por meio da internet, da
+                    telefonia celular e outros meios digitais, para assim divulgar e comercializar seus produtos ou
+                    serviços, conquistando novos clientes e melhorando a sua rede de relacionamentos.
+                </p>
+    </div>
+
 
 
 
 
     <section>
-        <h1 id="color-changing-heading">Potencialize sua presença nas Mídias Sociais!</h1>
+
+        <div class="titulo-animado">
+
+            "Inspiração Online: A Magia das Mídias Sociais"
+
+        </div>
+
+        <div class="descricao">Olá! Sou a <b>Ana Julia</b>, uma especialista em mídias sociais. Conecto marcas ao
+            público-alvo,
+            com autenticidade e engajamento genuíno. Ofereço análises de desempenho e atualizações constantes para
+            impulsionar sua presença online. <br> Vamos trabalhar juntos para alcançar o sucesso!</div>
+        <!-- <h1 id="color-changing-heading">"Inspiração Online: A Magia das Mídias Sociais"</h1> -->
         <div class="services-container">
             <div class="service">
                 <h2>Desenvolvimento Web</h2>
@@ -321,35 +406,33 @@
                 <p>Entre em contato para obter assistência técnica rápida e confiável.</p>
             </div>
         </div>
-    </section>
 
-    <div class="testes">
-        <p>aewgehrh</p>
-    </div>
+        <div class="principais">
+            <div class="filho1">
+                <h1>Entraremos em contato!</h1>
 
-    <div class="principais">
-        <div class="filho1">
-            <h1>Entraremos em contato!</h1>
+                <div class="form-contato">
+                    <form>
 
-            <div class="form-contato">
-                <form>
+                        <label for="nome">Nome:</label>
+                        <input placeholder="Nome completo" type="text" id="nome" name="nome" required="">
 
-                    <label for="nome">Nome:</label>
-                    <input placeholder="Somente letras" type="text" id="nome" name="nome" required>
+                        <label for="email">Email:</label>
+                        <input placeholder="E-mail de sua preferência" type="email" id="email" name="email" required="">
 
-                    <label for="email">Email:</label>
-                    <input placeholder="E-mail de sua preferência" type="email" id="email" name="email" required>
-
-                    <label for="telefone">Telefone celular:</label>
-                    <input type="tel" id="telefone" name="telefone" placeholder="Somente números" required>
-                    <br>
-                    <button type="submit">Enviar</button>
-                </form>
+                        <label for="telefone">Telefone celular:</label>
+                        <input type="tel" id="telefone" name="telefone" placeholder="Fone/WhatsApp" required="">
+                        <br>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
             </div>
+
         </div>
 
-        <div class="filho2">teste</div>
-    </div>
+    </section>
+
+
 
 
     <footer>
@@ -410,16 +493,16 @@
         // função para recarregar a página e voltar no início do site
 
         // função para mudar de cor no titulo abaixo do header
-        const heading = document.getElementById('color-changing-heading');
-        const colors = ['blue', 'green'];
-        let currentIndex = 0;
+        // const heading = document.getElementById('color-changing-heading');
+        // const colors = ['blue', 'green'];
+        // let currentIndex = 0;
 
-        function changeColor() {
-            heading.style.color = colors[currentIndex];
-            currentIndex = (currentIndex + 1) % colors.length;
-        }
+        // function changeColor() {
+        //     heading.style.color = colors[currentIndex];
+        //     currentIndex = (currentIndex + 1) % colors.length;
+        // }
 
-        setInterval(changeColor, 1000);
+        // setInterval(changeColor, 1000);
         // função para mudar de cor no titulo abaixo do header
 
         // função para aceitar somente letras
@@ -472,6 +555,8 @@
 
     </script>
     <!-- <script src="../javascript/pagina.js"></script> -->
+
+
 
 </body>
 
