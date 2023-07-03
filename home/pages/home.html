@@ -110,22 +110,24 @@
         .sidebar {
             position: fixed;
             margin-left: 0px;
-            top: 100px;
-            left: 0;
+            top: 150px;
+            border-radius: 10px;
+            margin-left: 20px;
             width: 200px;
-            background-color: #f2f2f2;
+            background-color: LightGrey;
             z-index: 99999;
+            border: 1px solid #ccc;
         }
 
         .sidebar h3 {
             text-align: center;
-            color: #333;
+            color: #666;
         }
 
         .sidebar p {
             text-align: center;
             color: #666;
-            text-align: left;
+            text-align: center;
             letter-spacing: 1px;
             line-height: 24px;
             font-size: 14px;
@@ -137,7 +139,7 @@
         }
 
         section {
-            padding: 0px 100px 0px 240px;
+            padding: 0px 80px 0px 280px;
             /* background-color: #4CAF50; */
         }
 
@@ -171,18 +173,6 @@
         }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
         h2 {
             color: #333;
         }
@@ -211,34 +201,6 @@
             background-color: #fff;
         }
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-
-        .social-icons img {
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        .social-icons a {
-            margin-bottom: 15px;
-            margin-left: 0px;
-            display: inline-block;
-            text-decoration: none;
-            color: #666;
-            margin: 0px 12px;
-        }
-
         .principais {
             width: 100%;
             padding: 50px 0px;
@@ -261,9 +223,11 @@
         }
 
         .form-contato label {
-            color: rgba(0, 0, 0, 0.7);
+            color: rgba(0, 0, 0, 0.8);
             display: block;
             margin-top: 40px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
             letter-spacing: 1px;
             display: block;
             margin-bottom: 3px;
@@ -276,10 +240,10 @@
             color: rgba(0, 0, 0, 0.7);
             padding: 10px;
             letter-spacing: 1px;
-            width: 350px;
+            width: 310px;
             border: 1px solid blue;
             border-radius: 5px;
-            font-size: 15px;
+            font-size: 13px;
             margin-left: 30px;
         }
 
@@ -323,7 +287,43 @@
             margin-top: 40px;
             width: 100%;
             text-align: left;
+        }
 
+        footer {
+            background-color: crimson;
+            height: 94px;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            text-align: center;
+            margin-top: auto;
+            width: 100%;
+        }
+
+        footer p {
+            color: #f2f2f2;
+            letter-spacing: 1px;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .social-icons img {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .social-icons a {
+            margin-bottom: 15px;
+            margin-left: 0px;
+            display: inline-block;
+            text-decoration: none;
+            color: #666;
+            margin: 0px 12px;
         }
     </style>
 </head>
@@ -364,15 +364,9 @@
     <div class="sidebar">
         <h3>Marketing Digital<h3>
                 <p>
-                    Marketing digital são ações de comunicação que as empresas podem utilizar por meio da internet, da
-                    telefonia celular e outros meios digitais, para assim divulgar e comercializar seus produtos ou
-                    serviços, conquistando novos clientes e melhorando a sua rede de relacionamentos.
-                </p>
+                    Ações de comunicação online para divulgar e vender produtos, conquistar clientes e melhorar
+                    relacionamentos. </p>
     </div>
-
-
-
-
 
     <section>
 
@@ -432,22 +426,16 @@
 
     </section>
 
-
-
-
     <footer>
         <div class="social-icons">
-            <a href="#"><img title="Home" src="../icons/casaf.png"></a>
-            <a href="#"><img title="WhatsApp" src="../icons/whatsappf.png"></a>
-            <a href="#"><img title="Instagram" src="../icons/instagramf.png"></a>
-            <a href="#"><img title="Facebook" src="../icons/facebookf.png"></a>
-            <a href="#"><img title="Linkedin" src="../icons/linkedinf.png"></a>
+            <a href="#"><img title="Início" src="../icons/casaf.png"></a>
+            <a href="#"><img title="Oi, vamos conversar no WhatsApp!" src="../icons/whatsappf.png"></a>
+            <a href="#"><img title="Me segue no Instagram!" src="../icons/instagramf.png"></a>
+            <a href="#"><img title="Transformando ideias em realidade profissional!" src="../icons/linkedinf.png"></a>
         </div>
 
-        <p>Ana Julia | Social Media</p>
-        <p>Francisco Beltrão - Paraná</p>
-        <p>Telefone: (00) 1234-5678</p>
-        <p>Email: info@empresa.com</p>
+        <p>Ana Julia | Francisco Beltrão - Paraná</p>
+        <p>Telefone: (00) 1234-5678 | Email: info@empresa.com</p>
 
     </footer>
     <script>
