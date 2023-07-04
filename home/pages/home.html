@@ -17,315 +17,682 @@
     <title>Ana Julia | Social Media</title>
 
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        @media (min-width: 768px) {
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
-        /* @media (min-width: 1000px) { */
-        body {
-            scroll-behavior: smooth;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f2f2f2;
-        }
-
-        header {
-            width: 100%;
-            top: 0px;
-            background-color: crimson;
-            position: fixed;
-            padding: 30px 0px;
-            z-index: 99999;
-            transition: 0.7s;
-        }
-
-        header.rolagem {
-            padding: 10px 0px 10px 0px;
-            transition: 0.7s;
-        }
-
-        .cabecalho {
-            width: 100%;
-        }
-
-        .cabecalho a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-            letter-spacing: 1px;
-            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-        }
-
-        .div1 a {
-            padding: 8px 5px 1px 8px;
-            margin-left: 20px;
-            font-family: arial;
-            color: white;
-            opacity: 100%;
-            font-weight: bold;
-            letter-spacing: 2px;
-            border-bottom: 1px solid white;
-        }
-
-        .div2 a {
-            padding: 6px 10px 6px 10px;
-            margin-right: 20px;
-            background-color: #f2f2f2;
-            color: black;
-            opacity: 100%;
-            border-radius: 15px;
-        }
-
-        .div1 a:hover {
-            color: white;
-            opacity: 90%;
-        }
-
-        .div2 a:hover {
-            background-color: white;
-            color: black;
-            opacity: 80%;
-        }
-
-        .div1 i {
-            margin-right: 10px;
-        }
-
-        .div2 i {
-            margin-right: 10px;
-        }
-
-        .div1 {
-            width: 35%;
-            float: left;
-            display: flex;
-        }
-
-        .div2 {
-            width: 65%;
-            float: left;
-            display: flex;
-            justify-content: end;
-        }
-
-        .sidebar {
-            position: fixed;
-            margin-left: 0px;
-            top: 150px;
-            border-radius: 10px;
-            margin-left: 20px;
-            width: 200px;
-            background-color: LightGrey;
-            z-index: 99999;
-            border: 1px solid #ccc;
-        }
-
-        .sidebar h3 {
-            text-align: center;
-            color: #666;
-        }
-
-        .sidebar p {
-            text-align: center;
-            color: #666;
-            text-align: center;
-            letter-spacing: 1px;
-            line-height: 24px;
-            font-size: 14px;
-            margin: 0px 20px;
-        }
-
-        .inclinado-esquerda {
-            transform: skewX(-10deg);
-        }
-
-        section {
-            padding: 0px 80px 0px 280px;
-            /* background-color: #4CAF50; */
-        }
-
-        .titulo-animado {
-            justify-content: center;
-            text-align: center;
-            display: flex;
-            width: 100%;
-            margin-top: 150px;
-            font-family: 'Poppins', sans-serif;
-            font-size: 30px;
-            text-transform: uppercase;
-            letter-spacing: 2px;
-            background: linear-gradient(40deg, #DC143C, #B22222, #FF4500, #A52A2A);
-            background-size: 400% 100%;
-            animation: degrade 15s linear infinite alternate;
-            -webkit-text-fill-color: transparent;
-            -webkit-background-clip: text;
-            background-clip: text;
-        }
-
-
-        @keyframes degrade {
-            0% {
-                background-position-x: 0%;
+            body {
+                scroll-behavior: smooth;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2;
             }
 
-            100% {
-                background-position: 400%;
+            header {
+                width: 100%;
+                top: 0px;
+                background-color: crimson;
+                position: fixed;
+                padding: 30px 0px;
+                z-index: 99999;
+                transition: 0.7s;
+            }
+
+            header.rolagem {
+                padding: 10px 0px 10px 0px;
+                transition: 0.7s;
+            }
+
+            .cabecalho {
+                width: 100%;
+            }
+
+            .cabecalho a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            .div1 a {
+                padding: 8px 5px 1px 8px;
+                margin-left: 20px;
+                font-family: arial;
+                color: white;
+                opacity: 100%;
+                font-weight: bold;
+                letter-spacing: 2px;
+                border-bottom: 1px solid white;
+            }
+
+            .div2 a {
+                padding: 6px 10px 6px 10px;
+                margin-right: 20px;
+                background-color: #f2f2f2;
+                color: black;
+                opacity: 100%;
+                border-radius: 15px;
+            }
+
+            .div1 a:hover {
+                color: white;
+                opacity: 90%;
+            }
+
+            .div2 a:hover {
+                background-color: white;
+                color: black;
+                opacity: 80%;
+            }
+
+            .div1 i {
+                margin-right: 10px;
+            }
+
+            .div2 i {
+                margin-right: 10px;
+            }
+
+            .div1 {
+                width: 35%;
+                float: left;
+                display: flex;
+            }
+
+            .div2 {
+                width: 65%;
+                float: left;
+                display: flex;
+                justify-content: end;
+            }
+
+            .sidebar {
+                position: fixed;
+                margin-left: 0px;
+                top: 150px;
+                border-radius: 10px;
+                margin-left: 20px;
+                width: 200px;
+                background-color: LightGrey;
+                z-index: 99999;
+                border: 1px solid #ccc;
+            }
+
+            .sidebar h3 {
+                text-align: center;
+                color: #666;
+            }
+
+            .sidebar p {
+                text-align: center;
+                color: #666;
+                text-align: center;
+                letter-spacing: 1px;
+                line-height: 24px;
+                font-size: 14px;
+                margin: 0px 20px;
+            }
+
+            .inclinado-esquerda {
+                transform: skewX(-10deg);
+            }
+
+            section {
+                padding: 0px 80px 0px 280px;
+                /* background-color: #4CAF50; */
+            }
+
+            .titulo-animado {
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                width: 100%;
+                margin-top: 150px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                background: linear-gradient(40deg, #DC143C, #B22222, #FF4500, #A52A2A);
+                background-size: 400% 100%;
+                animation: degrade 15s linear infinite alternate;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
+
+
+            @keyframes degrade {
+                0% {
+                    background-position-x: 0%;
+                }
+
+                100% {
+                    background-position: 400%;
+                }
+            }
+
+
+            h2 {
+                color: #333;
+            }
+
+            p {
+                color: #666;
+                margin-bottom: 20px;
+            }
+
+            .services-container {
+                padding-top: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 20px;
+                margin-top: 200px;
+            }
+
+            .service {
+                flex: 1 1 300px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                text-align: left;
+                background-color: #fff;
+            }
+
+            .principais {
+                width: 100%;
+                padding: 50px 0px;
+                margin: 200px 0px;
+                background-color: LightGrey;
+                display: flex;
+            }
+
+            .principais h1 {
+                margin-top: 0px;
+                margin-bottom: 80px;
+                letter-spacing: 1px;
+                font-size: 30px;
+                color: rgba(0, 0, 0, 0.7);
+                text-align: center;
+            }
+
+            .filho1 {
+                width: 100%;
+            }
+
+            .form-contato label {
+                color: rgba(0, 0, 0, 0.8);
+                display: block;
+                margin-top: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                letter-spacing: 1px;
+                display: block;
+                margin-bottom: 3px;
+                margin-left: 40px;
+            }
+
+            .form-contato input[type="text"],
+            .form-contato input[type="tel"],
+            .form-contato input[type="email"] {
+                color: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+                letter-spacing: 1px;
+                width: 310px;
+                border: 1px solid blue;
+                border-radius: 5px;
+                font-size: 13px;
+                margin-left: 30px;
+            }
+
+
+
+            .form-contato input[type="text"]:focus,
+            .form-contato input[type="tel"]:focus,
+            .form-contato input[type="email"]:focus {
+                outline: none;
+                border-color: #4CAF50;
+                box-shadow: none;
+                color: #333;
+            }
+
+            .form-contato button {
+                padding: 10px 50px;
+                border-radius: 5px;
+                margin-top: 30px;
+                background-color: blue;
+                color: white;
+                border: none;
+                cursor: pointer;
+                display: block;
+                margin-left: 50px;
+                margin-right: 0px;
+                letter-spacing: 1px;
+                transition: 0.5s;
+            }
+
+            .form-contato button:hover {
+                background-color: #4CAF50;
+                color: white;
+                transition: 0.5s;
+            }
+
+            .descricao {
+                color: #666;
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 27px;
+                margin-top: 40px;
+                margin-bottom: 250px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .descricao p {
+                width: 80%;
+                align-items: center;
+                text-align: left;
+                justify-content: center;
+            }
+
+            .imagem {
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .imagem img {
+
+                width: 90%;
+                height: 100%;
+                align-items: center;
+            }
+
+            footer {
+                background-color: crimson;
+                height: 94px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: center;
+                margin-top: auto;
+                width: 100%;
+            }
+
+            footer p {
+                color: #f2f2f2;
+                letter-spacing: 1px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+            }
+
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .social-icons img {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .social-icons a {
+                margin-bottom: 15px;
+                margin-left: 0px;
+                display: inline-block;
+                text-decoration: none;
+                color: #666;
+                margin: 0px 12px;
             }
         }
 
+        /*  */
 
-        h2 {
-            color: #333;
-        }
+        @media (max-width: 450px) {
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
-        p {
-            color: #666;
-            margin-bottom: 20px;
-        }
+            body {
+                scroll-behavior: smooth;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f2f2f2;
+            }
 
-        .services-container {
-            padding-top: 50px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-bottom: 20px;
-            margin-top: 200px;
-        }
+            header {
+                width: 100%;
+                top: 0px;
+                background-color: crimson;
+                position: fixed;
+                padding: 30px 0px;
+                z-index: 99999;
+                transition: 0.7s;
+            }
 
-        .service {
-            flex: 1 1 300px;
-            padding: 20px;
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            text-align: left;
-            background-color: #fff;
-        }
+            header.rolagem {
+                padding: 10px 0px 10px 0px;
+                transition: 0.7s;
+            }
 
-        .principais {
-            width: 100%;
-            padding: 50px 0px;
-            margin: 200px 0px;
-            background-color: LightGrey;
-            display: flex;
-        }
+            .cabecalho {
+                width: 100%;
+            }
 
-        .principais h1 {
-            margin-top: 0px;
-            margin-bottom: 80px;
-            letter-spacing: 1px;
-            font-size: 30px;
-            color: rgba(0, 0, 0, 0.7);
-            text-align: center;
-        }
+            .cabecalho a {
+                color: white;
+                text-decoration: none;
+                font-size: 16px;
+                letter-spacing: 1px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
 
-        .filho1 {
-            width: 100%;
-        }
+            .div1 a {
+                padding: 8px 5px 1px 8px;
+                margin-left: 20px;
+                font-family: arial;
+                color: white;
+                opacity: 100%;
+                font-weight: bold;
+                letter-spacing: 2px;
+                border-bottom: 1px solid white;
+            }
 
-        .form-contato label {
-            color: rgba(0, 0, 0, 0.8);
-            display: block;
-            margin-top: 40px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
-            letter-spacing: 1px;
-            display: block;
-            margin-bottom: 3px;
-            margin-left: 40px;
-        }
+            .div2 a {
+                padding: 6px 10px 6px 10px;
+                margin-right: 20px;
+                background-color: #f2f2f2;
+                color: black;
+                opacity: 100%;
+                border-radius: 15px;
+            }
 
-        .form-contato input[type="text"],
-        .form-contato input[type="tel"],
-        .form-contato input[type="email"] {
-            color: rgba(0, 0, 0, 0.7);
-            padding: 10px;
-            letter-spacing: 1px;
-            width: 310px;
-            border: 1px solid blue;
-            border-radius: 5px;
-            font-size: 13px;
-            margin-left: 30px;
-        }
+            .div1 a:hover {
+                color: white;
+                opacity: 90%;
+            }
+
+            .div2 a:hover {
+                background-color: white;
+                color: black;
+                opacity: 80%;
+            }
+
+            .div1 i {
+                margin-right: 10px;
+            }
+
+            .div2 i {
+                margin-right: 10px;
+            }
+
+            .div1 {
+                width: 35%;
+                float: left;
+                display: flex;
+            }
+
+            .div2 {
+                width: 65%;
+                float: left;
+                display: flex;
+                justify-content: end;
+            }
+
+            /* .sidebar {
+                position: fixed;
+                margin-left: 0px;
+                top: 150px;
+                border-radius: 10px;
+                margin-left: 20px;
+                width: 200px;
+                background-color: LightGrey;
+                z-index: 99999;
+                border: 1px solid #ccc;
+            }
+
+            .sidebar h3 {
+                text-align: center;
+                color: #666;
+            }
+
+            .sidebar p {
+                text-align: center;
+                color: #666;
+                text-align: center;
+                letter-spacing: 1px;
+                line-height: 24px;
+                font-size: 14px;
+                margin: 0px 20px;
+            } */
+
+            .inclinado-esquerda {
+                transform: skewX(-10deg);
+            }
+
+            section {
+                padding: 0px 20px;
+                /* background-color: #4CAF50; */
+            }
+
+            .titulo-animado {
+                justify-content: center;
+                text-align: center;
+                display: flex;
+                width: 100%;
+                margin-top: 150px;
+                font-family: 'Poppins', sans-serif;
+                font-size: 30px;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                background: linear-gradient(40deg, #DC143C, #B22222, #FF4500, #A52A2A);
+                background-size: 400% 100%;
+                animation: degrade 15s linear infinite alternate;
+                -webkit-text-fill-color: transparent;
+                -webkit-background-clip: text;
+                background-clip: text;
+            }
 
 
+            @keyframes degrade {
+                0% {
+                    background-position-x: 0%;
+                }
 
-        .form-contato input[type="text"]:focus,
-        .form-contato input[type="tel"]:focus,
-        .form-contato input[type="email"]:focus {
-            outline: none;
-            border-color: #4CAF50;
-            box-shadow: none;
-            color: #333;
-        }
+                100% {
+                    background-position: 400%;
+                }
+            }
 
-        .form-contato button {
-            padding: 10px 50px;
-            border-radius: 5px;
-            margin-top: 30px;
-            background-color: blue;
-            color: white;
-            border: none;
-            cursor: pointer;
-            display: block;
-            margin-left: 50px;
-            margin-right: 0px;
-            letter-spacing: 1px;
-            transition: 0.5s;
-        }
 
-        .form-contato button:hover {
-            background-color: #4CAF50;
-            color: white;
-            transition: 0.5s;
-        }
+            h2 {
+                color: #333;
+            }
 
-        .descricao {
-            color: #666;
-            font-size: 18px;
-            letter-spacing: 1px;
-            line-height: 27px;
-            margin-top: 40px;
-            width: 100%;
-            text-align: left;
-        }
+            p {
+                color: #666;
+                margin-bottom: 20px;
+            }
 
-        footer {
-            background-color: crimson;
-            height: 94px;
-            padding-top: 20px;
-            padding-bottom: 20px;
-            text-align: center;
-            margin-top: auto;
-            width: 100%;
-        }
+            .services-container {
+                padding-top: 50px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                margin-bottom: 20px;
+                margin-top: 200px;
+            }
 
-        footer p {
-            color: #f2f2f2;
-            letter-spacing: 1px;
-            font-family: 'Courier New', Courier, monospace;
-        }
+            .service {
+                flex: 1 1 300px;
+                padding: 20px;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                text-align: left;
+                background-color: #fff;
+            }
 
-        .social-icons {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-        }
+            .principais {
+                width: 100%;
+                padding: 50px 0px;
+                margin: 200px 0px;
+                background-color: LightGrey;
+                display: flex;
+            }
 
-        .social-icons img {
-            display: inline-block;
-            vertical-align: middle;
-        }
+            .principais h1 {
+                margin-top: 0px;
+                margin-bottom: 80px;
+                letter-spacing: 1px;
+                font-size: 20px;
+                color: rgba(0, 0, 0, 0.7);
+                text-align: center;
+            }
 
-        .social-icons a {
-            margin-bottom: 15px;
-            margin-left: 0px;
-            display: inline-block;
-            text-decoration: none;
-            color: #666;
-            margin: 0px 12px;
+            .filho1 {
+                width: 100%;
+            }
+
+            .form-contato label {
+                color: rgba(0, 0, 0, 0.8);
+                display: block;
+                margin-top: 40px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                letter-spacing: 1px;
+                display: block;
+                margin-bottom: 3px;
+                margin-left: 20px;
+            }
+
+            .form-contato input[type="text"],
+            .form-contato input[type="tel"],
+            .form-contato input[type="email"] {
+                color: rgba(0, 0, 0, 0.7);
+                padding: 10px;
+                letter-spacing: 1px;
+                width: 245px;
+                border: 1px solid blue;
+                border-radius: 5px;
+                font-size: 13px;
+                margin-left: 10px;
+            }
+
+            .form-contato input[type="text"]:focus,
+            .form-contato input[type="tel"]:focus,
+            .form-contato input[type="email"]:focus {
+                outline: none;
+                border-color: #4CAF50;
+                box-shadow: none;
+                color: #333;
+            }
+
+            .form-contato button {
+                padding: 10px 50px;
+                border-radius: 5px;
+                margin-top: 30px;
+                background-color: blue;
+                color: white;
+                border: none;
+                cursor: pointer;
+                display: flex;
+
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                letter-spacing: 1px;
+                transition: 0.5s;
+            }
+
+            .form-contato button:hover {
+                background-color: #4CAF50;
+                color: white;
+                transition: 0.5s;
+            }
+
+            .descricao {
+                color: #666;
+                font-size: 18px;
+                letter-spacing: 1px;
+                line-height: 27px;
+                margin-top: 40px;
+                margin-bottom: 250px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .descricao p {
+                width: 80%;
+                align-items: center;
+                text-align: left;
+                justify-content: center;
+            }
+
+            .imagem {
+                width: 100%;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+
+            }
+
+            .imagem img {
+
+                width: 90%;
+                height: 100%;
+                align-items: center;
+            }
+
+            footer {
+                background-color: crimson;
+                height: 94px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+                text-align: center;
+                margin-top: auto;
+                width: 100%;
+            }
+
+            footer p {
+                color: #f2f2f2;
+                letter-spacing: 1px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+            }
+
+            .social-icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+            }
+
+            .social-icons img {
+                display: inline-block;
+                vertical-align: middle;
+            }
+
+            .social-icons a {
+                margin-bottom: 15px;
+                margin-left: 0px;
+                display: inline-block;
+                text-decoration: none;
+                color: #666;
+                margin: 0px 12px;
+            }
         }
     </style>
+
+
 </head>
 
 <body>
@@ -376,28 +743,54 @@
 
         </div>
 
-        <div class="descricao">Olá! Sou a <b>Ana Julia</b>, uma especialista em mídias sociais. Conecto marcas ao
-            público-alvo,
-            com autenticidade e engajamento genuíno. Ofereço análises de desempenho e atualizações constantes para
-            impulsionar sua presença online. <br> Vamos trabalhar juntos para alcançar o sucesso!</div>
+        <div class="descricao">
+            <p> Olá! Sou a <b>Ana Julia</b>, uma especialista em mídias sociais. Conecto marcas ao
+                público-alvo,
+                com autenticidade e engajamento genuíno. Ofereço análises de desempenho e atualizações constantes para
+                impulsionar sua presença online. <br> Vamos trabalhar juntos para alcançar o sucesso!</p>
+
+        </div>
         <!-- <h1 id="color-changing-heading">"Inspiração Online: A Magia das Mídias Sociais"</h1> -->
+
+        <div class="imagem">
+
+            <img src="../image/imagem1.jpg" alt="">
+        </div>
+
+
         <div class="services-container">
             <div class="service">
-                <h2>Desenvolvimento Web</h2>
-                <p>Oferecemos serviços de desenvolvimento web, criando sites modernos e responsivos.</p>
-                <p>Entre em contato para discutir seus requisitos e obter um orçamento personalizado.</p>
+                <h2>Marketing Digital</h2>
+                <p>O marketing digital é uma estratégia essencial para alcançar e envolver o público-alvo online,
+                    utilizando mídias sociais, sites e e-mail marketing. Essa abordagem permite promover produtos, gerar
+                    leads e construir relacionamentos próximos com os clientes.</p>
+                <p>Além disso, o marketing digital oferece a vantagem de medir resultados em tempo real e otimizar
+                    campanhas para obter eficácia. No entanto, é um campo em constante evolução, exigindo adaptação às
+                    mudanças do mercado digital.</p>
+
+                <!-- <p>Entre em contato para discutir seus requisitos e obter um orçamento personalizado.</p> -->
             </div>
             <div class="service">
-                <h2>Consultoria em TI</h2>
-                <p>Nossa equipe de especialistas em TI pode fornecer consultoria para ajudar sua empresa a tomar
-                    decisões estratégicas relacionadas à tecnologia.</p>
-                <p>Entre em contato para agendar uma reunião e discutir suas necessidades específicas.</p>
+                <h2>A Importância da Divulgação da Marca</h2>
+                <p>A divulgação da marca pessoal ou empresarial é fundamental para o sucesso. Estratégias de marketing e
+                    comunicação são utilizadas para atrair o público-alvo, criar uma identidade visual consistente e
+                    promover a marca em plataformas online, eventos e parcerias estratégicas.</p>
+                <p>Construir relacionamentos
+                    e uma reputação sólida também são importantes. A divulgação impulsiona o crescimento, fortalece a
+                    presença no mercado e abre novas oportunidades de negócios.</p>
+
             </div>
             <div class="service">
-                <h2>Suporte Técnico</h2>
-                <p>Oferecemos suporte técnico especializado para resolver problemas de hardware e software em
-                    computadores e dispositivos.</p>
-                <p>Entre em contato para obter assistência técnica rápida e confiável.</p>
+                <h2>Impulsione sua Marca no Instagram: Stories, Feed e Reels</h2>
+                <p>Postar nos Stories, Feed e Reels do Instagram é uma forma poderosa de promover sua marca pessoal
+                    ou
+                    empresa. Os Stories são ótimos para atualizações rápidas e interativas, o Feed permite
+                    compartilhar
+                    conteúdo mais duradouro e o Reels é ideal para criar vídeos envolventes.</p>
+                <p>Esses recursos ajudam a
+                    construir uma presença positiva no Instagram, aumentar o engajamento e impulsionar o crescimento
+                    da
+                    sua marca.</p>
             </div>
         </div>
 
