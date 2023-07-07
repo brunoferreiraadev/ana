@@ -14,11 +14,130 @@
     <!-- <link rel="stylesheet" href="../style/hover-min.css"> -->
     <!-- <link rel="stylesheet" href="../style/home.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- <script src="https://kit.fontawesome.com/d8a94dde1a.js" crossorigin="anonymous"></script> -->
+
     <title>Ana Julia | Social Media</title>
 
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+
         @media (min-width: 768px) {
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+            .slide {
+                margin-top: 91px;
+                margin-bottom: 0px;
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+                position: relative;
+            }
+
+            .slides {
+                width: 400%;
+                display: flex;
+                transition: left 1s;
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .image {
+                width: 100%;
+                height: 100%;
+                position: relative;
+                transition: opacity 1s;
+                opacity: 0;
+                flex: 1 0 0;
+                border-radius: 0;
+                /* Remover ou definir como zero */
+            }
+
+            .slide .slides .image {
+                border-radius: 0;
+            }
+
+
+            .image.active {
+                opacity: 1;
+            }
+
+            .image.previous {
+                left: -100%;
+            }
+
+            .image.next {
+                left: 100%;
+            }
+
+            .image img {
+                width: 100%;
+                height: 500px;
+            }
+
+            .btn {
+                position: absolute;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 0.4s;
+                font-size: 1.7em;
+                margin-top: -5px;
+            }
+
+            .btn:hover {
+                transform: scale(1.5);
+            }
+
+            #voltar {
+                top: 50%;
+                left: 10%;
+            }
+
+            #next {
+                top: 50%;
+                right: 10%;
+            }
+
+            .balls {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-top: -45px;
+            }
+
+            .balls div {
+                transition: all 0.5s;
+                border: 3px solid white;
+                padding: 6px;
+                border-radius: 50%;
+                margin-right: 15px;
+                cursor: pointer;
+                pointer-events: none;
+            }
+
+            .balls div:hover {
+                background-color: white;
+            }
+
+            .imgAtual {
+                transition: all 0.5s;
+                background-color: white;
+            }
+
+            .no-border-radius {
+                border-radius: 0 !important;
+            }
+
+
+
+
+
+
 
             body {
                 scroll-behavior: smooth;
@@ -26,6 +145,10 @@
                 margin: 0;
                 padding: 0;
                 background-color: #f2f2f2;
+                width: 100%;
+                height: 200vh;
+                align-items: center;
+                justify-content: center;
             }
 
             header {
@@ -108,14 +231,14 @@
             }
 
             .sidebar {
-                position: fixed;
+                position: absolute;
                 margin-left: 0px;
-                top: 150px;
+                top: 700px;
                 border-radius: 10px;
                 margin-left: 20px;
                 width: 200px;
                 background-color: LightGrey;
-                z-index: 99999;
+
                 border: 1px solid #ccc;
             }
 
@@ -139,7 +262,7 @@
             }
 
             section {
-                padding: 0px 80px 0px 280px;
+                padding: 0px 150px;
                 /* background-color: #4CAF50; */
             }
 
@@ -148,7 +271,7 @@
                 text-align: center;
                 display: flex;
                 width: 100%;
-                margin-top: 150px;
+                margin-top: 100px;
                 font-family: 'Poppins', sans-serif;
                 font-size: 30px;
                 text-transform: uppercase;
@@ -172,34 +295,78 @@
                 }
             }
 
-
-            h2 {
-                color: #333;
-            }
-
-            p {
+            .descricao {
                 color: #666;
-                margin-bottom: 20px;
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 27px;
+                margin-top: 40px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
             }
+
+            .descricao p {
+                width: 60%;
+                margin-bottom: 0px;
+                align-items: center;
+                text-align: left;
+                justify-content: center;
+            }
+
+            .teste {
+                margin-top: 110px;
+                width: 100%;
+                height: 100%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .teste img {
+                max-width: 100%;
+                height: auto;
+            }
+
+
+
+
+
 
             .services-container {
-                padding-top: 50px;
+                padding-top: 200px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
                 gap: 20px;
                 margin-bottom: 20px;
-                margin-top: 200px;
+                margin-top: 0px;
+                text-align: left;
+                letter-spacing: 1px;
             }
 
             .service {
                 flex: 1 1 300px;
-                padding: 20px;
+                padding: 0px 20px 20px 20px;
                 border: 1px solid #ccc;
                 border-radius: 5px;
                 text-align: left;
                 background-color: #fff;
             }
+
+            .service h2 {
+                padding: 10px 0px;
+                margin-top: 0px;
+                text-align: center;
+                color: #333;
+            }
+
+
+            .service p {
+                color: #666;
+            }
+
 
             .principais {
                 width: 100%;
@@ -210,6 +377,7 @@
             }
 
             .principais h1 {
+
                 margin-top: 0px;
                 margin-bottom: 80px;
                 letter-spacing: 1px;
@@ -247,8 +415,6 @@
                 margin-left: 30px;
             }
 
-
-
             .form-contato input[type="text"]:focus,
             .form-contato input[type="tel"]:focus,
             .form-contato input[type="email"]:focus {
@@ -259,7 +425,7 @@
             }
 
             .form-contato button {
-                padding: 10px 50px;
+                padding: 10px 70px;
                 border-radius: 5px;
                 margin-top: 30px;
                 background-color: blue;
@@ -267,7 +433,7 @@
                 border: none;
                 cursor: pointer;
                 display: block;
-                margin-left: 50px;
+                margin-left: 30px;
                 margin-right: 0px;
                 letter-spacing: 1px;
                 transition: 0.5s;
@@ -279,49 +445,12 @@
                 transition: 0.5s;
             }
 
-            .descricao {
-                color: #666;
-                font-size: 18px;
-                letter-spacing: 1px;
-                line-height: 27px;
-                margin-top: 40px;
-                margin-bottom: 250px;
-                width: 100%;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            .descricao p {
-                width: 80%;
-                align-items: center;
-                text-align: left;
-                justify-content: center;
-            }
-
-            .imagem {
-                width: 100%;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-
-            }
-
-            .imagem img {
-
-                width: 90%;
-                height: 100%;
-                align-items: center;
-            }
-
             footer {
                 background-color: crimson;
-                height: 94px;
-                padding-top: 25px;
-                padding-bottom: 20px;
                 text-align: center;
-                margin-top: auto;
                 width: 100%;
+                padding-top: 20px;
+                padding-bottom: 1px;
             }
 
             footer p {
@@ -356,7 +485,6 @@
         /*  */
 
         @media (max-width: 600px) {
-            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
             body {
                 scroll-behavior: smooth;
@@ -738,12 +866,47 @@
         </div>
     </header>
 
-    <div class="sidebar">
+    <!-- <div class="sidebar">
         <h3>Marketing Digital<h3>
                 <p>
                     Ações de comunicação online para divulgar e vender produtos, conquistar clientes e melhorar
                     relacionamentos. </p>
+    </div> -->
+
+
+    <!-- <div class="teste">
+        <img src="../image/img1.jpg" alt="Imagem">
+    </div> -->
+
+    <div class="slide">
+        <div class="slides">
+            <div id="voltar" class="btn">
+                <!-- <i class="fas fa-chevron-left"></i> -->
+            </div>
+            <div id="next" class="btn">
+                <!-- <i class="fas fa-chevron-right"></i> -->
+            </div>
+            <div class="image active">
+                <img class="no-border-radius" src="../image/img1.jpg" alt="">
+            </div>
+            <div class="image">
+                <img class="no-border-radius" src="../image/img2.jpg" alt="">
+            </div>
+            <div class="image">
+                <img class="no-border-radius" src="../image/img3.jpg" alt="">
+            </div>
+            <div class="image">
+                <img class="no-border-radius" src="../image/img4.jpg" alt="">
+            </div>
+        </div>
+        <div class="balls">
+            <!-- <div class="imgAtual" id="0"></div>
+            <div id="1"></div>
+            <div id="2"></div>
+            <div id="3"></div> -->
+        </div>
     </div>
+
 
     <section>
 
@@ -762,13 +925,11 @@
         </div>
         <!-- <h1 id="color-changing-heading">"Inspiração Online: A Magia das Mídias Sociais"</h1> -->
 
-        <div class="imagem">
 
-            <img src="../image/imagem1.jpg" alt="">
-        </div>
 
 
         <div class="services-container">
+
             <div class="service">
                 <h2>Marketing Digital</h2>
                 <p>O marketing digital é uma estratégia essencial para alcançar e envolver o público-alvo online,
@@ -838,7 +999,8 @@
         </div>
 
         <p>Ana Julia | Francisco Beltrão - Paraná</p>
-        <p>Telefone: (00) 1234-5678 | Email: info@empresa.com</p>
+        <p>Telefone: (00) 1234-5678</p>
+        <p>Email: info@empresa.com</p>
 
     </footer>
     <script>
@@ -944,10 +1106,93 @@
         telefoneInput.addEventListener('blur', validarTelefone);
         // função para validar somente 11 numeros
 
+
+        // função para mudar as imagens automaticas abaixo do header
+        var balls = document.querySelector('.balls');
+        var quant = document.querySelectorAll('.slides .image');
+        var atual = 0;
+        var slideWidth = document.querySelector('.slide').offsetWidth;
+        var imagem = document.querySelector('.slides');
+        var next = document.getElementById('next');
+        var voltar = document.getElementById('voltar');
+        var canVoltar = true;
+        var rolar = true;
+
+        for (let i = 0; i < quant.length; i++) {
+            var div = document.createElement('div');
+            div.id = i;
+            balls.appendChild(div);
+        }
+
+        document.getElementById('0').classList.add('imgAtual');
+
+        var pos = document.querySelectorAll('.balls div');
+
+        for (let i = 0; i < pos.length; i++) {
+            pos[i].addEventListener('click', () => {
+                atual = pos[i].id;
+                rolar = false;
+                slide();
+            });
+        }
+
+        voltar.addEventListener('click', () => {
+            if (canVoltar) {
+                atual--;
+                rolar = false;
+                slide();
+            }
+        });
+
+        next.addEventListener('click', () => {
+            if (atual < quant.length - 1) {
+                atual++;
+                rolar = false;
+                slide();
+            }
+        });
+
+        function slide() {
+            if (atual >= quant.length) {
+                atual = 0;
+            } else if (atual < 0) {
+                atual = quant.length - 1;
+            }
+
+            document.querySelector('.imgAtual').classList.remove('imgAtual');
+            imagem.style.transform = `translateX(-${slideWidth * atual}px)`;
+
+            for (let i = 0; i < quant.length; i++) {
+                quant[i].classList.remove('previous');
+                quant[i].classList.remove('active');
+                quant[i].classList.remove('next');
+            }
+
+            var previousIndex = (atual === 0) ? quant.length - 1 : atual - 1;
+            var nextIndex = (atual === quant.length - 1) ? 0 : atual + 1;
+
+            quant[previousIndex].classList.add('previous');
+            quant[atual].classList.add('active');
+            quant[nextIndex].classList.add('next');
+
+            document.getElementById(atual).classList.add('imgAtual');
+        }
+
+        function startSlide() {
+            setInterval(() => {
+                if (rolar) {
+                    atual++;
+                    slide();
+                } else {
+                    rolar = true;
+                }
+            }, 2500);
+        }
+        startSlide();
+
+        // função para mudar as imagens automaticas abaixo do header
     </script>
     <!-- <script src="../javascript/pagina.js"></script> -->
-
-
 
 </body>
 
