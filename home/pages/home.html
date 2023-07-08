@@ -14,7 +14,7 @@
     <!-- <link rel="stylesheet" href="../style/hover-min.css"> -->
     <!-- <link rel="stylesheet" href="../style/home.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <!-- <script src="https://kit.fontawesome.com/d8a94dde1a.js" crossorigin="anonymous"></script> -->
+    <script src="https://kit.fontawesome.com/d8a94dde1a.js" crossorigin="anonymous"></script>
 
     <title>Ana Julia | Social Media</title>
 
@@ -22,122 +22,10 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
 
         @media (min-width: 768px) {
-            .slide {
-                margin-top: 91px;
-                margin-bottom: 0px;
-                width: 100%;
-                height: 500px;
-                overflow: hidden;
-                position: relative;
+            * {
+                padding: 0;
+                margin: 0;
             }
-
-            .slides {
-                width: 400%;
-                display: flex;
-                transition: left 1s;
-                position: absolute;
-                top: 0;
-                left: 0;
-            }
-
-            .image {
-                width: 100%;
-                height: 100%;
-                position: relative;
-                transition: opacity 1s;
-                opacity: 0;
-                flex: 1 0 0;
-                border-radius: 0;
-                /* Remover ou definir como zero */
-            }
-
-            .slide .slides .image {
-                border-radius: 0;
-            }
-
-
-            .image.active {
-                opacity: 1;
-            }
-
-            .image.previous {
-                left: -100%;
-            }
-
-            .image.next {
-                left: 100%;
-            }
-
-            .image img {
-                width: 100%;
-                height: 500px;
-            }
-
-            .btn {
-                position: absolute;
-                color: white;
-                padding: 10px;
-                text-align: center;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                cursor: pointer;
-                transition: all 0.4s;
-                font-size: 1.7em;
-                margin-top: -5px;
-            }
-
-            .btn:hover {
-                transform: scale(1.5);
-            }
-
-            #voltar {
-                top: 50%;
-                left: 10%;
-            }
-
-            #next {
-                top: 50%;
-                right: 10%;
-            }
-
-            .balls {
-                position: absolute;
-                width: 100%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-top: -45px;
-            }
-
-            .balls div {
-                transition: all 0.5s;
-                border: 3px solid white;
-                padding: 6px;
-                border-radius: 50%;
-                margin-right: 15px;
-                cursor: pointer;
-                pointer-events: none;
-            }
-
-            .balls div:hover {
-                background-color: white;
-            }
-
-            .imgAtual {
-                transition: all 0.5s;
-                background-color: white;
-            }
-
-            .no-border-radius {
-                border-radius: 0 !important;
-            }
-
-
-
-
-
-
 
             body {
                 scroll-behavior: smooth;
@@ -180,7 +68,7 @@
 
             .div1 a {
                 padding: 8px 5px 1px 8px;
-                margin-left: 20px;
+                margin-left: 30px;
                 font-family: arial;
                 color: white;
                 opacity: 100%;
@@ -191,7 +79,7 @@
 
             .div2 a {
                 padding: 6px 10px 6px 10px;
-                margin-right: 20px;
+                margin-right: 30px;
                 background-color: #f2f2f2;
                 color: black;
                 opacity: 100%;
@@ -230,40 +118,98 @@
                 justify-content: end;
             }
 
-            .sidebar {
+            section {
+                padding: 0px 150px;
+            }
+
+            .slide {
+                margin-top: 89px;
+                width: 100%;
+                height: 500px;
+                overflow: hidden;
+                transition: 0.4s;
+                display: flex;
+                align-items: center;
+            }
+
+            .slides {
+                width: 100%;
+                display: flex;
+            }
+
+            .image {
+                flex: 0 0 100%;
+                max-width: 100%;
+                height: auto;
+            }
+
+            .image img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            #atual {
+                transition: all 2s;
+            }
+
+            .btn {
                 position: absolute;
-                margin-left: 0px;
-                top: 700px;
-                border-radius: 10px;
-                margin-left: 20px;
-                width: 200px;
-                background-color: LightGrey;
-
-                border: 1px solid #ccc;
+                color: white;
+                padding: 10px;
+                text-align: center;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                cursor: pointer;
+                transition: all 0.4s;
+                font-size: 1.7em;
+                margin-top: -5px;
             }
 
-            .sidebar h3 {
-                text-align: center;
-                color: #666;
+            .btn:hover {
+                transform: scale(1.5);
             }
 
-            .sidebar p {
-                text-align: center;
-                color: #666;
-                text-align: center;
-                letter-spacing: 1px;
-                line-height: 24px;
-                font-size: 14px;
-                margin: 0px 20px;
+            #voltar {
+                top: 50%;
+                left: 10%;
+            }
+
+            #next {
+                top: 50%;
+                right: 10%;
+            }
+
+            .balls {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                margin-top: 400px;
+
+            }
+
+            .balls div {
+                transition: all 0.5s;
+                border: 3px solid white;
+                padding: 6px;
+                border-radius: 50%;
+                margin-right: 15px;
+                cursor: pointer;
+            }
+
+            .balls div:hover {
+                background-color: white;
+            }
+
+            .imgAtual {
+                transition: all 0.5s;
+                background-color: white;
             }
 
             .inclinado-esquerda {
                 transform: skewX(-10deg);
-            }
-
-            section {
-                padding: 0px 150px;
-                /* background-color: #4CAF50; */
             }
 
             .titulo-animado {
@@ -271,7 +217,7 @@
                 text-align: center;
                 display: flex;
                 width: 100%;
-                margin-top: 100px;
+                margin-top: 150px;
                 font-family: 'Poppins', sans-serif;
                 font-size: 30px;
                 text-transform: uppercase;
@@ -308,7 +254,7 @@
             }
 
             .descricao p {
-                width: 60%;
+                width: 80%;
                 margin-bottom: 0px;
                 align-items: center;
                 text-align: left;
@@ -339,7 +285,7 @@
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 20px;
+                gap: 60px;
                 margin-bottom: 20px;
                 margin-top: 0px;
                 text-align: left;
@@ -347,26 +293,38 @@
             }
 
             .service {
-                flex: 1 1 300px;
-                padding: 0px 20px 20px 20px;
+                flex: 1 1 350px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
                 border: 1px solid #ccc;
-                border-radius: 5px;
-                text-align: left;
                 background-color: #fff;
+
             }
 
             .service h2 {
-                padding: 10px 0px;
+                padding: 20px 0px;
                 margin-top: 0px;
                 text-align: center;
-                color: #333;
-            }
+                color: #f2f2f2;
+                font-family: 'Poppins', sans-serif;
+                font-size: 19px;
+                background-color: crimson;
 
+                letter-spacing: 1px;
+                border-radius: 0px 0px 20px 20px;
+            }
 
             .service p {
+                justify-content: center;
+                align-items: center;
+                text-align: left;
                 color: #666;
+                width: 80%;
+                margin: 0 auto;
+                padding: 40px 0px;
+                /* Centraliza horizontalmente */
             }
-
 
             .principais {
                 width: 100%;
@@ -377,7 +335,6 @@
             }
 
             .principais h1 {
-
                 margin-top: 0px;
                 margin-bottom: 80px;
                 letter-spacing: 1px;
@@ -388,32 +345,43 @@
 
             .filho1 {
                 width: 100%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
             }
 
             .form-contato label {
-                color: rgba(0, 0, 0, 0.8);
+                color: rgba(0, 0, 0, 0.9);
                 display: block;
                 margin-top: 40px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 15px;
                 letter-spacing: 1px;
                 display: block;
+                justify-content: center;
+                align-items: center;
                 margin-bottom: 3px;
-                margin-left: 40px;
+
             }
 
             .form-contato input[type="text"],
             .form-contato input[type="tel"],
             .form-contato input[type="email"] {
-                color: rgba(0, 0, 0, 0.7);
-                padding: 10px;
+                color: rgba(0, 0, 0, 0.9);
+                padding: 10px 0px;
                 letter-spacing: 1px;
-                width: 310px;
+                width: 60%;
                 border: 1px solid blue;
                 border-radius: 5px;
                 font-size: 13px;
-                margin-left: 30px;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
             }
+
+
+
+
 
             .form-contato input[type="text"]:focus,
             .form-contato input[type="tel"]:focus,
@@ -425,18 +393,21 @@
             }
 
             .form-contato button {
-                padding: 10px 70px;
+                padding: 10px 0px;
                 border-radius: 5px;
                 margin-top: 30px;
                 background-color: blue;
                 color: white;
                 border: none;
                 cursor: pointer;
-                display: block;
-                margin-left: 30px;
-                margin-right: 0px;
+                width: 20%;
+                /* margin-left: 30px;
+                margin-right: 0px; */
                 letter-spacing: 1px;
                 transition: 0.5s;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
             }
 
             .form-contato button:hover {
@@ -886,17 +857,17 @@
             <div id="next" class="btn">
                 <!-- <i class="fas fa-chevron-right"></i> -->
             </div>
-            <div class="image active">
-                <img class="no-border-radius" src="../image/img1.jpg" alt="">
+            <div id="atual" class="image">
+                <img src="../image/img1.jpg" alt="">
             </div>
             <div class="image">
-                <img class="no-border-radius" src="../image/img2.jpg" alt="">
+                <img src="../image/img2.jpg" alt="">
             </div>
             <div class="image">
-                <img class="no-border-radius" src="../image/img3.jpg" alt="">
+                <img src="../image/img3.jpg" alt="">
             </div>
             <div class="image">
-                <img class="no-border-radius" src="../image/img4.jpg" alt="">
+                <img src="../image/img4.jpg" alt="">
             </div>
         </div>
         <div class="balls">
@@ -906,7 +877,6 @@
             <div id="3"></div> -->
         </div>
     </div>
-
 
     <section>
 
@@ -934,35 +904,35 @@
                 <h2>Marketing Digital</h2>
                 <p>O marketing digital é uma estratégia essencial para alcançar e envolver o público-alvo online,
                     utilizando mídias sociais, sites e e-mail marketing. Essa abordagem permite promover produtos, gerar
-                    leads e construir relacionamentos próximos com os clientes.</p>
-                <p>Além disso, o marketing digital oferece a vantagem de medir resultados em tempo real e otimizar
+                    leads e construir relacionamentos próximos com os clientes. <br><br>Além disso, o marketing digital
+                    oferece a vantagem de medir resultados em tempo real e otimizar
                     campanhas para obter eficácia. No entanto, é um campo em constante evolução, exigindo adaptação às
                     mudanças do mercado digital.</p>
-
-                <!-- <p>Entre em contato para discutir seus requisitos e obter um orçamento personalizado.</p> -->
             </div>
+
             <div class="service">
                 <h2>A Importância da Divulgação da Marca</h2>
                 <p>A divulgação da marca pessoal ou empresarial é fundamental para o sucesso. Estratégias de marketing e
                     comunicação são utilizadas para atrair o público-alvo, criar uma identidade visual consistente e
-                    promover a marca em plataformas online, eventos e parcerias estratégicas.</p>
-                <p>Construir relacionamentos
+                    promover a marca em plataformas online, eventos e parcerias estratégicas.<br><br>Construir
+                    relacionamentos
                     e uma reputação sólida também são importantes. A divulgação impulsiona o crescimento, fortalece a
                     presença no mercado e abre novas oportunidades de negócios.</p>
-
             </div>
+
             <div class="service">
                 <h2>Impulsione sua Marca no Instagram: Stories, Feed e Reels</h2>
                 <p>Postar nos Stories, Feed e Reels do Instagram é uma forma poderosa de promover sua marca pessoal
                     ou
                     empresa. Os Stories são ótimos para atualizações rápidas e interativas, o Feed permite
                     compartilhar
-                    conteúdo mais duradouro e o Reels é ideal para criar vídeos envolventes.</p>
-                <p>Esses recursos ajudam a
+                    conteúdo mais duradouro e o Reels é ideal para criar vídeos envolventes.<br><br>Esses recursos
+                    ajudam a
                     construir uma presença positiva no Instagram, aumentar o engajamento e impulsionar o crescimento
                     da
                     sua marca.</p>
             </div>
+
         </div>
 
         <div class="principais">
@@ -1004,6 +974,18 @@
 
     </footer>
     <script>
+
+        document.getElementById("nome").addEventListener("keydown", function (event) {
+            if (event.keyCode === 32) {
+                event.stopPropagation();
+            }
+        });
+
+
+
+
+
+
         // função do header para ser executada somente acima de 768px
         window.addEventListener('load', function () {
             function handleScroll() {
@@ -1106,13 +1088,13 @@
         telefoneInput.addEventListener('blur', validarTelefone);
         // função para validar somente 11 numeros
 
-
-        // função para mudar as imagens automaticas abaixo do header
+    </script>
+    <!-- <script src="../javascript/pagina.js"></script> -->
+    <script>
         var balls = document.querySelector('.balls');
         var quant = document.querySelectorAll('.slides .image');
         var atual = 0;
-        var slideWidth = document.querySelector('.slide').offsetWidth;
-        var imagem = document.querySelector('.slides');
+        var imagem = document.getElementById('atual');
         var next = document.getElementById('next');
         var voltar = document.getElementById('voltar');
         var canVoltar = true;
@@ -1132,24 +1114,21 @@
             pos[i].addEventListener('click', () => {
                 atual = pos[i].id;
                 rolar = false;
+
                 slide();
             });
         }
 
         voltar.addEventListener('click', () => {
-            if (canVoltar) {
-                atual--;
-                rolar = false;
-                slide();
-            }
+            atual--;
+            rolar = false;
+            slide();
         });
 
         next.addEventListener('click', () => {
-            if (atual < quant.length - 1) {
-                atual++;
-                rolar = false;
-                slide();
-            }
+            atual++;
+            rolar = false;
+            slide();
         });
 
         function slide() {
@@ -1160,39 +1139,19 @@
             }
 
             document.querySelector('.imgAtual').classList.remove('imgAtual');
-            imagem.style.transform = `translateX(-${slideWidth * atual}px)`;
-
-            for (let i = 0; i < quant.length; i++) {
-                quant[i].classList.remove('previous');
-                quant[i].classList.remove('active');
-                quant[i].classList.remove('next');
-            }
-
-            var previousIndex = (atual === 0) ? quant.length - 1 : atual - 1;
-            var nextIndex = (atual === quant.length - 1) ? 0 : atual + 1;
-
-            quant[previousIndex].classList.add('previous');
-            quant[atual].classList.add('active');
-            quant[nextIndex].classList.add('next');
-
+            imagem.style.marginLeft = -100 * atual + '%'; /* Alterado para usar uma porcentagem */
             document.getElementById(atual).classList.add('imgAtual');
         }
 
-        function startSlide() {
-            setInterval(() => {
-                if (rolar) {
-                    atual++;
-                    slide();
-                } else {
-                    rolar = true;
-                }
-            }, 2500);
-        }
-        startSlide();
-
-        // função para mudar as imagens automaticas abaixo do header
+        setInterval(() => {
+            if (rolar) {
+                atual++;
+                slide();
+            } else {
+                rolar = true;
+            }
+        }, 3000);
     </script>
-    <!-- <script src="../javascript/pagina.js"></script> -->
 
 </body>
 
