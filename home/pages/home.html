@@ -34,9 +34,9 @@
                 padding: 0;
                 background-color: #f2f2f2;
                 width: 100%;
-                height: 200vh;
                 align-items: center;
                 justify-content: center;
+
             }
 
             header {
@@ -122,40 +122,65 @@
                 padding: 0px 150px;
             }
 
-            .slide {
-                margin-top: 89px;
-                width: 100%;
-                height: 500px;
-                overflow: hidden;
-                transition: 0.4s;
+            .texto-cima {
+                margin-top: 100px;
                 display: flex;
+                /* background-color: blue; */
+                position: relative;
+                text-align: center;
+                justify-content: center;
                 align-items: center;
+                width: 100%;
+            }
+
+            .texto-cima p {
+                margin-top: 20px;
+                padding: 10px 0px;
+                width: 750px;
+                color: #f2f2f2;
+                background-color: crimson;
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 1px;
+            }
+
+            .imagens {
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+                position: relative;
+                display: flex;
+            }
+
+            .slide {
+                border-top: none;
+
+                /* Remove a borda superior */
+                box-shadow: 0px 10px 10px -8px crimson;
+                width: 750px;
+                height: 450px;
+                overflow: hidden;
+
+                transition: 0.4s;
             }
 
             .slides {
-                width: 100%;
+                width: 5120px;
                 display: flex;
             }
 
-            .image {
-                flex: 0 0 100%;
-                max-width: 100%;
-                height: auto;
-            }
-
             .image img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                width: 750px;
+                height: 450px;
             }
 
             #atual {
                 transition: all 2s;
             }
 
-            .btn {
+            /* .btn {
                 position: absolute;
-                color: white;
+                color: red;
                 padding: 10px;
                 text-align: center;
                 display: flex;
@@ -165,29 +190,28 @@
                 transition: all 0.4s;
                 font-size: 1.7em;
                 margin-top: -5px;
-            }
+            } */
 
             .btn:hover {
                 transform: scale(1.5);
             }
 
-            #voltar {
+            /* #voltar {
                 top: 50%;
-                left: 10%;
+                left: 5%;
             }
 
             #next {
                 top: 50%;
-                right: 10%;
-            }
+                right: 5%;
+            } */
 
             .balls {
                 position: absolute;
-                width: 100%;
+                width: 750px;
                 display: flex;
                 justify-content: center;
-                margin-top: 400px;
-
+                margin-top: -30px;
             }
 
             .balls div {
@@ -217,7 +241,7 @@
                 text-align: center;
                 display: flex;
                 width: 100%;
-                margin-top: 150px;
+                margin-top: 200px;
                 font-family: 'Poppins', sans-serif;
                 font-size: 30px;
                 text-transform: uppercase;
@@ -261,7 +285,7 @@
                 justify-content: center;
             }
 
-            .teste {
+            /* .teste {
                 margin-top: 110px;
                 width: 100%;
                 height: 100%;
@@ -273,7 +297,7 @@
             .teste img {
                 max-width: 100%;
                 height: auto;
-            }
+            } */
 
 
 
@@ -281,7 +305,7 @@
 
 
             .services-container {
-                padding-top: 200px;
+                padding-top: 250px;
                 display: flex;
                 flex-wrap: wrap;
                 justify-content: center;
@@ -329,7 +353,7 @@
             .principais {
                 width: 100%;
                 padding: 50px 0px;
-                margin: 200px 0px;
+                margin: 250px 0px;
                 background-color: LightGrey;
                 display: flex;
             }
@@ -351,8 +375,9 @@
             }
 
             .form-contato label {
-                color: rgba(0, 0, 0, 0.9);
+                color: rgba(0, 0, 0, 0.7);
                 display: block;
+                font-weight: bold;
                 margin-top: 40px;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 15px;
@@ -379,9 +404,9 @@
                 align-items: center;
             }
 
-
-
-
+            .form-contato input[type="text"] {
+                text-transform: uppercase;
+            }
 
             .form-contato input[type="text"]:focus,
             .form-contato input[type="tel"]:focus,
@@ -420,7 +445,7 @@
                 background-color: crimson;
                 text-align: center;
                 width: 100%;
-                padding-top: 20px;
+
                 padding-bottom: 1px;
             }
 
@@ -432,6 +457,7 @@
             }
 
             .social-icons {
+                margin-bottom: 20px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -444,8 +470,7 @@
             }
 
             .social-icons a {
-                margin-bottom: 15px;
-                margin-left: 0px;
+
                 display: inline-block;
                 text-decoration: none;
                 color: #666;
@@ -849,33 +874,73 @@
         <img src="../image/img1.jpg" alt="Imagem">
     </div> -->
 
-    <div class="slide">
-        <div class="slides">
-            <div id="voltar" class="btn">
-                <!-- <i class="fas fa-chevron-left"></i> -->
+    <div class="texto-cima">
+        <p>" A chave do sucesso: marketing digital! "</p>
+    </div>
+
+
+    <div class="imagens">
+        <div class="slide">
+
+            <div class="slides">
+
+                <div id="voltar" class="btn">
+                    <!-- <i class="fas fa-chevron-left"></i> -->
+                </div>
+
+                <div id="next" class="btn">
+                    <!-- <i class="fas fa-chevron-right"></i> -->
+                </div>
+
+                <div id="atual" class="image">
+                    <img src="../image/img1.jpg" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../image/img2.jpg" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../image/img3.jpg" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../image/img4.jpg" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../image/img5.jpg" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../image/img6.jpg" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../image/img7.jpg" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../image/img8.jpg" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../image/img9.jpg" alt="">
+                </div>
+
+                <div class="image">
+                    <img src="../image/img10.jpg" alt="">
+                </div>
+
             </div>
-            <div id="next" class="btn">
-                <!-- <i class="fas fa-chevron-right"></i> -->
-            </div>
-            <div id="atual" class="image">
-                <img src="../image/img1.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="../image/img2.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="../image/img3.jpg" alt="">
-            </div>
-            <div class="image">
-                <img src="../image/img4.jpg" alt="">
+            <div class="balls">
+                <!-- <div class="imgAtual" id="0"></div>
+                <div id="1"></div>
+                <div id="2"></div>
+                <div id="3"></div> -->
             </div>
         </div>
-        <div class="balls">
-            <!-- <div class="imgAtual" id="0"></div>
-            <div id="1"></div>
-            <div id="2"></div>
-            <div id="3"></div> -->
-        </div>
+
     </div>
 
     <section>
@@ -943,7 +1008,8 @@
                     <form>
 
                         <label for="nome">Nome:</label>
-                        <input placeholder="Nome completo" type="text" id="nome" name="nome" required="">
+                        <input placeholder="Nome completo" type="text" id="nome" name="nome" required=""
+                            oninput="validarInput(this)">
 
                         <label for="email">Email:</label>
                         <input placeholder="E-mail de sua preferência" type="email" id="email" name="email" required="">
@@ -960,7 +1026,7 @@
 
     </section>
 
-    <footer>
+    <footer><br>
         <div class="social-icons">
             <a href="#"><img title="Início" src="../icons/casaf.png"></a>
             <a href="#"><img title="Oi, vamos conversar no WhatsApp!" src="../icons/whatsappf.png"></a>
@@ -968,21 +1034,30 @@
             <a href="#"><img title="Transformando ideias em realidade profissional!" src="../icons/linkedinf.png"></a>
         </div>
 
-        <p>Ana Julia | Francisco Beltrão - Paraná</p>
-        <p>Telefone: (00) 1234-5678</p>
-        <p>Email: info@empresa.com</p>
+        <p>Ana Julia | Francisco Beltrão - Paraná</p><br>
+        <p>Telefone: (00) 1234-5678</p><br>
+        <p>Email: info@empresa.com</p><br>
 
     </footer>
     <script>
 
-        document.getElementById("nome").addEventListener("keydown", function (event) {
-            if (event.keyCode === 32) {
-                event.stopPropagation();
+        // document.getElementById("nome").addEventListener("keydown", function (event) {
+        //     if (event.keyCode === 32) {
+        //         event.stopPropagation();
+        //     }
+        // });
+
+
+
+        function validarInput(input) {
+            var regex = /^[a-zA-Z\s]*$/;
+            var inputValue = input.value;
+            var isValid = regex.test(inputValue);
+
+            if (!isValid) {
+                input.value = inputValue.replace(/[^a-zA-Z\s]/g, '');
             }
-        });
-
-
-
+        }
 
 
 
@@ -1002,7 +1077,7 @@
             }
 
             function handleResize() {
-                if (window.innerWidth > 768) {
+                if (window.innerWidth > 750) {
                     addScrollListener();
                 } else {
                     removeScrollListener();
@@ -1041,17 +1116,17 @@
         // função para mudar de cor no titulo abaixo do header
 
         // função para aceitar somente letras
-        const nomeInput = document.getElementById('nome');
+        // const nomeInput = document.getElementById('nome');
 
-        nomeInput.addEventListener('input', function (event) {
-            const inputValue = event.target.value;
+        // nomeInput.addEventListener('input', function (event) {
+        //     const inputValue = event.target.value;
 
-            const regex = /^[A-Za-z]+$/;
+        //     const regex = /^[A-Za-z]+$/;
 
-            if (!regex.test(inputValue)) {
-                event.target.value = inputValue.replace(/[^A-Za-z]+/g, '');
-            }
-        });
+        //     if (!regex.test(inputValue)) {
+        //         event.target.value = inputValue.replace(/[^A-Za-z]+/g, '');
+        //     }
+        // });
         // função para aceitar somente letras
 
         // função para validar somente 11 numeros
@@ -1139,7 +1214,7 @@
             }
 
             document.querySelector('.imgAtual').classList.remove('imgAtual');
-            imagem.style.marginLeft = -100 * atual + '%'; /* Alterado para usar uma porcentagem */
+            imagem.style.marginLeft = -750 * atual + 'px';
             document.getElementById(atual).classList.add('imgAtual');
         }
 
@@ -1150,9 +1225,8 @@
             } else {
                 rolar = true;
             }
-        }, 3000);
+        }, 3500);
     </script>
-
 </body>
 
 </html>
