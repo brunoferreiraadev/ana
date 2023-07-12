@@ -26,16 +26,18 @@
             }
 
             body {
+                overflow-x: hidden;
                 scroll-behavior: smooth;
                 background-color: #f2f2f2;
                 width: 100%;
-                height: 200vh;
+                height: 300vh;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
             }
 
             .bloco1 {
+
                 display: flex;
                 width: 100%;
                 background-image: linear-gradient(130deg, cyan, blue);
@@ -55,7 +57,6 @@
                 font-size: 50px;
                 color: #f2f2f2;
                 text-align: left;
-                /* margin-top: -150px; */
                 margin-bottom: 20px;
                 letter-spacing: 3px;
             }
@@ -76,7 +77,6 @@
                 font-family: 'Montserrat', sans-serif;
                 margin-bottom: 20px;
                 border-bottom: 1px solid cyan;
-                /* border-right: 3px solid cyan; */
                 padding-bottom: 5px;
             }
 
@@ -85,6 +85,7 @@
                 align-items: center;
                 justify-content: center;
                 padding: 20px 40px;
+                margin-bottom: 30px;
                 text-decoration: none;
                 cursor: pointer;
                 border-radius: 50px;
@@ -114,15 +115,109 @@
             .blocob {
                 width: 50%;
                 align-items: center;
-                justify-content: center;
+                justify-content: end;
                 display: flex;
             }
 
             .blocob img {
-                /* margin-top: -100px; */
                 width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+
+            .titulo {
+                width: 100%;
+                background-color: #ff0099;
+                align-items: center;
+                padding-top: 150px;
+            }
+
+            .titulo h1 {
+                color: #f2f2f2;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 47px;
+                letter-spacing: 1px;
+            }
+
+            .bloco2 {
+                width: 100%;
+                background-color: #ff0099;
+                display: flex;
+                padding: 70px 0px 150px 0px;
+            }
+
+            .paragrafo1,
+            .paragrafo2 {
+                width: 50%;
+            }
+
+            .paragrafo1 {
+                justify-content: top;
+                align-items: top;
+
+                /* background-color: blue; */
+            }
+
+            .paragrafo1 p {
+                width: 100%;
+                padding-left: 50px;
+                color: #f2f2f2;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+                letter-spacing: 1px;
+                line-height: 35px;
+                text-align: left;
 
             }
+
+            .paragrafo2 {
+                text-align: right;
+                padding-right: 50px;
+            }
+
+            .paragrafo2 img {
+                width: 70%;
+                height: 100%;
+                border-radius: 25px;
+                object-fit: cover;
+            }
+
+            .bloco2 a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 20px 40px;
+                margin-bottom: 20px;
+                margin-left: 50px;
+                text-align: center;
+                position: absolute;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50px;
+                text-decoration: none;
+                background-color: blue;
+                color: #f2f2f2;
+                letter-spacing: 2px;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                transition: 0.5s;
+                text-transform: uppercase;
+                box-shadow: 0px 0px 20px 1px white;
+            }
+
+            .bloco2 .fa-rocket {
+                font-size: 22px;
+                margin-right: 15px;
+            }
+
+            .bloco2 a:hover {
+                box-shadow: 0px 0px 20px 1px blue;
+                background-color: cyan;
+                color: blue;
+                transition: 0.5s;
+            }
+
         }
     </style>
 
@@ -134,7 +229,8 @@
 
         <div class="blocoa">
             <h1 class="inclinado-esquerda">Vamos <br> avançar!</h1><br>
-            <p>Aplique uma abordagem estratégica no uso do Instagram e diga adeus a um perfil que não gera resultados.
+            <p>Aplique uma abordagem estratégica no uso do <span style="color: black;">Instagram</span> e diga adeus a
+                um perfil que não gera resultados.
             </p><br></br>
             <a title="Olá, vamos conversar no WhatsApp!"
                 href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
@@ -143,7 +239,29 @@
         <div class="blocob">
             <img title="Ana Julia" src="../image/ana.png" alt="">
         </div>
+    </div>
 
+    <div class="titulo">
+        <h1 class="inclinado-esquerda">Potencialize sua Marca no <span style="color: black;">Instagram</span></h1>
+    </div>
+
+    <div class="bloco2">
+
+        <div class="paragrafo1">
+            <p>Potencialize sua presença no Instagram com meus serviços especializados em Social Media! Como uma
+                profissional apaixonada e experiente em gerenciamento de redes sociais, vou criar estratégias
+                personalizadas, gerenciar suas contas exclusivamente no Instagram, criar conteúdo envolvente e otimizar
+                suas campanhas para impulsionar o sucesso da sua marca nesta plataforma. Não espere mais, entre em
+                contato comigo agora mesmo e juntos vamos levar sua presença no Instagram para o próximo nível!</p>
+            <br><br>
+            <a title="Olá, vamos conversar no WhatsApp!"
+                href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
+                target="_blank"> <i class="fas fa-rocket"></i> eu quero avançar</a>
+        </div>
+
+        <div class="paragrafo2">
+            <img src="../image/alexander-shatov-71Qk8ODIBko-unsplash (1).jpg" alt="">
+        </div>
     </div>
 </body>
 
