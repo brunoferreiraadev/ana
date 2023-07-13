@@ -19,7 +19,7 @@
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
         @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
-        @media (min-width: 1000px) {
+        @media (min-width: 768px) {
             * {
                 padding: 0;
                 margin: 0;
@@ -30,14 +30,13 @@
                 scroll-behavior: smooth;
                 background-color: #f2f2f2;
                 width: 100%;
-                height: 300vh;
+
                 align-items: center;
                 justify-content: center;
                 text-align: center;
             }
 
             .bloco1 {
-
                 display: flex;
                 width: 100%;
                 background-image: linear-gradient(130deg, cyan, blue);
@@ -122,7 +121,7 @@
             .blocob img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
 
 
@@ -155,8 +154,6 @@
             .paragrafo1 {
                 justify-content: top;
                 align-items: top;
-
-                /* background-color: blue; */
             }
 
             .paragrafo1 p {
@@ -168,7 +165,6 @@
                 letter-spacing: 1px;
                 line-height: 35px;
                 text-align: left;
-
             }
 
             .paragrafo2 {
@@ -178,8 +174,7 @@
 
             .paragrafo2 img {
                 width: 70%;
-                height: 100%;
-                border-radius: 25px;
+                border-radius: 30px;
                 object-fit: cover;
             }
 
@@ -196,14 +191,14 @@
                 cursor: pointer;
                 border-radius: 50px;
                 text-decoration: none;
-                background-color: blue;
-                color: #f2f2f2;
+                background-color: black;
+                color: white;
                 letter-spacing: 2px;
                 font-size: 15px;
                 font-family: 'Montserrat', sans-serif;
                 transition: 0.5s;
                 text-transform: uppercase;
-                box-shadow: 0px 0px 20px 1px white;
+                border: 3px solid white;
             }
 
             .bloco2 .fa-rocket {
@@ -212,18 +207,88 @@
             }
 
             .bloco2 a:hover {
-                box-shadow: 0px 0px 20px 1px blue;
-                background-color: cyan;
-                color: blue;
+                box-shadow: none;
+                border: 3px solid cyan;
+                color: cyan;
                 transition: 0.5s;
             }
 
+            .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                right: 15px;
+                top: 79%;
+                z-index: 99999;
+            }
+
+            .whats,
+            .insta,
+            .inicio {
+                text-decoration: none;
+                width: 125px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                color: white;
+                padding: 3px 0px;
+                border-radius: 20px;
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 2px;
+                font-size: 12px;
+            }
+
+            .box .inicio {
+                width: 80px;
+                background-image: linear-gradient(150deg, blue, cyan);
+                display: flex;
+                border: 3px solid cyan;
+                margin-bottom: 15px;
+            }
+
+            .box i {
+                margin-right: 10px;
+            }
+
+            .box .whats {
+                background-image: linear-gradient(150deg, blue, cyan);
+                display: flex;
+                border: 3px solid cyan;
+                margin-bottom: 15px;
+            }
+
+            .box .insta {
+                background-image: linear-gradient(150deg, blue, cyan);
+                display: flex;
+                border: 3px solid cyan;
+            }
+
+            .box a:hover {
+                background-image: linear-gradient(130deg, blue, blue);
+                border: 3px solid white;
+            }
         }
     </style>
 
 </head>
 
-<body>
+<body id="top">
+
+    <div class="box">
+
+        <a class="inicio" title="Inicio" href="#top"> <i class="fas fa-arrow-up"></i>Inicio</a>
+
+        <a class="whats" title="Olá, vamos conversar no WhatsApp!"
+            href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
+            target="_blank"> <i class="fab fa-whatsapp"></i>WhatsApp</a>
+
+        <a class="insta" title="Olá, Venha explorar comigo no Instagram!"
+            href="https://www.instagram.com/anaju_socialmedia/" target="_blank"> <i
+                class="fab fa-instagram"></i>Instagram</a>
+
+    </div>
 
     <div class="bloco1">
 
@@ -248,10 +313,12 @@
     <div class="bloco2">
 
         <div class="paragrafo1">
-            <p>Potencialize sua presença no Instagram com meus serviços especializados em Social Media! Como uma
+            <p>Potencialize sua presença no Instagram com meus serviços especializados em Social Media! <br><br> Como
+                uma
                 profissional apaixonada e experiente em gerenciamento de redes sociais, vou criar estratégias
                 personalizadas, gerenciar suas contas exclusivamente no Instagram, criar conteúdo envolvente e otimizar
-                suas campanhas para impulsionar o sucesso da sua marca nesta plataforma. Não espere mais, entre em
+                suas campanhas para impulsionar o sucesso da sua marca nesta plataforma. <br><br> Não espere mais, entre
+                em
                 contato comigo agora mesmo e juntos vamos levar sua presença no Instagram para o próximo nível!</p>
             <br><br>
             <a title="Olá, vamos conversar no WhatsApp!"
@@ -263,6 +330,27 @@
             <img src="../image/alexander-shatov-71Qk8ODIBko-unsplash (1).jpg" alt="">
         </div>
     </div>
+
+    <script>
+        //comando para subir o site ao topo quando clicar na div inicio
+        const botao = document.querySelector(".inicio");
+        const inicio = document.querySelector("#top"); // Adicione um ID à tag <body> para referenciá-la aqui
+
+        botao.addEventListener("click", function (event) {
+            event.preventDefault();
+            inicio.scrollIntoView({ behavior: "smooth" });
+        });
+
+        window.addEventListener("scroll", function () {
+            if (window.scrollY === 0) {
+                botao.classList.remove("visible");
+            } else {
+                botao.classList.add("visible");
+            }
+        });
+        //comando para subir o site ao topo quando clicar na div inicio
+    </script>
+
 </body>
 
 </html>
