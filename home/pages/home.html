@@ -36,6 +36,42 @@
                 text-align: center;
             }
 
+
+
+            /* bloco icons lateral direita */
+            .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                position: fixed;
+                right: 15px;
+                top: 79%;
+                z-index: 99999;
+            }
+
+            .box .inicio {
+                background-color: white;
+                border-radius: 20px;
+                display: flex;
+                margin-bottom: 15px;
+            }
+
+            .box .whats {
+                display: flex;
+                margin-bottom: 15px;
+            }
+
+            .box .insta {
+                display: flex;
+            }
+
+            /* bloco icons lateral direita */
+
+
+
+
+            /* bloco1 */
             .bloco1 {
                 display: flex;
                 width: 100%;
@@ -47,7 +83,7 @@
                 font-family: 'Poppins', sans-serif;
                 display: flex;
                 justify-content: top;
-                padding-top: 50px;
+                padding-top: 30px;
                 align-items: center;
                 width: 50%;
             }
@@ -72,11 +108,18 @@
                 margin: 0 auto;
                 max-width: 80%;
                 text-align: start;
-                font-size: 22px;
+                font-size: 20px;
                 font-family: 'Montserrat', sans-serif;
-                margin-bottom: 20px;
+                margin-bottom: 50px;
                 border-bottom: 1px solid cyan;
                 padding-bottom: 5px;
+            }
+
+            .inclinado {
+                transform: skew(-15deg);
+                display: inline-block;
+                font-weight: bold;
+                color: black;
             }
 
             .blocoa a {
@@ -124,12 +167,98 @@
                 object-fit: contain;
             }
 
+            /* bloco1 */
 
-            .titulo {
+
+
+            /* bloco2 */
+            .bloco2 {
+                padding: 100px 0px;
                 width: 100%;
                 background-color: #ff0099;
+            }
+
+            .bloco2 h1 {
+                color: #f2f2f2;
+                text-align: center;
+                letter-spacing: 1px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-bottom: 70px;
+                font-size: 47px;
+            }
+
+            .bloco2 p {
+                color: #f2f2f2;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 35px;
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 85%;
+                text-align: left;
+                margin: 0 auto;
+            }
+
+            /* bloco2 */
+
+
+
+            /* bloco 3 */
+            .bloco3 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                background-color: darkturquoise;
+            }
+
+            .bloco3 h1 {
+                color: #f2f2f2;
+                text-align: center;
+                letter-spacing: 1px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 40px;
+            }
+
+            .bloco3a,
+            .bloco3b {
+                padding: 100px 0px;
+                width: 50%;
                 align-items: center;
-                padding-top: 150px;
+                justify-content: center;
+            }
+
+            .bloco3a {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .bloco3 img {
+                width: 80%;
+                border-radius: 50%;
+                border: 5px solid white;
+            }
+
+            .bloco3 p {
+                color: #f2f2f2;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 30px;
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 90%;
+                text-align: left;
+                margin: 0 auto;
+                padding-top: 40px;
+            }
+
+            /* bloco 3 */
+
+
+
+            /* bloco div titulo */
+            .titulo {
+                width: 100%;
+                background: linear-gradient(to right, #000000, #1a1a1a);
+                align-items: center;
+                padding-top: 100px;
             }
 
             .titulo h1 {
@@ -139,11 +268,17 @@
                 letter-spacing: 1px;
             }
 
-            .bloco2 {
+            /* bloco div titulo */
+
+
+
+            /* bloco 4 */
+            .bloco4 {
                 width: 100%;
-                background-color: #ff0099;
+                background: linear-gradient(to right, #000000, #1a1a1a);
                 display: flex;
-                padding: 70px 0px 150px 0px;
+                height: 100%;
+                padding: 70px 0px 180px 0px;
             }
 
             .paragrafo1,
@@ -162,6 +297,7 @@
                 color: #f2f2f2;
                 font-family: Arial, Helvetica, sans-serif;
                 font-size: 20px;
+                margin-top: -6px;
                 letter-spacing: 1px;
                 line-height: 35px;
                 text-align: left;
@@ -178,12 +314,11 @@
                 object-fit: cover;
             }
 
-            .bloco2 a {
+            .bloco4 a {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: 20px 40px;
-                margin-bottom: 20px;
+                padding: 10px 40px;
                 margin-left: 50px;
                 text-align: center;
                 position: absolute;
@@ -192,83 +327,55 @@
                 border-radius: 50px;
                 text-decoration: none;
                 background-color: black;
-                color: white;
+                color: #ff0099;
                 letter-spacing: 2px;
-                font-size: 15px;
+                font-size: 13px;
                 font-family: 'Montserrat', sans-serif;
                 transition: 0.5s;
                 text-transform: uppercase;
                 border: 3px solid white;
             }
 
-            .bloco2 .fa-rocket {
+            .bloco4 .fa-rocket {
                 font-size: 22px;
                 margin-right: 15px;
             }
 
-            .bloco2 a:hover {
+            .bloco4 a:hover {
                 box-shadow: none;
-                border: 3px solid cyan;
-                color: cyan;
+                border: 3px solid #ff0099;
+                color: white;
                 transition: 0.5s;
             }
 
-            .box {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                position: fixed;
-                right: 15px;
-                top: 79%;
-                z-index: 99999;
-            }
+            /* bloco 4 */
 
-            .whats,
-            .insta,
-            .inicio {
-                text-decoration: none;
-                width: 125px;
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-                color: white;
-                padding: 3px 0px;
-                border-radius: 20px;
-                font-family: 'Poppins', sans-serif;
-                letter-spacing: 2px;
-                font-size: 12px;
-            }
 
-            .box .inicio {
-                width: 80px;
-                background-image: linear-gradient(150deg, blue, cyan);
-                display: flex;
-                border: 3px solid cyan;
-                margin-bottom: 15px;
-            }
 
-            .box i {
-                margin-right: 10px;
-            }
+            /* bloco 5 */
 
-            .box .whats {
-                background-image: linear-gradient(150deg, blue, cyan);
-                display: flex;
-                border: 3px solid cyan;
-                margin-bottom: 15px;
-            }
+            /* bloco 5 */
 
-            .box .insta {
-                background-image: linear-gradient(150deg, blue, cyan);
-                display: flex;
-                border: 3px solid cyan;
-            }
 
-            .box a:hover {
-                background-image: linear-gradient(130deg, blue, blue);
-                border: 3px solid white;
-            }
+
+            /* bloco 6 */
+
+            /* bloco 6 */
+
+
+
+            /* bloco 7 rodape*/
+
+            /* bloco 7 rodape*/
+
+
+
+            /* direitos reservados */
+
+            /* direitos reservados */
+
+
+
         }
     </style>
 
@@ -276,60 +383,170 @@
 
 <body id="top">
 
+
+
+    <!-- bloco icons lateral direita -->
     <div class="box">
 
-        <a class="inicio" title="Inicio" href="#top"> <i class="fas fa-arrow-up"></i>Inicio</a>
+        <a class="inicio" title="Inicio" href="#top"> <img src="../icons/seta-cima.png" alt=""></a>
 
         <a class="whats" title="Olá, vamos conversar no WhatsApp!"
             href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
-            target="_blank"> <i class="fab fa-whatsapp"></i>WhatsApp</a>
+            target="_blank"> <img src="../icons/whatsapp.png" alt=""></a>
 
         <a class="insta" title="Olá, Venha explorar comigo no Instagram!"
-            href="https://www.instagram.com/anaju_socialmedia/" target="_blank"> <i
-                class="fab fa-instagram"></i>Instagram</a>
+            href="https://www.instagram.com/anaju_socialmedia/" target="_blank"><img src="../icons/instagram.png"
+                alt=""></a>
 
     </div>
+    <!-- bloco icons lateral direita -->
 
+
+
+    <!-- bloco 1 -->
     <div class="bloco1">
 
         <div class="blocoa">
-            <h1 class="inclinado-esquerda">Vamos <br> avançar!</h1><br>
-            <p>Aplique uma abordagem estratégica no uso do <span style="color: black;">Instagram</span> e diga adeus a
-                um perfil que não gera resultados.
+            <h1 class="inclinado-esquerda">Vamos <br> começar?</h1><br>
+            <p>Use o <span
+                    style="color: black; padding: 5px 10px; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+                de forma
+                inteligente e pare de
+                desperdiçar seu tempo
+                e dinheiro com estratégias que já não funcionam mais.
             </p><br></br>
             <a title="Olá, vamos conversar no WhatsApp!"
                 href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
-                target="_blank"> <i class="fas fa-rocket"></i> eu quero avançar</a>
+                target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
         </div>
         <div class="blocob">
             <img title="Ana Julia" src="../image/ana.png" alt="">
         </div>
     </div>
+    <!-- bloco 1 -->
 
-    <div class="titulo">
-        <h1 class="inclinado-esquerda">Potencialize sua Marca no <span style="color: black;">Instagram</span></h1>
-    </div>
 
+
+    <!-- bloco 2 -->
     <div class="bloco2">
 
+        <h1 class="inclinado-esquerda">O básico funciona, se feito da forma <span style="color: black;">certa!</span>
+        </h1>
+        <p>O <span
+                style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            se tornou uma ferramenta indispensável para
+            todos os públicos, sendo utilizado principalmente
+            para pesquisas.
+
+            Imagine que você precisa de uma consulta com uma psicóloga e não tem nenhuma indicação.
+
+            A primeira coisa que você faz é buscar no Google ou acessar o perfil no <span
+                style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            para
+            encontrar um
+            profissional em que você se identifique, descobrindo a abordagem e conhecendo o ambiente onde será atendida.
+            <br><br>
+            Agora imagine que você seja este profissional, já parou para pensar se o seu perfil está pronto para receber
+            este paciente, aonde ele vai se identificar e escolher você entre todos os outros profissionais desta area?
+
+            E eu estou aqui para ajudar você a criar uma presença autêntica no <span
+                style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            ressaltando a solução que você
+            pode trazer para seu público!
+            <br><br>
+            É exatamente nesse ponto que a sua presença no <span
+                style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            pode fazer toda a
+            diferença!
+        </p>
+    </div>
+    <!-- bloco 2 -->
+
+
+
+    <!-- bloco 3 -->
+    <div class="bloco3">
+        <div class="bloco3a">
+            <img src="../image/ana.png" alt="">
+        </div>
+        <div class="bloco3b">
+            <h1 class="inclinado-esquerda">Quem é Ana Julia?</span>
+            </h1>
+            <p>Ana Júlia, Social Midia por paixão. Busca ajudar as pessoas a realizar seus sonhos por meio do poder das
+                redes sociais. E assim como os sonhos são únicos, cada pessoa e marca também são únicas. <br><br>
+
+                É por isso que sua abordagem de trabalho se baseia em transmitir a verdadeira essência por trás de cada
+                perfil, alinhando-se aos princípios e valores de cada um.<br><br>
+
+                Através de uma Identidade Estratégica irá mostrar ao seu público quem você realmente é, permitindo que
+                seus seguidores reconheçam sua marca em sua verdadeira essência.<br><br>
+
+                VISIBILIDADE COM AUTENTICIDADE!</p>
+        </div>
+    </div>
+    <!-- bloco 3 -->
+
+
+
+    <!-- bloco div titulo -->
+    <div class="titulo">
+        <h1 class="inclinado-esquerda">Potencialize sua Marca no <span style="color: #ff0099;">Instagram</span></h1>
+    </div>
+    <!-- bloco div titulo -->
+
+
+
+    <!-- bloco 4 -->
+    <div class="bloco4">
+
         <div class="paragrafo1">
-            <p>Potencialize sua presença no Instagram com meus serviços especializados em Social Media! <br><br> Como
+            <p>Potencialize sua presença no <span style="color: #ff0099;" class="inclinado">Instagram</span> com meus
+                serviços especializados em Social Media! <br><br> Como
                 uma
                 profissional apaixonada e experiente em gerenciamento de redes sociais, vou criar estratégias
-                personalizadas, gerenciar suas contas exclusivamente no Instagram, criar conteúdo envolvente e otimizar
+                personalizadas, gerenciar suas contas exclusivamente no <span style="color: #ff0099;"
+                    class="inclinado">Instagram</span>, criar
+                conteúdo envolvente e otimizar
                 suas campanhas para impulsionar o sucesso da sua marca nesta plataforma. <br><br> Não espere mais, entre
                 em
                 contato comigo agora mesmo e juntos vamos levar sua presença no Instagram para o próximo nível!</p>
             <br><br>
             <a title="Olá, vamos conversar no WhatsApp!"
                 href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
-                target="_blank"> <i class="fas fa-rocket"></i> eu quero avançar</a>
+                target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
         </div>
 
         <div class="paragrafo2">
             <img src="../image/alexander-shatov-71Qk8ODIBko-unsplash (1).jpg" alt="">
         </div>
     </div>
+    <!-- bloco 4 -->
+
+
+
+    <!-- bloco 5 -->
+
+    <!-- bloco 5 -->
+
+
+
+    <!-- bloco 6 -->
+
+    <!-- bloco 6 -->
+
+
+
+    <!-- bloco 7 rodape -->
+
+    <!-- bloco 7 rodape -->
+
+
+
+    <!-- direitos reservados -->
+
+    <!-- direitos reservados -->
+
+
 
     <script>
         //comando para subir o site ao topo quando clicar na div inicio
