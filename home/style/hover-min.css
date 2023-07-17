@@ -2907,7 +2907,7 @@
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
     transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 2px white;
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
     position: relative
 }
 
@@ -2929,14 +2929,14 @@
 
 .hvr-shadow-radial:before {
     bottom: 100%;
-    background: -webkit-radial-gradient(50% 150%, ellipse, white, white 100%);
-    background: radial-gradient(ellipse at 50% 150%, white, rgba(0, 0, 0, 0) 100%)
+    background: -webkit-radial-gradient(50% 150%, ellipse, rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at 50% 150%, rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, 0) 80%)
 }
 
 .hvr-shadow-radial:after {
     top: 100%;
-    background: -webkit-radial-gradient(50% -50%, ellipse, rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, 0) 100%);
-    background: radial-gradient(ellipse at 50% -50%, white, rgba(0, 0, 0, 0) 100%)
+    background: -webkit-radial-gradient(50% -50%, ellipse, rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, 0) 80%);
+    background: radial-gradient(ellipse at 50% -50%, rgba(0, 0, 0, .6) 0, rgba(0, 0, 0, 0) 80%)
 }
 
 .hvr-shadow-radial:active:after,

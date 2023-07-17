@@ -11,6 +11,7 @@
     <meta name="keywords" content="conexão, engajamento, viralidade">
     <meta name="author" content="Ana Julia">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="../style/hover-min.css">
     <script src="https://kit.fontawesome.com/d8a94dde1a.js" crossorigin="anonymous"></script>
 
     <title>Ana Julia | Social Media</title>
@@ -39,37 +40,38 @@
 
             #cookie-banner {
                 position: fixed;
-                bottom: 0;
-                left: 0;
-                width: 100%;
-                background-color: blue;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 15px;
-                letter-spacing: 1px;
-                color: #fff;
-                padding: 10px;
                 text-align: start;
-                padding-left: 20px;
+                bottom: 0;
+                width: 100%;
+                background-color: #f2f2f2;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 18px;
+                letter-spacing: 1px;
+                color: #333;
+                padding: 15px 0px 15px 40px;
                 z-index: 99999;
             }
 
             #cookie-banner button {
-                background-color: #f2f2f2;
-                color: #000;
+                background-color: blue;
+                color: #f2f2f2;
                 border: none;
-                padding: 3px 15px;
+                padding: 5px 20px;
+                margin-left: 10px;
                 cursor: pointer;
-                border: 2px solid #f2f2f2;
+                border: 2px solid blue;
                 transition: 0.5s;
-                border-radius: 10px;
+                border-radius: 15px;
+                letter-spacing: 1px;
+                font-weight: bold;
             }
 
             #cookie-banner button:hover {
-                background-color: blue;
-                border: 2px solid white;
-                color: #f2f2f2;
+                background-color: #f2f2f2;
+                border: 2px solid blue;
+                color: blue;
                 transition: 0.5s;
-                border-radius: 10px;
+                border-radius: 15px;
             }
 
             body.no-scroll {
@@ -88,23 +90,34 @@
                 justify-content: center;
                 position: fixed;
                 right: 25px;
-                top: 79%;
+                top: 75%;
                 z-index: 99999;
             }
 
             .box .inicio {
                 background-color: white;
-                border-radius: 20px;
+                border: 3px solid transparent;
+                border-radius: 30px;
                 display: flex;
-                margin-bottom: 15px;
+                margin-bottom: 14px;
+            }
+
+            .box a:hover {
+                background-color: mediumturquoise;
             }
 
             .box .whats {
+                background-color: white;
+                border: 3px solid transparent;
+                border-radius: 30px;
                 display: flex;
-                margin-bottom: 15px;
+                margin-bottom: 14px;
             }
 
             .box .insta {
+                background-color: white;
+                border: 3px solid transparent;
+                border-radius: 30px;
                 display: flex;
             }
 
@@ -703,7 +716,7 @@
 <body id="top">
 
     <div id="cookie-banner">
-        Este site utiliza cookies. Ao continuar navegando, você concorda com o uso de cookies.
+        Este site utiliza cookies. <br>Ao continuar navegando, você concorda com o uso de cookies.
         <button onclick="aceitarCookies()">Aceitar</button>
     </div>
     <!-- bloco icons lateral direita -->
