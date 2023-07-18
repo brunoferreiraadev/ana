@@ -27,13 +27,20 @@
             }
 
             body {
-                overflow-x: hidden;
                 scroll-behavior: smooth;
                 background-color: #f2f2f2;
                 width: 100%;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+            }
+
+            section {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                overflow-x: hidden;
             }
 
             /* banner */
@@ -90,7 +97,7 @@
                 justify-content: center;
                 position: fixed;
                 right: 25px;
-                top: 75%;
+                top: 77%;
                 z-index: 99999;
             }
 
@@ -99,11 +106,11 @@
                 border: 3px solid transparent;
                 border-radius: 30px;
                 display: flex;
-                margin-bottom: 14px;
+                margin-bottom: 12px;
             }
 
             .box a:hover {
-                background-color: mediumturquoise;
+                background-color: transparent;
             }
 
             .box .whats {
@@ -111,7 +118,7 @@
                 border: 3px solid transparent;
                 border-radius: 30px;
                 display: flex;
-                margin-bottom: 14px;
+                margin-bottom: 12px;
             }
 
             .box .insta {
@@ -211,6 +218,7 @@
 
             .blocob {
                 width: 50%;
+                height: 100%;
                 align-items: center;
                 justify-content: end;
                 display: flex;
@@ -616,10 +624,10 @@
                 background-color: #ff0099;
                 color: #f2f2f2;
                 text-align: left;
-                letter-spacing: 1px;
-                font-size: 18px;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                padding: 15px 0px;
+                letter-spacing: 2px;
+                font-size: 16px;
+                font-family: 'Poppins', sans-serif;
+                padding: 18px 0px;
                 display: flex;
                 align-items: center;
                 text-align: left;
@@ -634,8 +642,9 @@
                 padding: 20px 0px;
                 display: none;
                 background-color: #f2f2f2;
-                color: rgba(0, 0, 0, 0.8);
+                color: rgba(0, 0, 0, 0.6);
                 font-size: 18px;
+                font-weight: bold;
                 letter-spacing: 1px;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 border-radius: 0px 0px 25px 25px;
@@ -656,7 +665,6 @@
                 margin-right: 20px;
                 margin-left: 20px;
                 position: relative;
-
             }
 
             .icone-right {
@@ -695,6 +703,7 @@
                 color: #f2f2f2;
                 letter-spacing: 1px;
                 text-align: center;
+                padding: 5px 0px;
             }
 
             .direitos1 a {
@@ -715,291 +724,305 @@
 
 <body id="top">
 
-    <div id="cookie-banner">
-        Este site utiliza cookies. <br>Ao continuar navegando, você concorda com o uso de cookies.
-        <button onclick="aceitarCookies()">Aceitar</button>
-    </div>
-    <!-- bloco icons lateral direita -->
-    <div class="box">
-
-        <a class="inicio" title="Inicio" href="#top"> <img src="../icons/seta-cima.png" alt=""></a>
-
-        <a class="whats" title="Olá, vamos conversar no WhatsApp!"
-            href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%21%20Estou%20encantado%28a%29%20em%20descobrir%20tudo%20sobre%20os%20seus%20serviços%20incríveis.%20Quero%20avançar%21"
-            target="_blank"> <img src="../icons/whatsapp.png" alt=""></a>
-
-        <a class="insta" title="Olá, Venha explorar comigo no Instagram!"
-            href="https://www.instagram.com/anaju_socialmedia/" target="_blank"><img src="../icons/instagram.png"
-                alt=""></a>
-
-    </div>
-    <!-- bloco icons lateral direita -->
-
-
-
-    <!-- bloco 1 -->
-    <div class="bloco1">
-
-        <div class="blocoa">
-            <h1 class="inclinado-esquerda">Vamos <br> começar?</h1><br>
-            <p>Use o <span
-                    style="color: black; padding: 5px 10px; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
-                de forma
-                inteligente e pare de
-                desperdiçar seu tempo
-                e dinheiro com estratégias que já não funcionam mais.
-            </p><br></br>
-            <a title="Olá, vamos conversar no WhatsApp!"
-                href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
-                target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
+    <section>
+        <div id="cookie-banner">
+            Este site utiliza cookies. <br>Ao continuar navegando, você concorda com o uso de cookies.
+            <button onclick="aceitarCookies()">Aceitar</button>
         </div>
-        <div class="blocob">
-            <img title="Ana Julia" src="../image/ana.png" alt="">
+        <!-- bloco icons lateral direita -->
+        <div class="box">
+
+            <a class="inicio" title="Inicio" href="#top"> <img src="../icons/seta-cima.png" alt=""></a>
+
+            <a class="whats" title="Olá, vamos conversar no WhatsApp!"
+                href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%21%20Estou%20encantado%28a%29%20em%20descobrir%20tudo%20sobre%20os%20seus%20serviços%20incríveis.%20Quero%20avançar%21"
+                target="_blank"> <img src="../icons/whatsapp.png" alt=""></a>
+
+            <a class="insta" title="Olá, Venha explorar comigo no Instagram!"
+                href="https://www.instagram.com/anaju_socialmedia/" target="_blank"><img src="../icons/instagram.png"
+                    alt=""></a>
+
         </div>
-    </div>
-    <!-- bloco 1 -->
+        <!-- bloco icons lateral direita -->
 
 
 
-    <!-- bloco 2 -->
-    <div class="bloco2">
+        <!-- bloco 1 -->
+        <div class="bloco1">
 
-        <h1 class="inclinado-esquerda">O básico funciona, se feito da forma <span style="color: black;">certa!</span>
-        </h1>
-        <p>O <span
-                style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
-            se tornou uma ferramenta indispensável para
-            todos os públicos, sendo utilizado principalmente
-            para pesquisas.
-
-            Imagine que você precisa de uma consulta com uma psicóloga e não tem nenhuma indicação.
-
-            A primeira coisa que você faz é buscar no Google ou acessar o perfil no <span
-                style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
-            para
-            encontrar um
-            profissional em que você se identifique, descobrindo a abordagem e conhecendo o ambiente onde será atendida.
-            <br><br>
-            Agora imagine que você seja este profissional, já parou para pensar se o seu perfil está pronto para receber
-            este paciente, aonde ele vai se identificar e escolher você entre todos os outros profissionais desta area?
-
-            E eu estou aqui para ajudar você a criar uma presença autêntica no <span
-                style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
-            ressaltando a solução que você
-            pode trazer para seu público!
-            <br><br>
-            É exatamente nesse ponto que a sua presença no <span
-                style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
-            pode fazer toda a
-            diferença!
-        </p>
-    </div>
-    <!-- bloco 2 -->
-
-
-
-    <!-- bloco 3 -->
-    <div class="bloco3">
-        <div class="bloco3a">
-            <img src="../image/ana.png" alt="">
+            <div class="blocoa">
+                <h1 class="inclinado-esquerda">Vamos <br> começar?</h1><br>
+                <p>Use o <span
+                        style="color: black; padding: 5px 10px; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+                    de forma
+                    inteligente e pare de
+                    desperdiçar seu tempo
+                    e dinheiro com estratégias que já não funcionam mais.
+                </p><br></br>
+                <a title="Olá, vamos conversar no WhatsApp!"
+                    href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
+                    target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
+            </div>
+            <div class="blocob">
+                <img title="Ana Julia" src="../image/ana2.png" alt="">
+            </div>
         </div>
-        <div class="bloco3b">
-            <h1 class="inclinado-esquerda">Quem é Ana Julia?</span>
+        <!-- bloco 1 -->
+
+
+
+        <!-- bloco 2 -->
+        <div class="bloco2">
+
+            <h1 class="inclinado-esquerda">O básico funciona, se feito da forma <span
+                    style="color: black;">certa!</span>
             </h1>
-            <p>Ana Júlia, Social Midia por paixão. Busca ajudar as pessoas a realizar seus sonhos por meio do poder das
-                redes sociais. E assim como os sonhos são únicos, cada pessoa e marca também são únicas. <br><br>
+            <p>O <span
+                    style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+                se tornou uma ferramenta indispensável para
+                todos os públicos, sendo utilizado principalmente
+                para pesquisas.
 
-                É por isso que sua abordagem de trabalho se baseia em transmitir a verdadeira essência por trás de cada
-                perfil, alinhando-se aos princípios e valores de cada um.<br><br>
+                Imagine que você precisa de uma consulta com uma psicóloga e não tem nenhuma indicação.
 
-                Através de uma Identidade Estratégica irá mostrar ao seu público quem você realmente é, permitindo que
-                seus seguidores reconheçam sua marca em sua verdadeira essência.<br><br>
+                A primeira coisa que você faz é buscar no Google ou acessar o perfil no <span
+                    style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+                para
+                encontrar um
+                profissional em que você se identifique, descobrindo a abordagem e conhecendo o ambiente onde será
+                atendida.
+                <br><br>
+                Agora imagine que você seja este profissional, já parou para pensar se o seu perfil está pronto para
+                receber
+                este paciente, aonde ele vai se identificar e escolher você entre todos os outros profissionais desta
+                area?
 
-                VISIBILIDADE COM AUTENTICIDADE!</p>
-        </div>
-    </div>
-    <!-- bloco 3 -->
-
-
-
-    <!-- bloco div titulo -->
-    <div class="titulo">
-        <h1 class="inclinado-esquerda">Potencialize sua Marca no <span style="color: #ff0099;">Instagram</span></h1>
-    </div>
-    <!-- bloco div titulo -->
-
-
-
-    <!-- bloco 4 -->
-    <div class="bloco4">
-
-        <div class="paragrafo1">
-            <p>Potencialize sua presença no <span style="color: #ff0099;" class="inclinado">Instagram</span> com meus
-                serviços especializados em Social Media! <br><br> Como
-                uma
-                profissional apaixonada e experiente em gerenciamento de redes sociais, vou criar estratégias
-                personalizadas, gerenciar suas contas exclusivamente no <span style="color: #ff0099;"
-                    class="inclinado">Instagram</span>, criar
-                conteúdo envolvente e otimizar
-                suas campanhas para impulsionar o sucesso da sua marca nesta plataforma. <br><br> Não espere mais, entre
-                em
-                contato comigo agora mesmo e juntos vamos levar sua presença no Instagram para o próximo nível!</p>
-            <br><br>
-            <a title="Olá, vamos conversar no WhatsApp!"
-                href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
-                target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
-        </div>
-
-        <div class="paragrafo2">
-            <img src="../image/alexander-shatov-71Qk8ODIBko-unsplash (1).jpg" alt="">
-        </div>
-    </div>
-    <!-- bloco 4 -->
-
-
-
-    <!-- bloco 5 -->
-    <!-- aqui ficará o bloco com os serviços -->
-    <!-- bloco 5 -->
-
-
-
-    <!-- bloco 6 -->
-    <div class="bloco6">
-
-        <div class="bloco6a">
-
-            <div class="bloco6aa">
-
-                <div class="bloco6aa1"><br><br><br><br><br><br><br><br>
-
-
-                    <h1><i class="fas fa-phone"></i>Ligue para nós</h1>
-
-                    <a title="Olá, sinta-se à vontade para me ligar ou entrar em contato pelo WhatsApp!"
-                        href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%21%20Estou%20encantado%28a%29%20em%20descobrir%20tudo%20sobre%20os%20seus%20serviços%20incríveis!"
-                        target="_blank">46 99934-4203</a>
-
-                    <br><br><br><br>
-
-
-                    <h1><i class="fas fa-map-marker-alt"></i> Localização</h1>
-                    <a title="Residente em Francisco Beltrão/PR" target="_blank"
-                        href="https://www.google.com/maps/place/Francisco+Beltr%C3%A3o,+PR/@-26.0656662,-53.1358567,12z/data=!3m1!4b1!4m6!3m5!1s0x94f072c9d1cb5c35:0x7d44d2235317b32!8m2!3d-26.0811184!4d-53.0531381!16zL20vMDYwejI1?authuser=0&entry=ttu">
-                        Francisco Beltrão/PR
-                    </a>
-                    <br><br><br><br>
-
-
-                    <h1><i class="fas fa-clock"></i>Horário Comercial</h1>
-                    <p>Segunda a sexta feira:</p>
-                    <p>Das 8h00 às 12h00 (manhã).</p>
-                    <p>Das 13h30 às 18h00 (tarde).</p>
-                    <br><br><br><br><br>
-                </div>
-
-            </div>
-        </div>
-
-        <div class="bloco6b">
-            <div class="bloco6bb">
-                <h1>Entre em contato conosco</h1>
-                <p>Será um prazer ajudá-lo (a)!</p>
-
-                <form action="https://api.staticforms.xyz/submit" method="post">
-                    <input type="hidden" name="accessKey" value="68b6f38b-93bd-4371-bd59-0ce232e133cb">
-                    <input type="text" name="honeypot" style="display: none;">
-                    <div class="form-group">
-                        <label for="nome">Nome completo:</label>
-                        <input type="text" id="nome" name="name" required="" placeholder="Seu nome"
-                            oninput="validarCampo(this)">
-
-                    </div>
-
-                    <div class="form-group">
-                        <label for="telefone">Fone/WhatsApp:</label>
-                        <input type="text" id="telefone" name="phone" required="" placeholder="Somente numeros">
-                    </div>
-
-                    <div class="form-group">
-                        <label for="email">E-mail:</label>
-                        <input type="email" id="email" name="email" required="" placeholder="E-mail válido">
-                    </div>
-                    <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/home/pages/home.html">
-
-                    <button type="submit" value="Submit" onclick="exibirMensagemEnviado">Enviar</button>
-                </form>
-
-            </div>
-        </div>
-    </div>
-    <!-- bloco 6 -->
-
-    <!-- bloco 7 rodape -->
-    <div class="inicio2">
-        <h1>Perguntas frequentes</h1>
-        <div class="duvidas">
-
-            <div class="pergunta" onclick="mostrarResposta(1)"> <span id="icone1" class="icone"></span>Como aumentar o
-                engajamento no Instagram?</div>
-            <div class="resposta" id="resposta1">Publique conteúdo relevante, use
-                hashtags adequadas e interaja com seus
-                seguidores.</div> <br>
-
-            <div class="pergunta" onclick="mostrarResposta(2)"><span id="icone2" class="icone"></span>Qual é a melhor
-                frequência de postagem no Instagram?
-            </div>
-            <div class="resposta" id="resposta2">Não há uma frequência ideal, mas poste regularmente para manter o
-                engajamento.</div> <br>
-
-            <div class="pergunta" onclick="mostrarResposta(3)"><span id="icone3" class="icone"></span>Como alcançar mais
-                seguidores no Instagram?</div>
-            <div class="resposta" id="resposta3">Use hashtags relevantes, interaja com outros perfis e colabore com
-                influenciadores ou marcas relevantes.</div> <br>
-
-            <div class="pergunta" onclick="mostrarResposta(4)"><span id="icone4" class="icone"></span>O que são as
-                histórias
-                do Instagram e como usá-las?</div>
-            <div class="resposta" id="resposta4">Histórias são posts temporários de 24 horas. Compartilhe fotos, vídeos
-                curtos e adicione elementos interativos.</div> <br>
-
-            <div class="pergunta" onclick="mostrarResposta(5)"><span id="icone5" class="icone"></span>Quais métricas
-                acompanhar no Instagram?</div>
-            <div class="resposta" id="resposta5">Seguidores, engajamento (curtidas, comentários, compartilhamentos),
-                alcance das postagens e insights do público.</div>
-
-        </div>
-    </div>
-    <!-- bloco 7 rodape -->
-
-
-    <!-- bloco 8 rodape -->
-    <!-- <div>rodapé</div> -->
-    <!-- bloco 8 rodape -->
-
-
-
-    <!-- direitos reservados -->
-    <div class="direitos">
-
-        <div class="direitos1">
-            <p>&copy; 2023 -
-                <a target="_blank" href="https://www.copyright.gov/what-is-copyright/"> Ana Julia</a> | Todos os
-                direitos reservados.
+                E eu estou aqui para ajudar você a criar uma presença autêntica no <span
+                    style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+                ressaltando a solução que você
+                pode trazer para seu público!
+                <br><br>
+                É exatamente nesse ponto que a sua presença no <span
+                    style="padding: 3px 10px; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+                pode fazer toda a
+                diferença!
             </p>
         </div>
+        <!-- bloco 2 -->
 
-        <div class="direitos2">Desenvolvido por
-            <a target="_blank" href="https://www.linkedin.com/in/brunoferreiraadev">Bruno Ferreira</a>
+
+
+        <!-- bloco 3 -->
+        <div class="bloco3">
+            <div class="bloco3a">
+                <img src="../image/ana2.png" alt="">
+            </div>
+            <div class="bloco3b">
+                <h1 class="inclinado-esquerda">Quem é Ana Julia?</span>
+                </h1>
+                <p>Ana Júlia, Social Midia por paixão. Busca ajudar as pessoas a realizar seus sonhos por meio do poder
+                    das
+                    redes sociais. E assim como os sonhos são únicos, cada pessoa e marca também são únicas. <br><br>
+
+                    É por isso que sua abordagem de trabalho se baseia em transmitir a verdadeira essência por trás de
+                    cada
+                    perfil, alinhando-se aos princípios e valores de cada um.<br><br>
+
+                    Através de uma Identidade Estratégica irá mostrar ao seu público quem você realmente é, permitindo
+                    que
+                    seus seguidores reconheçam sua marca em sua verdadeira essência.<br><br>
+
+                    VISIBILIDADE COM AUTENTICIDADE!</p>
+            </div>
         </div>
-
-    </div>
-    <!-- direitos reservados -->
+        <!-- bloco 3 -->
 
 
-    <script>
 
-    </script>
+        <!-- bloco div titulo -->
+        <div class="titulo">
+            <h1 class="inclinado-esquerda">Potencialize sua Marca no <span style="color: #ff0099;">Instagram</span></h1>
+        </div>
+        <!-- bloco div titulo -->
+
+
+
+        <!-- bloco 4 -->
+        <div class="bloco4">
+
+            <div class="paragrafo1">
+                <p>Potencialize sua presença no <span style="color: #ff0099;" class="inclinado">Instagram</span> com
+                    meus
+                    serviços especializados em Social Media! <br><br> Como
+                    uma
+                    profissional apaixonada e experiente em gerenciamento de redes sociais, vou criar estratégias
+                    personalizadas, gerenciar suas contas exclusivamente no <span style="color: #ff0099;"
+                        class="inclinado">Instagram</span>, criar
+                    conteúdo envolvente e otimizar
+                    suas campanhas para impulsionar o sucesso da sua marca nesta plataforma. <br><br> Não espere mais,
+                    entre
+                    em
+                    contato comigo agora mesmo e juntos vamos levar sua presença no Instagram para o próximo nível!</p>
+                <br><br>
+                <a title="Olá, vamos conversar no WhatsApp!"
+                    href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%2C%20eu%20quero%20avançar%21"
+                    target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
+            </div>
+
+            <div class="paragrafo2">
+                <img src="../image/instagram.png" alt="">
+            </div>
+        </div>
+        <!-- bloco 4 -->
+
+
+
+        <!-- bloco 5 -->
+        <!-- aqui ficará o bloco com os serviços -->
+        <!-- bloco 5 -->
+
+
+
+        <!-- bloco 6 -->
+        <div class="bloco6">
+
+            <div class="bloco6a">
+
+                <div class="bloco6aa">
+
+                    <div class="bloco6aa1"><br><br><br><br><br><br><br><br>
+
+
+                        <h1><i class="fas fa-phone"></i>Ligue para nós</h1>
+
+                        <a title="Olá, sinta-se à vontade para me ligar ou entrar em contato pelo WhatsApp!"
+                            href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%21%20Estou%20encantado%28a%29%20em%20descobrir%20tudo%20sobre%20os%20seus%20serviços%20incríveis!"
+                            target="_blank">46 99934-4203</a>
+
+                        <br><br><br><br>
+
+
+                        <h1><i class="fas fa-map-marker-alt"></i> Localização</h1>
+                        <a title="Residente em Francisco Beltrão/PR" target="_blank"
+                            href="https://www.google.com/maps/place/Francisco+Beltr%C3%A3o,+PR/@-26.0656662,-53.1358567,12z/data=!3m1!4b1!4m6!3m5!1s0x94f072c9d1cb5c35:0x7d44d2235317b32!8m2!3d-26.0811184!4d-53.0531381!16zL20vMDYwejI1?authuser=0&entry=ttu">
+                            Francisco Beltrão/PR
+                        </a>
+                        <br><br><br><br>
+
+
+                        <h1><i class="fas fa-clock"></i>Horário Comercial</h1>
+                        <p>Segunda a sexta feira:</p>
+                        <p>Das 8h00 às 12h00 (manhã).</p>
+                        <p>Das 13h30 às 18h00 (tarde).</p>
+                        <br><br><br><br><br>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bloco6b">
+                <div class="bloco6bb">
+                    <h1>Entre em contato conosco</h1>
+                    <p>Será um prazer ajudá-lo (a)!</p>
+
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="68b6f38b-93bd-4371-bd59-0ce232e133cb">
+                        <input type="text" name="honeypot" style="display: none;">
+                        <div class="form-group">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome" name="name" required="" placeholder="Seu nome"
+                                oninput="validarCampo(this)">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Fone/WhatsApp:</label>
+                            <input type="text" id="telefone" name="phone" required="" placeholder="Somente numeros">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required="" placeholder="E-mail válido">
+                        </div>
+                        <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/home/pages/home.html">
+
+                        <button type="submit" value="Submit" onclick="exibirMensagemEnviado">Enviar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- bloco 6 -->
+
+        <!-- bloco 7 rodape -->
+        <div class="inicio2">
+            <h1>Perguntas frequentes</h1>
+            <div class="duvidas">
+
+                <div class="pergunta" onclick="mostrarResposta(1)"> <span id="icone1" class="icone"></span>Como aumentar
+                    o
+                    engajamento no Instagram?</div>
+                <div class="resposta" id="resposta1">Publique conteúdo relevante, use
+                    hashtags adequadas e interaja com seus
+                    seguidores.</div> <br>
+
+                <div class="pergunta" onclick="mostrarResposta(2)"><span id="icone2" class="icone"></span>Qual é a
+                    melhor
+                    frequência de postagem no Instagram?
+                </div>
+                <div class="resposta" id="resposta2">Não há uma frequência ideal, mas poste regularmente para manter o
+                    engajamento.</div> <br>
+
+                <div class="pergunta" onclick="mostrarResposta(3)"><span id="icone3" class="icone"></span>Como alcançar
+                    mais
+                    seguidores no Instagram?</div>
+                <div class="resposta" id="resposta3">Use hashtags relevantes, interaja com outros perfis e colabore com
+                    influenciadores ou marcas relevantes.</div> <br>
+
+                <div class="pergunta" onclick="mostrarResposta(4)"><span id="icone4" class="icone"></span>O que são as
+                    histórias
+                    do Instagram e como usá-las?</div>
+                <div class="resposta" id="resposta4">Histórias são posts temporários de 24 horas. Compartilhe fotos,
+                    vídeos
+                    curtos e adicione elementos interativos.</div> <br>
+
+                <div class="pergunta" onclick="mostrarResposta(5)"><span id="icone5" class="icone"></span>Quais métricas
+                    acompanhar no Instagram?</div>
+                <div class="resposta" id="resposta5">Seguidores, engajamento (curtidas, comentários, compartilhamentos),
+                    alcance das postagens e insights do público.</div>
+
+            </div>
+        </div>
+        <!-- bloco 7 rodape -->
+
+
+        <!-- bloco 8 rodape -->
+        <!-- <div>rodapé</div> -->
+        <!-- bloco 8 rodape -->
+
+
+
+        <!-- direitos reservados -->
+        <div class="direitos">
+
+            <div class="direitos1">
+                <p>&copy; 2023 -
+                    <a target="_blank" href="https://www.copyright.gov/what-is-copyright/"> Ana Julia</a> | Todos os
+                    direitos reservados.
+                </p>
+            </div>
+
+            <div class="direitos2">Desenvolvido por
+                <a target="_blank" href="https://www.linkedin.com/in/brunoferreiraadev">Bruno Ferreira</a>
+            </div>
+
+        </div>
+        <!-- direitos reservados -->
+
+    </section>
+
+
+
 
     <script>
         // funcao cookies
