@@ -101,7 +101,7 @@
                 justify-content: center;
                 position: fixed;
                 right: 25px;
-                top: 77%;
+                bottom: 10px;
                 z-index: 99999;
             }
 
@@ -110,7 +110,7 @@
                 border: 2px solid transparent;
                 border-radius: 30px;
                 display: flex;
-                margin-bottom: 12px;
+                margin-bottom: 10px;
             }
 
             .box .whats {
@@ -118,7 +118,7 @@
                 border: 2px solid transparent;
                 border-radius: 30px;
                 display: flex;
-                margin-bottom: 12px;
+                margin-bottom: 10px;
             }
 
             .box .insta {
@@ -153,6 +153,8 @@
                 align-items: center;
                 width: 50%;
             }
+
+
 
             .blocoa h1 {
                 font-size: 50px;
@@ -443,7 +445,8 @@
 
             .bloco6a {
                 background-color: darkcyan;
-                margin: 20px 10px 20px 20px;
+                margin: 0px 10px 0px 20px;
+                padding: 50px 0px;
 
             }
 
@@ -506,7 +509,8 @@
                 width: 50%;
                 align-items: center;
                 justify-content: center;
-                margin: 20px 20px 20px 10px;
+                margin: 0px 20px 0px 10px;
+                padding: 50px 0px;
             }
 
             .bloco6bb {
@@ -559,7 +563,7 @@
             .bloco6bb input[type="text"],
             [type="email"] {
                 margin: 0 auto;
-                border: 1px solid lime;
+                border: 1px solid #f2f2f2;
                 outline: none;
                 transition: 0.5s;
             }
@@ -587,13 +591,13 @@
                 font-size: 15px;
                 font-weight: bold;
                 transition: 0.5s;
-                border: 2px solid lime;
+                border: 2px solid #f2f2f2;
             }
 
             button:hover {
-                background-color: lime;
-                color: white;
-                border: 2px solid white;
+                background-color: blue;
+                color: #f2f2f2;
+                border: 2px solid #f2f2f2;
                 transition: 0.5s;
             }
 
@@ -605,7 +609,7 @@
             /* bloco 7*/
             .bloco7 {
                 background-color: #ccc;
-                padding: 50px 0px 60px 0px;
+                padding: 80px 0px 120px 0px;
             }
 
             .bloco7 h1 {
@@ -634,7 +638,6 @@
                 padding: 18px 0px;
                 display: flex;
                 align-items: center;
-                text-align: left;
                 border-bottom: 2px solid #ff0099;
                 border-left: 2px solid #ff0099;
                 border-right: 2px solid #ff0099;
@@ -655,6 +658,14 @@
                 border-bottom: 2px solid #ff0099;
                 border-left: 2px solid #ff0099;
                 border-right: 2px solid #ff0099;
+                margin-bottom: 10px;
+            }
+
+            .resposta p {
+                width: 80%;
+                margin: 0 auto;
+                text-align: left;
+
             }
 
             .icone {
@@ -685,6 +696,54 @@
 
 
             /* bloco 8 rodape*/
+            .bloco8 {
+                padding: 80px 0px;
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                background-color: blue;
+
+            }
+
+            .bloco8 i {
+                margin-right: 10px;
+            }
+
+            .missao,
+            .visao,
+            .valores {
+                width: 400px;
+                background-image: linear-gradient(130deg, cyan, blue, #6699cc);
+                padding-bottom: 50px;
+                border-radius: 25px 25px 5px 5px;
+                margin: 20px 10px 20px 10px;
+
+            }
+
+            .bloco8 h1 {
+                text-align: center;
+                padding: 30px 0px;
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 2px;
+                font-size: 25px;
+                background-image: linear-gradient(130deg, cyan, blue);
+                color: #f2f2f2;
+                border-radius: 25px;
+            }
+
+            .bloco8 p {
+                text-align: left;
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 2px;
+                font-size: 16px;
+                line-height: 25px;
+                margin: 0 auto;
+                padding-top: 30px;
+                color: #f2f2f2;
+                width: 80%;
+            }
+
 
             /* bloco 8 rodape*/
 
@@ -957,7 +1016,7 @@
         </div>
         <!-- bloco 6 -->
 
-        <!-- bloco 7 rodape -->
+        <!-- bloco 7 -->
         <div class="bloco7">
             <h1>Perguntas frequentes</h1>
             <div class="duvidas">
@@ -965,42 +1024,73 @@
                 <div class="pergunta" onclick="mostrarResposta(1)"> <span id="icone1" class="icone"></span>Como aumentar
                     o
                     engajamento no Instagram?</div>
-                <div class="resposta" id="resposta1">Publique conteúdo relevante, use
-                    hashtags adequadas e interaja com seus
-                    seguidores.</div> <br>
+                <div class="resposta" id="resposta1">
+                    <p>Publique conteúdo relevante, use
+                        hashtags adequadas e interaja com seus
+                        seguidores.</p>
+                </div> <br>
 
                 <div class="pergunta" onclick="mostrarResposta(2)"><span id="icone2" class="icone"></span>Qual é a
                     melhor
                     frequência de postagem no Instagram?
                 </div>
-                <div class="resposta" id="resposta2">Não há uma frequência ideal, mas poste regularmente para manter o
-                    engajamento.</div> <br>
+                <div class="resposta" id="resposta2">
+                    <p>Não há uma frequência ideal, mas poste regularmente para manter o
+                        engajamento.</p>
+                </div> <br>
 
                 <div class="pergunta" onclick="mostrarResposta(3)"><span id="icone3" class="icone"></span>Como alcançar
                     mais
                     seguidores no Instagram?</div>
-                <div class="resposta" id="resposta3">Use hashtags relevantes, interaja com outros perfis e colabore com
-                    influenciadores ou marcas relevantes.</div> <br>
+                <div class="resposta" id="resposta3">
+                    <p>Use hashtags relevantes, interaja com outros perfis e colabore com
+                        influenciadores ou marcas relevantes.</p>
+                </div> <br>
 
                 <div class="pergunta" onclick="mostrarResposta(4)"><span id="icone4" class="icone"></span>O que são as
                     histórias
                     do Instagram e como usá-las?</div>
-                <div class="resposta" id="resposta4">Histórias são posts temporários de 24 horas. Compartilhe fotos,
-                    vídeos
-                    curtos e adicione elementos interativos.</div> <br>
+                <div class="resposta" id="resposta4">
+                    <p>Histórias são posts temporários de 24 horas. Compartilhe fotos,
+                        vídeos
+                        curtos e adicione elementos interativos.</p>
+                </div> <br>
 
                 <div class="pergunta" onclick="mostrarResposta(5)"><span id="icone5" class="icone"></span>Quais métricas
                     acompanhar no Instagram?</div>
-                <div class="resposta" id="resposta5">Seguidores, engajamento (curtidas, comentários, compartilhamentos),
-                    alcance das postagens e insights do público.</div>
+                <div class="resposta" id="resposta5">
+                    <p>Seguidores, engajamento (curtidas, comentários, compartilhamentos),
+                        alcance das postagens e insights do público.</p>
+                </div>
 
             </div>
         </div>
-        <!-- bloco 7 rodape -->
+        <!-- bloco 7  -->
 
 
         <!-- bloco 8 rodape -->
-        <!-- <div>rodapé</div> -->
+        <div class="bloco8">
+
+            <div class="missao">
+                <h1> <i class="fas fa-flag-checkered"></i>
+                    MISSÃO</h1>
+                <p>Impulsionar o sucesso no Instagram através de estratégias eficazes de social media.</p>
+            </div>
+
+            <div class="visao">
+                <h1> <i class="fas fa-eye"></i>
+                    VISÃO</h1>
+                <p>Ser referência como profissionais de social media no Instagram, oferecendo soluções inovadoras e
+                    estabelecendo autoridade para os clientes.</p>
+            </div>
+
+            <div class="valores">
+                <h1> <i class="fas fa-heart"></i>
+                    VALORES</h1>
+                <p>Excelência, criatividade, integridade, orientação ao cliente e inovação.</p>
+            </div>
+
+        </div>
         <!-- bloco 8 rodape -->
 
         <!-- direitos reservados -->
