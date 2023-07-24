@@ -150,7 +150,8 @@
                 font-family: 'Montserrat', sans-serif;
                 transition: 0.5s;
                 text-transform: uppercase;
-                box-shadow: 0px 0px 20px 1px white;
+                /* box-shadow: 0px 0px 20px 1px white; */
+                border: 5px solid white;
             }
 
             .blocoa .fa-rocket {
@@ -159,7 +160,8 @@
             }
 
             .blocoa a:hover {
-                box-shadow: 0px 0px 20px 1px blue;
+                /* box-shadow: 0px 0px 20px 1px blue; */
+                border: 5px solid blue;
                 background-color: cyan;
                 color: blue;
                 transition: 0.5s;
@@ -174,7 +176,7 @@
             }
 
             .blocob img {
-                width: 90%;
+                width: 100%;
             }
 
             /* bloco1 */
@@ -183,7 +185,7 @@
 
             /* bloco2 */
             .bloco2 {
-                padding: 100px 20px 10px 20px;
+                padding: 60px 20px 20px 20px;
                 background-color: #ff0099;
             }
 
@@ -218,7 +220,7 @@
             }
 
             .bloco3a {
-                padding: 90px 0px 0px 0px;
+                padding: 40px 0px 0px 0px;
                 width: 100%;
                 height: 100%;
                 align-items: center;
@@ -232,7 +234,7 @@
             }
 
             .bloco3b {
-                padding: 30px 20px 10px 20px;
+                padding: 30px 20px 20px 20px;
                 align-items: center;
                 justify-content: center;
             }
@@ -260,6 +262,29 @@
 
 
 
+            /* bloco div titulo */
+            .titulo {
+                width: 100%;
+                background: linear-gradient(to right, #000000, #1a1a1a);
+                /* background-color: blue; */
+                align-items: center;
+                padding-top: 40px;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .titulo h1 {
+                padding: 0px;
+                color: #f2f2f2;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 25px;
+                letter-spacing: 1px;
+            }
+
+            /* bloco div titulo */
+
+
+
             /* bloco 4 */
             .bloco4 {
                 width: 100%;
@@ -282,7 +307,7 @@
                 letter-spacing: 1px;
                 line-height: 25px;
                 text-align: left;
-                padding: 0px 20px 50px 20px;
+                padding: 0px 20px 0px 20px;
             }
 
             .bloco4 .paragrafo2 {
@@ -291,7 +316,7 @@
                 justify-content: center;
                 align-items: center;
                 display: flex;
-                padding: 70px 0px 10px 0px;
+                padding: 0px 0px 20px 0px;
             }
 
             .bloco4 .paragrafo2 img {
@@ -308,7 +333,7 @@
                 border-radius: 50px;
                 text-decoration: none;
                 background-color: black;
-                color: white;
+                color: #ff0099;
                 letter-spacing: 2px;
                 font-size: 10px;
                 font-family: 'Montserrat', sans-serif;
@@ -325,7 +350,7 @@
             .bloco4 a:hover {
                 box-shadow: none;
                 border: 5px solid white;
-                color: #ff0099;
+                color: white;
                 transition: 0.5s;
             }
 
@@ -333,24 +358,304 @@
 
 
 
-            /* bloco div titulo */
-            .titulo {
+            /* bloco 5 */
+            .bloco5 {
                 width: 100%;
-                background: linear-gradient(to right, #000000, #1a1a1a);
-                /* background-color: blue; */
+                background-color: blue;
+                text-align: center;
+                justify-content: center;
                 align-items: center;
-                padding-top: 90px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
             }
 
-            .titulo h1 {
-                padding: 0px 16px;
+            .bloco5 h1 {
                 color: #f2f2f2;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                letter-spacing: 2px;
+                margin: 40px 20px 50px 20px;
                 font-size: 25px;
-                letter-spacing: 1px;
             }
 
-            /* bloco div titulo */
+            .bloco55 {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;
+            }
+
+            .bloco55 h3 {
+                color: #f2f2f2;
+                background-image: linear-gradient(130deg, cyan, blue);
+                padding: 10px 0px;
+                margin-bottom: 50px;
+                font-family: 'Poppins', sans-serif;
+                letter-spacing: 2px;
+                font-size: 20px;
+                border-bottom: 3px solid #f2f2f2;
+            }
+
+            .bloco55 p {
+                color: #f2f2f2;
+                font-weight: bold;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                margin: 0 auto;
+                width: 90%;
+                text-align: center;
+                letter-spacing: 2px;
+                line-height: 25px;
+            }
+
+            .serv1,
+            .serv2,
+            .serv3,
+            .serv4 {
+                pointer-events: none;
+                border: 3px solid #f2f2f2;
+                width: 300px;
+                height: 400px;
+                margin: 0px 20px 20px 20px;
+                gap: 20px;
+                background-color: rgba(0, 0, 0, 0.9);
+            }
+
+            .hvr-grow2 {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                -webkit-transition-duration: .3s;
+                transition-duration: .3s;
+                -webkit-transition-property: transform;
+                transition-property: transform;
+            }
+
+            .hvr-grow2:active,
+            .hvr-grow2:focus,
+            .hvr-grow2:hover {
+                -webkit-transform: scale(1.05);
+                transform: scale(1.05);
+            }
+
+            .hvr-grow2-rotate {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                -webkit-transition-duration: .3s;
+                transition-duration: .3s;
+                -webkit-transition-property: transform;
+                transition-property: transform
+            }
+
+            .hvr-grow2-rotate:active,
+            .hvr-grow-rotate:focus,
+            .hvr-grow-rotate:hover {
+                -webkit-transform: scale(1.1) rotate(4deg);
+                transform: scale(1.1) rotate(4deg)
+            }
+
+            .hvr-grow2-shadow {
+                display: inline-block;
+                vertical-align: middle;
+                -webkit-transform: perspective(1px) translateZ(0);
+                transform: perspective(1px) translateZ(0);
+                box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+                -webkit-transition-duration: .3s;
+                transition-duration: .3s;
+                -webkit-transition-property: box-shadow, transform;
+                transition-property: box-shadow, transform
+            }
+
+            .hvr-grow2-shadow:active,
+            .hvr-grow2-shadow:focus,
+            .hvr-grow2-shadow:hover {
+                box-shadow: 0 10px 10px -10px rgba(0, 0, 0, .5);
+                -webkit-transform: scale(1.1);
+                transform: scale(1.1)
+            }
+
+            /* bloco 5 */
+
+
+            /* bloco 6 */
+            .bloco6 {
+                width: 100%;
+                background-color: #f2f2f2;
+                align-items: center;
+            }
+
+            /* bloco6a */
+
+            .bloco6a {
+                display: flex;
+                background-color: darkcyan;
+                padding: 40px 20px 20px 20px;
+            }
+
+            .bloco6aa {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: top;
+            }
+
+            .bloco6aa1 {
+                text-align: left;
+            }
+
+            .bloco6aa1 h1 {
+                color: #f2f2f2;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 19px;
+                letter-spacing: 2px;
+                margin-bottom: 13px;
+            }
+
+            .bloco6aa1 p {
+                color: black;
+                font-size: 13px;
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 2px;
+                margin-left: 21px;
+                margin-right: 0px;
+                line-height: 20px;
+            }
+
+            .bloco6aa1 a {
+                text-decoration: none;
+                font-size: 15px;
+                color: black;
+                margin-left: 28px;
+                padding: 5px 10px;
+                transition: 0.5s;
+                border-radius: 10px;
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 2px;
+            }
+
+            .bloco6aa1 i {
+                font-size: 18px;
+                margin-right: 15px;
+            }
+
+            .bloco6aa1 a:hover {
+                background-color: #f2f2f2;
+                padding: 5px 10px;
+                transition: 0.5s;
+            }
+
+            /* bloco6a */
+
+            /* bloco6b */
+            .bloco6b {
+                display: flex;
+                background-color: darkcyan;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                margin-top: 10px;
+                padding-bottom: 20px;
+            }
+
+            .bloco6bb {
+                width: 100%;
+                margin: 0 auto;
+            }
+
+            .bloco6bb h1 {
+                font-family: Arial, Helvetica, sans-serif;
+                letter-spacing: 2px;
+                font-size: 25px;
+                color: #f2f2f2;
+                margin: 40px 0px 10px 0px;
+            }
+
+            .bloco6bb p {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: #f2f2f2;
+                font-size: 15px;
+                letter-spacing: 2px;
+                padding-bottom: 50px;
+            }
+
+            .form-group {
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 50px;
+            }
+
+            label {
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 15px;
+                letter-spacing: 2px;
+                margin-bottom: 5px;
+                color: #f2f2f2;
+                text-align: left;
+                margin-left: 65px;
+            }
+
+            .bloco6bb input[type="text"],
+            [type="email"] {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 13px;
+                letter-spacing: 2px;
+                width: 80%;
+                padding: 10px;
+                border-radius: 5px;
+                background-color: #f2f2f2;
+            }
+
+            .bloco6bb input[type="text"],
+            [type="email"] {
+                margin: 0 auto;
+                border: 1px solid #f2f2f2;
+                outline: none;
+                transition: 0.5s;
+            }
+
+            .bloco6bb input[type="text"]:focus {
+                border: 1px solid blue;
+                transition: 0.5s;
+            }
+
+            .bloco6bb input[type="email"]:focus {
+                border: 1px solid blue;
+                transition: 0.5s;
+            }
+
+            .bloco6bb button {
+                display: block;
+                margin: 0 auto;
+                padding: 5px 30px;
+                border: none;
+                border-radius: 20px;
+                cursor: pointer;
+                letter-spacing: 2px;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 15px;
+                font-weight: bold;
+                transition: 0.5s;
+                border: 2px solid #f2f2f2;
+            }
+
+            button:hover {
+                background-color: blue;
+                color: #f2f2f2;
+                border: 2px solid #f2f2f2;
+                transition: 0.5s;
+            }
+
+            /* bloco6b */
+            /* bloco 6 */
+
+
         }
     </style>
 
@@ -489,18 +794,135 @@
                     entre
                     em
                     contato comigo agora mesmo e juntos vamos levar sua presença no Instagram para o próximo nível!</p>
-                <br><br>
-            </div>
+            </div><br><br><br>
 
             <a title="Olá, vamos conversar no WhatsApp!"
                 href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%20Ana%20Julia%2C%20estou%20ansioso(a)%20para%20descobrir%20seus%20incríveis%20métodos%20no%20Instagram%21"
                 target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
-
+            <br><br><br><br><br>
             <div class="paragrafo2">
                 <img src="../image/perfil-instagram.png" alt="" title="Potencialize seu Instagram!">
             </div>
         </div>
         <!-- bloco 4 -->
+
+
+
+        <!-- bloco 5 -->
+        <div class="bloco5">
+
+            <h1 class="inclinado-esquerda">Impulsione agora seu <span style="color: #ff0099;">INSTAGRAM!</span></h1>
+
+            <div class="bloco55">
+                <div class="serv1 hvr-curl-top-left hvr-grow2">
+                    <h3>MÓDULO 1<br>TITULO
+                    </h3>
+                    <p>Descrição do módulo e valores caso tenha ficará na parte de baixo
+                        <br><br><br><br><br>valor
+                    </p>
+
+                </div>
+
+                <div class="serv2 hvr-curl-top-left hvr-grow2">
+                    <h3>MÓDULO 2<br>TITULO</h3>
+                    <p>Descrição do módulo e valores caso tenha ficará na parte de baixo
+                        <br><br><br><br><br>valor
+                    </p>
+                </div>
+
+                <div class="serv3 hvr-curl-top-left hvr-grow2">
+                    <h3>MÓDULO 3<br>TITULO</h3>
+                    <p>Descrição do módulo e valores caso tenha ficará na parte de baixo
+                        <br><br><br><br><br>valor
+                    </p>
+                </div>
+
+                <div class="serv4 hvr-curl-top-left hvr-grow2">
+                    <h3>MÓDULO 4<br>TITULO</h3>
+                    <p>Descrição do módulo e valores caso tenha ficará na parte de baixo
+                        <br><br><br><br><br>valor
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- bloco 5 -->
+
+
+
+        <!-- bloco 6 -->
+        <div class="bloco6">
+
+            <div class="bloco6a">
+
+                <div class="bloco6aa">
+
+                    <div class="bloco6aa1">
+
+
+                        <h1><i class="fas fa-phone"></i>Ligue para nós</h1>
+
+                        <a title="Olá, vamos conversar no WhatsApp!"
+                            href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%20Ana%20Julia%2C%20estou%20ansioso(a)%20para%20descobrir%20seus%20incríveis%20métodos%20no%20Instagram%21"
+                            target="_blank">46 99934-4203</a>
+
+                        <br><br><br><br>
+
+
+                        <h1><i class="fas fa-map-marker-alt"></i> Localização</h1>
+                        <a title="Residente em Francisco Beltrão/PR" target="_blank"
+                            href="https://www.google.com/maps/place/Francisco+Beltr%C3%A3o,+PR/@-26.0656662,-53.1358567,12z/data=!3m1!4b1!4m6!3m5!1s0x94f072c9d1cb5c35:0x7d44d2235317b32!8m2!3d-26.0811184!4d-53.0531381!16zL20vMDYwejI1?authuser=0&entry=ttu">
+                            Francisco Beltrão/PR
+                        </a>
+                        <br><br><br><br>
+
+
+                        <h1><i class="fas fa-clock"></i>Horário Comercial</h1>
+                        <p>Segunda a sexta feira:</p>
+                        <p>Das 8h00 às 12h00 (manhã).</p>
+                        <p>Das 13h30 às 18h00 (tarde).</p>
+
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="bloco6b">
+                <div class="bloco6bb">
+                    <h1>Entre em contato conosco</h1>
+                    <p>Será um prazer ajudá-lo (a)!</p>
+
+                    <form action="https://api.staticforms.xyz/submit" method="post">
+                        <input type="hidden" name="accessKey" value="68b6f38b-93bd-4371-bd59-0ce232e133cb">
+                        <input type="text" name="honeypot" style="display: none;">
+                        <div class="form-group">
+                            <label for="nome">Nome completo:</label>
+                            <input type="text" id="nome" name="name" required="" placeholder="Seu nome"
+                                oninput="validarCampo(this)">
+
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telefone">Fone/WhatsApp:</label>
+                            <input type="text" id="telefone" name="phone" required="" placeholder="Somente numeros">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail:</label>
+                            <input type="email" id="email" name="email" required="" placeholder="E-mail válido">
+                        </div>
+                        <input type="hidden" name="redirectTo"
+                            value="https://brunoferreiraadev.github.io/ana/home/pages/home.html">
+
+                        <button type="submit" value="Submit" onclick="exibirMensagemEnviado">Enviar</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <!-- bloco 6 -->
 
     </section>
 
