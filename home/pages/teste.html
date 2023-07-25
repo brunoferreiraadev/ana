@@ -12,6 +12,7 @@
 
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
 
         @media (max-width: 767px) {
             * {
@@ -28,115 +29,131 @@
                 text-align: center;
             }
 
-            /* bloco 8 rodape*/
-            .bloco8 {
+            /* bloco 4 */
+            .bloco4 {
+                width: 100%;
+                background: linear-gradient(to right, #000000, #1a1a1a);
+                padding: 50px 0px 0px 0px;
 
+            }
+
+
+            .bloco4 .paragrafo1 {
+                justify-content: center;
+                align-items: center;
+                text-align: center;
                 width: 100%;
                 display: flex;
-                flex-wrap: wrap;
-                align-items: center;
-                justify-content: center;
-                text-align: top;
-                background-color: rgba(0, 0, 255, 0.8);
+                position: relative;
             }
 
-            .bloco8>div {
-                margin-bottom: 30px;
-
-            }
-
-            .bloco8 .valores {
-                margin-bottom: 20px;
-            }
-
-            .bloco8 i {
-                margin-right: 20px;
-            }
-
-            .missao,
-            .visao,
-            .valores {
+            .bloco4 .paragrafo1 p {
                 width: 100%;
-                height: 295px;
-                max-width: 300px;
-                background-image: linear-gradient(130deg, cyan, blue, #6699cc);
-                border-radius: 25px 25px 5px 5px;
-                margin: 0px 20px;
-            }
-
-            .bloco8 h1 {
-                text-align: center;
-                align-items: center;
-                justify-content: center;
-                padding: 20px 0px;
-                font-family: 'Poppins', sans-serif;
-                letter-spacing: 2px;
-                font-size: 15px;
-                background-image: linear-gradient(130deg, cyan, blue, #6699cc);
                 color: #f2f2f2;
-                border-radius: 25px;
-            }
-
-            .bloco8 .titulos {
-                width: 100%;
-                margin: 50px 20px 50px 20px;
-                margin-bottom: 50px;
-                text-align: center;
-                font-family: 'Poppins', sans-serif;
-                letter-spacing: 2px;
-                font-size: 12px;
-                color: #f2f2f2;
-            }
-
-            .bloco8 p {
-                text-align: left;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                letter-spacing: 2px;
-                font-weight: bold;
                 font-size: 15px;
+                margin-top: -6px;
+                letter-spacing: 1px;
                 line-height: 25px;
-                margin: 0 auto;
-                padding-top: 30px;
-                color: #f2f2f2;
-                width: 80%;
+                text-align: left;
+                justify-content: center;
+                align-items: center;
+                padding: 0px 20px;
 
             }
-        }
 
-        /* bloco 8 rodape*/
+            .bloco4 .paragrafo2 {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                display: flex;
+                padding: 160px 0px 20px 0px;
+            }
+
+            .bloco4 .paragrafo2 img {
+                width: 90%;
+                border-radius: 30px;
+            }
+
+            .botao {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                margin-top: 65px;
+                position: absolute;
+                top: 100%;
+            }
+
+            .botao a {
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 15px 10px;
+                display: flex;
+                display: inline;
+                cursor: pointer;
+                border-radius: 50px;
+                text-decoration: none;
+                background-color: black;
+                color: #ff0099;
+                letter-spacing: 2px;
+                font-size: 10px;
+                font-family: 'Montserrat', sans-serif;
+                transition: 0.5s;
+                text-transform: uppercase;
+                border: 5px solid #ff0099;
+            }
+
+            .botao .fa-rocket {
+                font-size: 12px;
+                margin-right: 15px;
+            }
+
+            .botao a:hover {
+                box-shadow: none;
+                border: 5px solid white;
+                color: white;
+                transition: 0.5s;
+            }
+
+            /* bloco 4 */
+
+
+        }
     </style>
 
 
 </head>
 
 <body>
+    <!-- bloco 4 -->
+    <div class="bloco4">
 
-    <!-- bloco 8 rodape -->
-    <div class="bloco8">
-        <div class="titulos">
-            <h2>"Guiando o Futuro: Nossa Missão, Visão e Valores"</h2>
-        </div>
-        <div class="missao">
-            <h1> <i class="fas fa-flag-checkered"></i>
-                MISSÃO</h1>
-            <p>Impulsionar o sucesso no Instagram através de estratégias eficazes de social media.</p>
-        </div>
-
-        <div class="visao">
-            <h1> <i class="fas fa-eye"></i>
-                VISÃO</h1>
-            <p>Ser referência como profissionais de social media no Instagram, oferecendo soluções inovadoras e
-                estabelecendo autoridade para os clientes.</p>
-        </div>
-
-        <div class="valores">
-            <h1> <i class="fas fa-heart"></i>
-                VALORES</h1>
-            <p>Excelência, criatividade, integridade, orientação ao cliente e inovação.</p>
+        <div class="paragrafo1">
+            <p>Potencialize sua presença no <span style="color: #ff0099;" class="inclinado">Instagram</span> com
+                meus
+                serviços especializados em Social Media! <br><br> Como
+                uma
+                profissional apaixonada e experiente em gerenciamento de redes sociais, vou criar estratégias
+                personalizadas, gerenciar suas contas exclusivamente no <span style="color: #ff0099;"
+                    class="inclinado">Instagram</span>, criar
+                conteúdo envolvente e otimizar
+                suas campanhas para impulsionar o sucesso da sua marca nesta plataforma. <br><br> Não espere mais,
+                entre
+                em
+                contato comigo agora mesmo e juntos vamos levar sua presença no Instagram para o próximo nível!</p>
+            <div class="botao"> <a title="Olá, vamos conversar no WhatsApp!"
+                    href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%20Ana%20Julia%2C%20estou%20ansioso(a)%20para%20descobrir%20seus%20incríveis%20métodos%20no%20Instagram%21"
+                    target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
+            </div>
         </div>
 
+        <div class="paragrafo2">
+            <img src="../image/perfil-instagram.png" alt="" title="Potencialize seu Instagram!">
+        </div>
     </div>
-    <!-- bloco 8 rodape -->
+    <!-- bloco 4 -->
 
 
 </body>
