@@ -36,12 +36,78 @@
 
             body {
                 scroll-behavior: smooth;
-                background-color: red;
+                background-color: #f2f2f2;
                 width: 100%;
                 align-items: center;
                 justify-content: center;
                 text-align: center;
             }
+
+            /* banner */
+
+            .comeco {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+
+            }
+
+            #cookie-banner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: fixed;
+                width: 100%;
+                text-align: start;
+                bottom: 0;
+                width: 200px;
+                margin: 0px 0px 0px 10px;
+                background-color: rgba(242, 242, 2842, 0.9);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 15px;
+                letter-spacing: 1px;
+                color: rgba(0, 0, 0, 0.9);
+                padding: 10px 10px 0px 10px;
+                z-index: 99999;
+            }
+
+            #cookie-banner a {
+                padding-bottom: 15px;
+                display: flex;
+                text-decoration: none;
+                color: blue;
+            }
+
+            #cookie-banner button {
+                background-color: blue;
+                color: white;
+                border: none;
+                width: 80%;
+                padding: 8px 0px;
+                cursor: pointer;
+                transition: 0.5s;
+                margin-bottom: 15px;
+                border-radius: 20px;
+                letter-spacing: 1px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                display: flex;
+            }
+
+            #cookie-banner button:hover {
+                background-color: limegreen;
+                color: white;
+                transition: 0.5s;
+                border-radius: 20px;
+            }
+
+            body.no-scroll {
+                overflow: hidden;
+            }
+
+            /* banner */
+
 
             /* preloader */
             #preloader {
@@ -89,8 +155,8 @@
                 align-items: center;
                 justify-content: center;
                 position: fixed;
-                right: 15px;
-                bottom: 15px;
+                right: 20px;
+                bottom: 20px;
                 z-index: 99999;
             }
 
@@ -931,6 +997,55 @@
                 text-align: center;
             }
 
+            /* banner */
+
+            #cookie-banner {
+                position: fixed;
+                text-align: start;
+                bottom: 0;
+                margin: 0px 0px 15px 15px;
+                width: 559px;
+                background-color: rgba(242, 242, 2842, 0.9);
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 16px;
+                letter-spacing: 1px;
+                color: rgba(0, 0, 0, 0.9);
+                padding: 20px;
+                z-index: 99999;
+            }
+
+            #cookie-banner a {
+                margin-right: 100px;
+                text-decoration: none;
+                color: blue;
+            }
+
+            #cookie-banner button {
+                background-color: blue;
+                color: white;
+                border: none;
+                padding: 10px 60px;
+                cursor: pointer;
+                transition: 0.5s;
+                border-radius: 20px;
+                letter-spacing: 1px;
+            }
+
+            #cookie-banner button:hover {
+                background-color: limegreen;
+                color: white;
+                transition: 0.5s;
+                border-radius: 20px;
+            }
+
+            body.no-scroll {
+                overflow: hidden;
+            }
+
+            /* banner
+
+
+
             /* preloader */
             #preloader {
                 position: fixed;
@@ -974,8 +1089,8 @@
                 align-items: center;
                 justify-content: center;
                 position: fixed;
-                right: 15px;
-                bottom: 15px;
+                right: 20px;
+                bottom: 20px;
                 z-index: 99999;
             }
 
@@ -1476,14 +1591,14 @@
                 font-size: 15px;
                 font-family: Arial, Helvetica, sans-serif;
                 letter-spacing: 2px;
-                margin-left: 42px;
+                margin-left: 70px;
                 line-height: 25px;
             }
 
             .bloco6aa1 a {
                 text-decoration: none;
                 color: black;
-                margin-left: 40px;
+                margin-left: 65px;
                 padding: 5px;
                 transition: 0.5s;
                 border-radius: 10px;
@@ -1492,7 +1607,7 @@
             }
 
             .bloco6aa1 i {
-                margin-right: 20px;
+                margin: 0px 20px;
             }
 
             .bloco6aa1 a:hover {
@@ -1708,7 +1823,6 @@
 
             .bloco8 .titulos {
                 display: flex;
-                width: 100%;
                 position: absolute;
                 text-align: center;
                 justify-content: center;
@@ -1717,8 +1831,8 @@
                 letter-spacing: 2px;
                 font-size: 20px;
                 color: #f2f2f2;
+                padding: 0px 20px;
             }
-
 
             .bloco8 i {
                 margin-right: 20px;
@@ -1801,6 +1915,21 @@
 </head>
 
 <body id="top">
+
+
+
+    <!-- banner -->
+    <div class="comeco">
+        <div id="cookie-banner">
+            Este site usa cookies para garantir que você obtenha a melhor experiência. <br><br>Ao continuar navegando,
+            você
+            concorda com o uso de cookies.
+            <br><br>
+            <a href="#">Politica de Privacidade</a><button onclick="aceitarCookies()">Aceitar</button>
+        </div>
+
+    </div>
+    <!-- banner -->
 
 
 
@@ -2208,6 +2337,31 @@
 
 
     <script>
+
+
+
+        // funcao cookies
+        function aceitarCookies() {
+            document.getElementById("cookie-banner").style.display = "none";
+            localStorage.setItem("cookiesAceitos", true);
+            document.body.classList.remove("no-scroll");
+        }
+
+        // if (!localStorage.getItem("cookiesAceitos")) {
+        //     document.body.classList.add("no-scroll");
+        // } else {
+        //     document.getElementById("cookie-banner").style.display = "none";
+        // }
+
+        // window.addEventListener("scroll", function () {
+        //     if (!localStorage.getItem("cookiesAceitos")) {
+        //         window.scrollTo(0, 0);
+        //     }
+        // });
+        // funcao cookies
+
+
+
         // funcao das perguntas e respostas
         function mostrarResposta(numero) {
             var resposta = document.getElementById('resposta' + numero);

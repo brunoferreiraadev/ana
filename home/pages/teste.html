@@ -29,95 +29,71 @@
                 text-align: center;
             }
 
-            /* bloco 4 */
-            .bloco4 {
+            /* banner */
+
+            .comeco {
                 width: 100%;
-                background: linear-gradient(to right, #000000, #1a1a1a);
-                padding: 50px 0px 0px 0px;
-
-            }
-
-
-            .bloco4 .paragrafo1 {
-                justify-content: center;
-                align-items: center;
                 text-align: center;
-                width: 100%;
-                display: flex;
-                position: relative;
+                justify-content: center;
+
             }
 
-            .bloco4 .paragrafo1 p {
+            #cookie-banner {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: fixed;
                 width: 100%;
-                color: #f2f2f2;
+                text-align: start;
+                bottom: 0;
+                width: 200px;
+                margin: 0px 0px 0px 10px;
+                /* background-color: rgba(242, 242, 2842, 0.9); */
+                background-color: orange;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
                 font-size: 15px;
-                margin-top: -6px;
                 letter-spacing: 1px;
-                line-height: 25px;
-                text-align: left;
-                justify-content: center;
-                align-items: center;
-                padding: 0px 20px;
-
+                color: rgba(0, 0, 0, 0.9);
+                padding: 10px 10px 0px 10px;
+                z-index: 99999;
             }
 
-            .bloco4 .paragrafo2 {
-                width: 100%;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
+            #cookie-banner a {
+                padding-bottom: 15px;
                 display: flex;
-                padding: 160px 0px 20px 0px;
-            }
-
-            .bloco4 .paragrafo2 img {
-                width: 90%;
-                border-radius: 30px;
-            }
-
-            .botao {
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                margin-top: 65px;
-                position: absolute;
-                top: 100%;
-            }
-
-            .botao a {
-                align-items: center;
-                justify-content: center;
-                text-align: center;
-                padding: 15px 10px;
-                display: flex;
-                display: inline;
-                cursor: pointer;
-                border-radius: 50px;
                 text-decoration: none;
-                background-color: black;
-                color: #ff0099;
-                letter-spacing: 2px;
-                font-size: 10px;
-                font-family: 'Montserrat', sans-serif;
+                color: blue;
+            }
+
+            #cookie-banner button {
+                background-color: blue;
+                color: white;
+                border: none;
+                width: 80%;
+                padding: 8px 0px;
+                cursor: pointer;
                 transition: 0.5s;
-                text-transform: uppercase;
-                border: 5px solid #ff0099;
+                margin-bottom: 15px;
+                border-radius: 20px;
+                letter-spacing: 1px;
+                text-align: center;
+                align-items: center;
+                justify-content: center;
+                display: flex;
             }
 
-            .botao .fa-rocket {
-                font-size: 12px;
-                margin-right: 15px;
-            }
-
-            .botao a:hover {
-                box-shadow: none;
-                border: 5px solid white;
+            #cookie-banner button:hover {
+                background-color: limegreen;
                 color: white;
                 transition: 0.5s;
+                border-radius: 20px;
             }
 
-            /* bloco 4 */
+            body.no-scroll {
+                overflow: hidden;
+            }
+
+            /* banner */
 
 
         }
@@ -127,33 +103,18 @@
 </head>
 
 <body>
-    <!-- bloco 4 -->
-    <div class="bloco4">
-
-        <div class="paragrafo1">
-            <p>Potencialize sua presença no <span style="color: #ff0099;" class="inclinado">Instagram</span> com
-                meus
-                serviços especializados em Social Media! <br><br> Como
-                uma
-                profissional apaixonada e experiente em gerenciamento de redes sociais, vou criar estratégias
-                personalizadas, gerenciar suas contas exclusivamente no <span style="color: #ff0099;"
-                    class="inclinado">Instagram</span>, criar
-                conteúdo envolvente e otimizar
-                suas campanhas para impulsionar o sucesso da sua marca nesta plataforma. <br><br> Não espere mais,
-                entre
-                em
-                contato comigo agora mesmo e juntos vamos levar sua presença no Instagram para o próximo nível!</p>
-            <div class="botao"> <a title="Olá, vamos conversar no WhatsApp!"
-                    href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%20Ana%20Julia%2C%20estou%20ansioso(a)%20para%20descobrir%20seus%20incríveis%20métodos%20no%20Instagram%21"
-                    target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
-            </div>
+    <!-- banner -->
+    <div class="comeco">
+        <div id="cookie-banner">
+            Este site usa cookies para garantir que você obtenha a melhor experiência. <br><br>Ao continuar navegando,
+            você
+            concorda com o uso de cookies.
+            <br><br>
+            <a href="#">Politica de Privacidade</a><button onclick="aceitarCookies()">Aceitar</button>
         </div>
 
-        <div class="paragrafo2">
-            <img src="../image/perfil-instagram.png" alt="" title="Potencialize seu Instagram!">
-        </div>
     </div>
-    <!-- bloco 4 -->
+    <!-- banner -->
 
 
 </body>
