@@ -2347,17 +2347,17 @@
             document.body.classList.remove("no-scroll");
         }
 
-        // if (!localStorage.getItem("cookiesAceitos")) {
-        //     document.body.classList.add("no-scroll");
-        // } else {
-        //     document.getElementById("cookie-banner").style.display = "none";
-        // }
+        if (!localStorage.getItem("cookiesAceitos")) {
+            document.body.classList.add("no-scroll");
+        } else {
+            document.getElementById("cookie-banner").style.display = "none";
+        }
 
-        // window.addEventListener("scroll", function () {
-        //     if (!localStorage.getItem("cookiesAceitos")) {
-        //         window.scrollTo(0, 0);
-        //     }
-        // });
+        window.addEventListener("scroll", function () {
+            if (!localStorage.getItem("cookiesAceitos")) {
+                window.scrollTo(0, 0);
+            }
+        });
         // funcao cookies
 
 
