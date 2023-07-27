@@ -4,10 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="../icons/alvo-de-dardos.png" sizes="32x32">
-    <link rel="icon" href="../icons/alvo-de-dardos.png" sizes="192x192">
     <script src="https://kit.fontawesome.com/d8a94dde1a.js" crossorigin="anonymous"></script>
-
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
     <title>Teste</title>
 
     <style>
@@ -27,96 +26,210 @@
                 align-items: center;
                 justify-content: center;
                 text-align: center;
+                overflow-x: hidden;
             }
 
-            /* bloco 5 */
-            .bloco5 {
+            section {
                 width: 100%;
-                background-color: blue;
-                text-align: center;
-                justify-content: center;
-                align-items: center;
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+                overflow-x: hidden;
+            }
+
+            /* bloco1 */
+            .bloco1 {
                 display: flex;
-                flex-direction: column;
-                align-items: center;
-                padding-bottom: 30px;
-            }
-
-            .bloco5 h1 {
-                color: #f2f2f2;
-                font-family: 'Poppins', sans-serif;
-                letter-spacing: 2px;
-                margin: 50px 0px;
-                font-size: 35px;
-            }
-
-            .bloco55 {
                 width: 100%;
-                display: flex;
-                justify-content: center;
-                flex-wrap: wrap;
-                text-align: center;
-
-            }
-
-            .bloco55 h3 {
-                color: #f2f2f2;
                 background-image: linear-gradient(130deg, cyan, blue);
-                padding: 10px 0px;
+            }
+
+            .blocoa {
+                flex-direction: column;
                 font-family: 'Poppins', sans-serif;
-                letter-spacing: 2px;
-                font-size: 20px;
-                border-bottom: 3px solid #f2f2f2;
-            }
-
-            .bloco55 p {
-                color: #f2f2f2;
-                background-color: red;
-                font-weight: bold;
-                font-family: Arial, Helvetica, sans-serif;
-                font-size: 15px;
                 display: flex;
-                justify-content: center;
+                justify-content: top;
+                padding-top: 30px;
                 align-items: center;
+                width: 50%;
+            }
+
+            .blocoa h1 {
+                font-size: 50px;
+                color: #f2f2f2;
                 text-align: left;
-                letter-spacing: 2px;
-                line-height: 25px;
-                transition: 0.5s;
-                height: 317px;
+                margin-bottom: 20px;
+                letter-spacing: 3px;
             }
 
-            .serv1,
-            .serv2,
-            .serv3,
-            .serv4 {
-                background-color: orange;
-                border: 3px solid #f2f2f2;
-                width: 260px;
-                height: 400px;
-                display: flex;
-                background-color: rgba(0, 0, 0, 0.9);
-                transition: 0.5s;
+            .inclinado-esquerda {
+                transform: skewX(-15deg);
             }
 
-            .serv1:hover,
-            .serv2:hover,
-            .serv3:hover,
-            .serv4:hover {
-                background-color: #f2f2f2;
-                transition: 0.5s;
+            .blocoa p {
+                letter-spacing: 3px;
+                line-height: 40px;
+                color: #f2f2f2;
+                text-align: left;
+                margin: 0 auto;
+                max-width: 80%;
+                text-align: start;
+                font-size: 20px;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 50px;
+                border-bottom: 1px solid cyan;
+                padding-bottom: 5px;
+            }
+
+            .inclinado {
+                transform: skew(-15deg);
+                display: inline-block;
+                font-weight: bold;
                 color: black;
             }
 
-            .serv1 p:hover,
-            .serv2 p:hover,
-            .serv3 p:hover,
-            .serv4 p:hover {
-                color: rgba(0, 0, 0, 0.7);
+            .blocoa a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 20px;
+                margin-bottom: 30px;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50px;
+                text-decoration: none;
+                background-color: blue;
+                color: #f2f2f2;
+                letter-spacing: 2px;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                transition: 0.5s;
+                text-transform: uppercase;
+                border: 5px solid white;
+            }
+
+            .blocoa .fa-rocket {
+                font-size: 22px;
+                margin-right: 15px;
+            }
+
+            .blocoa a:hover {
+                border: 5px solid blue;
+                background-color: cyan;
+                color: blue;
                 transition: 0.5s;
             }
 
-            /* bloco 5 */
+            .blocob {
+                width: 50%;
+                height: 100%;
+                align-items: center;
+                justify-content: end;
+                display: flex;
+            }
 
+            .blocob img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            /* bloco1 */
+
+
+
+            /* bloco2 */
+            .bloco2 {
+                padding: 100px 0px;
+                width: 100%;
+                background-color: #ff0099;
+            }
+
+            .bloco2 h1 {
+                color: #f2f2f2;
+                text-align: center;
+                letter-spacing: 1px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                margin-bottom: 70px;
+                font-size: 47px;
+            }
+
+            .bloco2 p {
+                color: #f2f2f2;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 35px;
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 85%;
+                text-align: left;
+                margin: 0 auto;
+            }
+
+            /* bloco2 */
+
+
+
+            /* bloco 3 */
+            .bloco3 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                background-color: darkturquoise;
+            }
+
+            .bloco3 h1 {
+                color: #f2f2f2;
+                text-align: center;
+                letter-spacing: 1px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 40px;
+            }
+
+            .bloco3a,
+            .bloco3b {
+                padding: 100px 0px;
+                width: 50%;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .bloco3a {
+                display: flex;
+                align-items: flex-start;
+            }
+
+            .bloco3 img {
+                width: 80%;
+                border-radius: 50%;
+                border: 5px solid white;
+            }
+
+            .bloco3 p {
+                color: #f2f2f2;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 30px;
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 90%;
+                text-align: left;
+                margin: 0 auto;
+                padding-top: 40px;
+            }
+
+            /* bloco 3 */
+
+            /* efeito opacity */
+            .init-hidden {
+                opacity: 0;
+                transition: opacity 0.8s linear;
+            }
+
+            .init-hidden-off {
+                opacity: 1;
+                transition: opacity 0.8s linear;
+            }
+
+            /* efeito opacity */
 
         }
     </style>
@@ -125,48 +238,119 @@
 </head>
 
 <body>
-    <!-- bloco 5 -->
-    <div class="bloco5">
+    <!-- bloco 1 -->
+    <div class="bloco1 init-hidden">
 
-        <h1 class="inclinado-esquerda">Impulsione agora seu <span style="color: #ff0099;">INSTAGRAM!</span></h1>
-
-        <div class="bloco55">
-            <div class="serv1 hvr-curl-top-left hvr-grow2">
-                <h3>MÓDULO 1<br>TITULO
-                </h3>
-                <p>Descrição do módulo e valores caso tenha ficará na parte de baixo
-                    <br><br><br><br><br>
-                </p>
-
-            </div>
-
-            <div class="serv2 hvr-curl-top-left hvr-grow2">
-                <h3>MÓDULO 2<br>TITULO</h3>
-                <p>Descrição do módulo e valores caso tenha ficará na parte de baixo
-                    <br><br><br><br><br>
-                </p>
-            </div>
-
-            <div class="serv3 hvr-curl-top-left hvr-grow2">
-                <h3>MÓDULO 3<br>TITULO</h3>
-                <p>Descrição do módulo e valores caso tenha ficará na parte de baixo
-                    <br><br><br><br><br>
-            </div>
-
-            <div class="serv4 hvr-curl-top-left hvr-grow2">
-                <h3>MÓDULO 4<br>TITULO</h3>
-                <p>Descrição do módulo e valores caso tenha ficará na parte de baixo
-                    <br><br><br><br><br>
-                </p>
-            </div>
-
+        <div class="blocoa">
+            <h1 class="inclinado-esquerda">Vamos <br> começar?</h1><br>
+            <p>Use o <span
+                    style="color: black; padding: 3px 10px; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+                de forma
+                inteligente e pare de
+                desperdiçar seu tempo
+                e dinheiro com estratégias que já não funcionam mais.
+            </p><br></br>
+            <a title="Olá, vamos conversar no WhatsApp!"
+                href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%20Ana%20Julia%2C%20estou%20ansioso(a)%20para%20descobrir%20seus%20incríveis%20métodos%20no%20Instagram%21"
+                target="_blank"> <i class="fas fa-rocket"></i> eu quero começar!</a>
         </div>
+        <div class="blocob">
+            <img title="Ana Julia" src="../image/ana2.png" alt="">
+        </div>
+    </div>
+    <!-- bloco 1 -->
 
+
+
+    <!-- bloco 2 -->
+    <div class="bloco2 init-hidden">
+
+        <h1 class="inclinado-esquerda">O básico funciona, se feito da forma <span style="color: black;">certa!</span>
+        </h1>
+        <p>O <span
+                style="padding: 3px 10px; font-weight: bold; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            se tornou uma ferramenta indispensável para
+            todos os públicos, sendo utilizado principalmente
+            para pesquisas.
+
+            Imagine que você precisa de uma consulta com uma psicóloga e não tem nenhuma indicação.
+
+            A primeira coisa que você faz é buscar no Google ou acessar o perfil no <span
+                style="padding: 3px 10px; font-weight: bold; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            para
+            encontrar um
+            profissional em que você se identifique, descobrindo a abordagem e conhecendo o ambiente onde será
+            atendida.
+            <br><br>
+            Agora imagine que você seja este profissional, já parou para pensar se o seu perfil está pronto para
+            receber
+            este paciente, aonde ele vai se identificar e escolher você entre todos os outros profissionais desta
+            area?
+
+            E eu estou aqui para ajudar você a criar uma presença autêntica no <span
+                style="padding: 3px 10px; font-weight: bold; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            ressaltando a solução que você
+            pode trazer para seu público!
+            <br><br>
+            É exatamente nesse ponto que a sua presença no <span
+                style="padding: 3px 10px; font-weight: bold; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            pode fazer toda a
+            diferença!
+        </p>
+    </div>
+    <!-- bloco 2 -->
+
+
+
+    <!-- bloco 3 -->
+    <div class="bloco3 init-hidden">
+        <div class="bloco3a">
+            <img title="Ana Julia" src="../image/ana2.png" alt="">
+        </div>
+        <div class="bloco3b">
+            <h1 class="inclinado-esquerda">Quem é Ana Julia?</span>
+            </h1>
+            <p>Ana Júlia, Social Midia por paixão. Busca ajudar as pessoas a realizar seus sonhos por meio do poder
+                das
+                redes sociais. E assim como os sonhos são únicos, cada pessoa e marca também são únicas. <br><br>
+
+                É por isso que sua abordagem de trabalho se baseia em transmitir a verdadeira essência por trás de
+                cada
+                perfil, alinhando-se aos princípios e valores de cada um.<br><br>
+
+                Através de uma Identidade Estratégica irá mostrar ao seu público quem você realmente é, permitindo
+                que
+                seus seguidores reconheçam sua marca em sua verdadeira essência.<br><br>
+
+                VISIBILIDADE COM AUTENTICIDADE!</p>
+        </div>
     </div>
 
-    <!-- bloco 5 -->
+    <!-- bloco 3 -->
 
 
+
+    <script>
+        const observer = new IntersectionObserver(entries => {
+            console.log(entries);
+
+            Array.from(entries).forEach(entry => {
+                if (entry.intersectionRatio >= 0.5) {
+                    entry.target.classList.add('init-hidden-off');
+                    entry.target.classList.remove('init-hidden'); // Adicionado para remover a classe init-hidden
+                } else {
+                    entry.target.classList.remove('init-hidden-off'); // Adicionado para garantir que a classe seja removida quando não estiver 100% visível
+                }
+            });
+
+        }, {
+            threshold: [0.5] // Ajustado o valor do threshold para [0.5]
+        });
+
+        Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+            observer.observe(element);
+        });
+    </script>
 </body>
 
 </html>

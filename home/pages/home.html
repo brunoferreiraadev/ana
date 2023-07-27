@@ -43,6 +43,19 @@
                 text-align: center;
             }
 
+            /* efeito opacity */
+            .init-hidden {
+                opacity: 0;
+                transition: opacity 0.8s linear;
+            }
+
+            .init-hidden-off {
+                opacity: 1;
+                transition: opacity 0.8s linear;
+            }
+
+            /* efeito opacity */
+
             /* banner */
 
             .comeco {
@@ -938,6 +951,19 @@
                 justify-content: center;
                 text-align: center;
             }
+
+            /* efeito opacity */
+            .init-hidden {
+                opacity: 0;
+                transition: opacity 0.8s linear;
+            }
+
+            .init-hidden-off {
+                opacity: 1;
+                transition: opacity 0.8s linear;
+            }
+
+            /* efeito opacity */
 
             /* banner */
 
@@ -1875,7 +1901,7 @@
 
 
         <!-- bloco 1 -->
-        <div class="bloco1">
+        <div class="bloco1 init-hidden">
 
             <div class="blocoa">
                 <h1 class="inclinado-esquerda">Vamos <br> começar?</h1><br>
@@ -1899,7 +1925,7 @@
 
 
         <!-- bloco 2 -->
-        <div class="bloco2">
+        <div class="bloco2 init-hidden">
 
             <h1 class="inclinado-esquerda">O básico funciona, se feito da forma <span
                     style="color: black;">certa!</span>
@@ -1940,7 +1966,7 @@
 
 
         <!-- bloco 3 -->
-        <div class="bloco3">
+        <div class="bloco3 init-hidden">
             <div class="bloco3a">
                 <img title="Ana Julia" src="../image/ana2.png" alt="">
             </div>
@@ -1967,7 +1993,7 @@
 
 
         <!-- bloco div titulo -->
-        <div class="titulo">
+        <div class="titulo init-hidden">
             <h1 class="inclinado-esquerda">Potencialize sua Marca no <span style="color: #ff0099;">Instagram</span></h1>
         </div>
         <!-- bloco div titulo -->
@@ -1975,7 +2001,7 @@
 
 
         <!-- bloco 4 -->
-        <div class="bloco4">
+        <div class="bloco4 init-hidden">
 
             <div class="paragrafo1">
                 <p>Potencialize sua presença no <span style="color: #ff0099;" class="inclinado">Instagram</span> com
@@ -2005,7 +2031,7 @@
 
 
         <!-- bloco 5 -->
-        <div class="bloco5">
+        <div class="bloco5 init-hidden">
 
             <h1 class="inclinado-esquerda">Impulsione agora seu <span style="color: #ff0099;">INSTAGRAM!</span></h1>
 
@@ -2048,7 +2074,7 @@
 
 
         <!-- bloco 6 -->
-        <div class="bloco6">
+        <div class="bloco6 init-hidden">
 
             <div class="bloco6a">
 
@@ -2129,7 +2155,7 @@
 
 
         <!-- bloco 7 -->
-        <div class="bloco7">
+        <div class="bloco7 init-hidden">
             <h1>Perguntas frequentes</h1>
             <div class="duvidas">
 
@@ -2182,7 +2208,7 @@
 
 
         <!-- bloco 8 rodape -->
-        <div class="bloco8">
+        <div class="bloco8 init-hidden">
             <div class="titulos">
                 <h2>"Guiando o Futuro: Nossa Missão, Visão e Valores"!</h2>
             </div>
@@ -2246,6 +2272,28 @@
 
 
     <script>
+
+        // efeito opacity
+        const observer = new IntersectionObserver(entries => {
+            console.log(entries);
+
+            Array.from(entries).forEach(entry => {
+                if (entry.intersectionRatio >= 0.5) {
+                    entry.target.classList.add('init-hidden-off');
+                    entry.target.classList.remove('init-hidden'); // Adicionado para remover a classe init-hidden
+                } else {
+                    entry.target.classList.remove('init-hidden-off'); // Adicionado para garantir que a classe seja removida quando não estiver 100% visível
+                }
+            });
+
+        }, {
+            threshold: [0.5] // Ajustado o valor do threshold para [0.5]
+        });
+
+        Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+            observer.observe(element);
+        });
+        // efeito opacity
 
 
 
