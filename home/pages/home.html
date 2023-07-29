@@ -46,19 +46,19 @@
             /* efeito opacity da esquerda para direita*/
             .init-hidden {
                 opacity: 0;
-                transition: opacity 1s linear;
-                transform: translateX(-70%);
+                transition: opacity 0.5s linear;
+                transform: translateX(-50%);
             }
 
             .init-hidden-off {
                 opacity: 1;
-                transition: opacity 1s linear;
+                transition: opacity 0.5s linear;
             }
 
             .slide-from-left {
                 opacity: 1;
                 transform: translateX(0);
-                transition: opacity 1s linear, transform 0.5s ease-in-out;
+                transition: opacity 0.5s linear, transform 0.5s ease-in-out;
             }
 
             /* efeito opacity da esquerda para direita*/
@@ -237,10 +237,6 @@
                 text-align: left;
                 margin-bottom: 10px;
                 letter-spacing: 3px;
-            }
-
-            .inclinado-esquerda {
-                transform: skewX(-15deg);
             }
 
             .blocoa p {
@@ -978,19 +974,19 @@
             /* efeito opacity da esquerda para direita*/
             .init-hidden {
                 opacity: 0;
-                transition: opacity 1s linear;
-                transform: translateX(-70%);
+                transition: opacity 0.5s linear;
+                transform: translateX(-50%);
             }
 
             .init-hidden-off {
                 opacity: 1;
-                transition: opacity 1s linear;
+                transition: opacity 0.5s linear;
             }
 
             .slide-from-left {
                 opacity: 1;
                 transform: translateX(0);
-                transition: opacity 1s linear, transform 0.5s ease-in-out;
+                transition: opacity 0.5s linear, transform 0.5s ease-in-out;
             }
 
             /* efeito opacity da esquerda para direita*/
@@ -1147,10 +1143,6 @@
                 text-align: left;
                 margin-bottom: 30px;
                 letter-spacing: 3px;
-            }
-
-            .inclinado-esquerda {
-                transform: skewX(-15deg);
             }
 
             .blocoa p {
@@ -1953,7 +1945,7 @@
         <div class="bloco1">
 
             <div class="blocoa">
-                <h1 class="inclinado-esquerda init-hidden">Vamos <br> começar?</h1><br>
+                <h1 class="init-hidden">Vamos <br> começar?</h1><br>
                 <p class="init-hidden">Use o <span class="init-hidden"
                         style="color: black; padding: 3px 10px; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
                     de forma
@@ -1976,7 +1968,7 @@
         <!-- bloco 2 -->
         <div class="bloco2">
 
-            <h1 class="inclinado-esquerda init-hidden">O básico funciona, se feito da forma <span class="init-hidden"
+            <h1 class="init-hidden">O básico funciona, se feito da forma <span class="init-hidden"
                     style="color: black;">certa!</span>
             </h1>
             <p class="init-hidden">O <span class="init-hidden"
@@ -2020,7 +2012,7 @@
                 <img class="init-hidden" title="Ana Julia" src="../image/ana2.png" alt="">
             </div>
             <div class="bloco3b">
-                <h1 class="inclinado-esquerda init-hidden">Quem é Ana Julia?</h1>
+                <h1 class="init-hidden">Quem é Ana Julia?</h1>
                 <p class="init-hidden">Ana Júlia, Social Midia por paixão. Busca ajudar as pessoas a realizar seus
                     sonhos por meio do poder
                     das
@@ -2043,7 +2035,7 @@
 
         <!-- bloco div titulo -->
         <div class="titulo">
-            <h1 class="inclinado-esquerda init-hidden">Potencialize sua Marca no <span class="init-hidden"
+            <h1 class="init-hidden">Potencialize sua Marca no <span class="init-hidden"
                     style="color: #ff0099;">Instagram</span></h1>
         </div>
         <!-- bloco div titulo -->
@@ -2084,7 +2076,7 @@
         <!-- bloco 5 -->
         <div class="bloco5">
 
-            <h1 class="inclinado-esquerda init-hidden">Impulsione agora seu <span class="init-hidden"
+            <h1 class="init-hidden">Impulsione agora seu <span class="init-hidden"
                     style="color: #ff0099;">INSTAGRAM!</span></h1>
 
             <div class="bloco55">
@@ -2345,6 +2337,7 @@
     </section>
 
     <script>
+
         // efeito opacity da esquerda para direita
         const observer = new IntersectionObserver(entries => {
             Array.from(entries).forEach(entry => {
