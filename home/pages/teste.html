@@ -37,97 +37,279 @@
                 overflow-x: hidden;
             }
 
-            /* bloco 7*/
-            .bloco7 {
-                background-color: #ccc;
-                padding: 80px 0px 120px 0px;
-            }
-
-            .bloco7 h1 {
-
-                color: #ff0099;
-                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                font-size: 45px;
-                letter-spacing: 1px;
-                margin-bottom: 50px;
-            }
-
-            .duvidas {
-                width: 80%;
-                margin: 0 auto;
-            }
-
-            .pergunta {
-                border-radius: 25px 25px 0px 0px;
+            /* bloco1 */
+            .bloco1 {
+                display: flex;
                 width: 100%;
-                cursor: pointer;
-                background-color: #ff0099;
+                background-image: linear-gradient(130deg, cyan, blue);
+            }
+
+            .blocoa {
+                flex-direction: column;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                justify-content: top;
+                padding-top: 50px;
+                align-items: center;
+                width: 50%;
+            }
+
+            .blocoa h1 {
+                font-size: 50px;
                 color: #f2f2f2;
                 text-align: left;
-                letter-spacing: 2px;
-                font-size: 16px;
-                font-family: 'Poppins', sans-serif;
-                padding: 18px 0px;
+                margin-bottom: 30px;
+                letter-spacing: 3px;
+            }
+
+            /* .inclinado-esquerda {
+                transform: skewX(-15deg);
+            } */
+
+            .blocoa p {
+                letter-spacing: 3px;
+                line-height: 40px;
+                color: #f2f2f2;
+                text-align: left;
+                margin: 0 auto;
+                max-width: 80%;
+                text-align: start;
+                font-size: 20px;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 40px;
+                border-bottom: 1px solid cyan;
+                padding-bottom: 5px;
+            }
+
+            /* .inclinado {
+                transform: skew(-15deg);
+                display: inline-block;
+                font-weight: bold;
+                color: black;
+            } */
+
+            .blocoa a {
                 display: flex;
                 align-items: center;
-                border-bottom: 2px solid #ff0099;
-                border-left: 2px solid #ff0099;
-                border-right: 2px solid #ff0099;
+                justify-content: center;
+                padding: 15px 20px;
+                margin-bottom: 50px;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50px;
+                text-decoration: none;
+                background-color: blue;
+                color: #f2f2f2;
+                letter-spacing: 2px;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                transition: 0.5s;
+                text-transform: uppercase;
+                border: 5px solid white;
             }
 
-            .resposta {
-                text-align: center;
+            .blocoa .fa-rocket {
+                font-size: 22px;
+                margin-right: 15px;
+            }
+
+            .blocoa a:hover {
+                border: 5px solid blue;
+                background-color: cyan;
+                color: blue;
+                transition: 0.5s;
+            }
+
+            .blocob {
+                width: 50%;
+                height: 100%;
+                align-items: center;
+                justify-content: end;
+                display: flex;
+            }
+
+            .blocob img {
                 width: 100%;
-                padding: 20px 0px;
-                display: none;
-                background-color: #f2f2f2;
-                color: rgba(0, 0, 0, 0.6);
-                font-size: 16px;
-                font-weight: bold;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            /* bloco1 */
+
+
+
+            /* bloco2 */
+            .bloco2 {
+                padding: 100px 0px 50px 0px;
+                width: 100%;
+                background-color: #ff0099;
+            }
+
+            .bloco2 h1 {
+                color: #f2f2f2;
+                text-align: center;
                 letter-spacing: 1px;
                 font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                border-radius: 0px 0px 25px 25px;
-                border-bottom: 2px solid #ff0099;
-                border-left: 2px solid #ff0099;
-                border-right: 2px solid #ff0099;
-                margin-bottom: 20px;
+                margin: 0px 20px 60px 20px;
+                font-size: 47px;
             }
 
-            .resposta p {
-                width: 80%;
-                margin: 0 auto;
+            .bloco2 p {
+                color: #f2f2f2;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 35px;
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 85%;
                 text-align: left;
-
+                margin: 0 auto;
             }
 
-            .icone {
-                display: inline-block;
-                width: 18px;
-                height: 18px;
-                background-image: url("../icons/seta-direita.png");
-                background-repeat: no-repeat;
-                background-position: center;
-                background-size: cover;
-                transition: transform 0.3s;
-                margin-right: 20px;
-                margin-left: 20px;
-                position: relative;
+            /* bloco2 */
+
+
+
+            /* bloco 3 */
+            .bloco3 {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                background-color: darkturquoise;
             }
 
-            .icone-right {
-                transform: rotate(0deg);
+            .bloco3 h1 {
+                color: #f2f2f2;
+                text-align: center;
+                letter-spacing: 1px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 40px;
             }
 
-            .icone-down {
-                transform: rotate(90deg);
+            .bloco3a,
+            .bloco3b {
+                padding: 100px 0px 50px 0px;
+                width: 50%;
+                align-items: center;
+                justify-content: center;
             }
 
+            .bloco3a {
+                display: flex;
+                align-items: flex-start;
+            }
 
-            /* bloco 7*/
-            .bordered-text {
-                display: inline-block;
-                border-bottom: 3px solid #ff0099;
-                padding-bottom: 5px;
+            .bloco3 img {
+                width: 80%;
+                border-radius: 50%;
+                border: 5px solid white;
+            }
+
+            .bloco3 p {
+                color: #f2f2f2;
+                font-family: Arial, Helvetica, sans-serif;
+                line-height: 30px;
+                font-size: 20px;
+                letter-spacing: 1px;
+                width: 90%;
+                text-align: left;
+                margin: 0 auto;
+                padding-top: 60px;
+            }
+
+            /* bloco 3 */
+
+            /* efeito opacity da esquerda para direita*/
+            /* 
+            .init-hidden {
+                opacity: 0;
+                transition: opacity 1s linear;
+                transform: translateX(-70%);
+            }
+
+            .init-hidden-off {
+                opacity: 1;
+                transition: opacity 1s linear;
+            }
+
+            .slide-from-left {
+                opacity: 1;
+                transform: translateX(0);
+                transition: opacity 1s linear, transform 0.5s ease-in-out;
+            } 
+            */
+            /* efeito opacity da esquerda para direita*/
+
+
+            /* transição de cima para baixo */
+            /* .init-hidden {
+                opacity: 0;
+                transition: opacity 1s linear;
+                transform: translateY(-50%);
+            }
+
+            .init-hidden-off {
+                opacity: 1;
+                transition: opacity 1s linear;
+            }
+
+            .slide-from-left {
+                opacity: 1;
+                transform: translateY(0);
+                transition: opacity 1s linear, transform 0.5s ease-in-out;
+            } */
+            /* transição de cima para baixo */
+
+
+
+            /* transição de baixo para cima */
+            /* .init-hidden {
+                opacity: 0;
+                transition: opacity 1s linear, transform 0.5s ease-in-out;
+                transform: translateY(50%);
+            }
+
+            .init-hidden-off {
+                opacity: 1;
+                transition: opacity 1s linear;
+            }
+
+            .slide-from-left {
+                opacity: 1;
+                transform: translateY(0);
+            } */
+            /* transição de baixo para cima */
+
+
+            /* efeito opacity normal */
+            /* 
+            .init-hidden {
+                opacity: 0;
+                transition: opacity 0.5s linear;
+            }
+
+            .init-hidden-off {
+                opacity: 1;
+                transition: opacity 0.5s linear;
+            } */
+
+            /* efeito opacity normal */
+
+
+            .init-hidden {
+                opacity: 0;
+                transition: opacity 1s linear;
+                transform: translateX(-70%);
+            }
+
+            .init-hidden-off {
+                opacity: 1;
+                transition: opacity 1s linear;
+            }
+
+            .slide-from-left {
+                opacity: 1;
+                transform: translateX(0);
+                transition: opacity 1s linear, transform 0.5s ease-in-out;
             }
 
 
@@ -140,72 +322,117 @@
 <body>
 
 
-    <!-- bloco 7 -->
-    <div class="bloco7">
-        <h1 class="init-hidden bordered-text">Perguntas frequentes:
+    <!-- bloco 1 -->
+    <div class="bloco1">
 
-        </h1>
-
-        <div class="duvidas">
-
-            <div class="pergunta init-hidden" onclick="mostrarResposta(1)"> <span id="icone1"
-                    class="icone init-hidden"></span>Como aumentar
-                o
-                engajamento no Instagram?</div>
-            <div class="resposta" id="resposta1">
-                <p class="init-hidden">Publique conteúdo relevante, use
-                    hashtags adequadas e interaja com seus
-                    seguidores.</p>
-            </div> <br>
-
-            <div class="pergunta init-hidden" onclick="mostrarResposta(2)"><span id="icone2"
-                    class="icone init-hidden"></span>Qual é a
-                melhor
-                frequência de postagem no Instagram?
-            </div>
-
-            <div class="resposta" id="resposta2">
-                <p class="init-hidden">Não há uma frequência ideal, mas poste regularmente para manter o
-                    engajamento.</p>
-            </div> <br>
-
-            <div class="pergunta init-hidden" onclick="mostrarResposta(3)"><span id="icone3"
-                    class="icone init-hidden"></span>Como alcançar
-                mais
-                seguidores no Instagram?</div>
-
-            <div class="resposta" id="resposta3">
-                <p class="init-hidden">Use hashtags relevantes, interaja com outros perfis e colabore com
-                    influenciadores ou marcas relevantes.</p>
-            </div> <br>
-
-            <div class="pergunta init-hidden" onclick="mostrarResposta(4)"><span id="icone4"
-                    class="icone init-hidden"></span>O que são as
-                histórias
-                do Instagram e como usá-las?</div>
-
-            <div class="resposta" id="resposta4">
-                <p class="init-hidden">Histórias são posts temporários de 24 horas. Compartilhe fotos,
-                    vídeos
-                    curtos e adicione elementos interativos.</p>
-            </div> <br>
-
-            <div class="pergunta init-hidden" onclick="mostrarResposta(5)"><span id="icone5"
-                    class="icone init-hidden"></span>Quais métricas
-                acompanhar no Instagram?</div>
-
-            <div class="resposta" id="resposta5">
-                <p class="init-hidden">Seguidores, engajamento (curtidas, comentários, compartilhamentos),
-                    alcance das postagens e insights do público.</p>
-            </div>
-
+        <div class="blocoa">
+            <h1 class="init-hidden">Vamos <br> começar?</h1><br>
+            <p class="init-hidden">Use o <span class="init-hidden"
+                    style="color: black; padding: 3px 10px; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+                de forma
+                inteligente e pare de
+                desperdiçar seu tempo
+                e dinheiro com estratégias que já não funcionam mais.
+            </p><br></br>
+            <a class="init-hidden" title="Olá, vamos conversar no WhatsApp!"
+                href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%20Ana%20Julia%2C%20estou%20ansioso(a)%20para%20descobrir%20seus%20incríveis%20métodos%20no%20Instagram%21"
+                target="_blank"> <i class="fas fa-rocket init-hidden"></i> eu quero começar!</a>
+        </div>
+        <div class="blocob">
+            <img class="init-hidden" title="Ana Julia" src="../image/ana2.png" alt="">
         </div>
     </div>
-    <!-- bloco 7  -->
+    <!-- bloco 1 -->
 
 
 
+    <!-- bloco 2 -->
+    <div class="bloco2">
 
+        <h1 class="init-hidden">O básico funciona, se feito da forma <span class="init-hidden"
+                style="color: black;">certa!</span>
+        </h1>
+        <p class="init-hidden">O <span class="init-hidden"
+                style="padding: 3px 10px; font-weight: bold; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            se tornou uma ferramenta indispensável para
+            todos os públicos, sendo utilizado principalmente
+            para pesquisas.
+
+            Imagine que você precisa de uma consulta com uma psicóloga e não tem nenhuma indicação.
+
+            A primeira coisa que você faz é buscar no Google ou acessar o perfil no <span class="init-hidden"
+                style="padding: 3px 10px; font-weight: bold; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            para
+            encontrar um
+            profissional em que você se identifique, descobrindo a abordagem e conhecendo o ambiente onde será
+            atendida.
+            <br><br>
+            Agora imagine que você seja este profissional, já parou para pensar se o seu perfil está pronto para
+            receber
+            este paciente, aonde ele vai se identificar e escolher você entre todos os outros profissionais desta
+            area?
+
+            E eu estou aqui para ajudar você a criar uma presença autêntica no <span class="init-hidden"
+                style="padding: 3px 10px; font-weight: bold; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            ressaltando a solução que você
+            pode trazer para seu público!
+            <br><br>
+            É exatamente nesse ponto que a sua presença no <span class="init-hidden"
+                style="padding: 3px 10px; font-weight: bold; color:black; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+            pode fazer toda a
+            diferença!
+        </p>
+    </div>
+    <!-- bloco 2 -->
+
+
+
+    <!-- bloco 3 -->
+    <div class="bloco3">
+        <div class="bloco3a">
+            <img class="init-hidden" title="Ana Julia" src="../image/ana2.png" alt="">
+        </div>
+        <div class="bloco3b">
+            <h1 class="init-hidden">Quem é Ana Julia?</h1>
+            <p class="init-hidden">Ana Júlia, Social Midia por paixão. Busca ajudar as pessoas a realizar seus
+                sonhos por meio do poder
+                das
+                redes sociais. E assim como os sonhos são únicos, cada pessoa e marca também são únicas. <br><br>
+
+                É por isso que sua abordagem de trabalho se baseia em transmitir a verdadeira essência por trás de
+                cada
+                perfil, alinhando-se aos princípios e valores de cada um.<br><br>
+
+                Através de uma Identidade Estratégica irá mostrar ao seu público quem você realmente é, permitindo
+                que
+                seus seguidores reconheçam sua marca em sua verdadeira essência.<br><br>
+
+                VISIBILIDADE COM AUTENTICIDADE!</p>
+        </div>
+    </div>
+    <!-- bloco 3 -->
+
+
+
+    <script>
+
+        // efeito opacity da esquerda para direita
+        const observer = new IntersectionObserver(entries => {
+            Array.from(entries).forEach(entry => {
+                if (entry.intersectionRatio >= 0.1) {
+                    entry.target.classList.add('slide-from-left');
+                }
+            });
+        }, {
+            threshold: [0.1]
+        });
+
+        Array.from(document.querySelectorAll('.init-hidden')).forEach(element => {
+            observer.observe(element);
+        });
+        // efeito opacity da esquerda para direita
+
+    </script>
 </body>
 
 </html>
