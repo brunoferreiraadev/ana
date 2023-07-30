@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/d8a94dde1a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <title>Teste</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap');
+
+        @media (min-width: 768px) {
+            * {
+                padding: 0;
+                margin: 0;
+            }
+
+            body {
+                scroll-behavior: smooth;
+                background-color: #f2f2f2;
+                width: 100%;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                overflow-x: hidden;
+            }
+
+            /* bloco1 */
+            .bloco1 {
+                display: flex;
+                width: 100%;
+                background-image: linear-gradient(130deg, cyan, blue);
+            }
+
+            .blocoa {
+                flex-direction: column;
+                font-family: 'Poppins', sans-serif;
+                display: flex;
+                justify-content: top;
+                padding-top: 50px;
+                align-items: center;
+                width: 50%;
+            }
+
+            .blocoa h1 {
+                font-size: 50px;
+                color: #f2f2f2;
+                text-align: left;
+                margin-bottom: 30px;
+                letter-spacing: 3px;
+            }
+
+            .blocoa p {
+                letter-spacing: 3px;
+                line-height: 40px;
+                color: #f2f2f2;
+                text-align: left;
+                margin: 0 auto;
+                max-width: 80%;
+                text-align: start;
+                font-size: 20px;
+                font-family: 'Montserrat', sans-serif;
+                margin-bottom: 40px;
+                border-bottom: 1px solid cyan;
+                padding-bottom: 5px;
+            }
+
+            .blocoa a {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px 20px;
+                margin-bottom: 50px;
+                text-decoration: none;
+                cursor: pointer;
+                border-radius: 50px;
+                text-decoration: none;
+                background-color: blue;
+                color: #f2f2f2;
+                letter-spacing: 2px;
+                font-size: 15px;
+                font-family: 'Montserrat', sans-serif;
+                transition: 0.5s;
+                text-transform: uppercase;
+                border: 5px solid white;
+            }
+
+            .blocoa .fa-rocket {
+                font-size: 22px;
+                margin-right: 15px;
+            }
+
+            .blocoa a:hover {
+                border: 5px solid blue;
+                background-color: cyan;
+                color: blue;
+                transition: 0.5s;
+            }
+
+            .blocob {
+                width: 50%;
+                height: 100%;
+                align-items: center;
+                justify-content: end;
+                display: flex;
+            }
+
+            .blocob img {
+                width: 100%;
+                height: 100%;
+                object-fit: contain;
+            }
+
+            /* bloco1 */
+
+            /* efeitos */
+            /* efeito opacity normal */
+            .init-hidden-normal {
+                opacity: 0;
+                transition: opacity 0.5 linear;
+            }
+
+            .init-hidden-off-normal {
+                opacity: 1;
+                transition: opacity 0.5s linear;
+            }
+
+            /* efeito opacity normal */
+
+            /* efeito de cima para baixo */
+            .init-hidden-cima {
+                opacity: 0;
+                transition: opacity 0.5s linear, transform 0.5s ease-in-out;
+                transform: translateY(-50%);
+            }
+
+            .init-from-cima {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            /* efeito de cima para baixo */
+
+            /* efeito de esquerda para direita */
+            .init-hidden-esquerda {
+                opacity: 0;
+                transition: opacity 0.5s linear;
+                transform: translateX(-70%);
+            }
+
+            .init-from-esquerda {
+                opacity: 1;
+                transform: translateX(0);
+                transition: opacity 0.5s linear, transform 0.5s ease-in-out;
+            }
+
+            /* efeito de esquerda para direita */
+            /* efeitos */
+
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <!-- bloco 1 -->
+    <div class="bloco1">
+        <div class="blocoa">
+            <h1 class="init-hidden-cima">Vamos <br> começar?</h1><br>
+            <p class="init-hidden-esquerda">Use o <span
+                    style="color: black; padding: 3px 10px; background-color: #f2f2f2; border-radius: 15px;">Instagram</span>
+                de forma
+                inteligente e pare de
+                desperdiçar seu tempo
+                e dinheiro com estratégias que já não funcionam mais.
+            </p><br></br>
+            <a class="init-hidden-cima" title="Olá, vamos conversar no WhatsApp!"
+                href="https://api.whatsapp.com/send?phone=46999344203&text=Olá%20Ana%20Julia%2C%20estou%20ansioso(a)%20para%20descobrir%20seus%20incríveis%20métodos%20no%20Instagram%21"
+                target="_blank"> <i class="fas fa-rocket"></i> eu quero
+                começar!</a>
+        </div>
+        <div class="blocob">
+            <img class="init-hidden-cima" title="Ana Julia" src="../image/ana2.png" alt="">
+        </div>
+    </div>
+    <!-- bloco 1 -->
+
+    <script>
+        // Crie um único objeto observer
+        const observer = new IntersectionObserver(entries => {
+            Array.from(entries).forEach(entry => {
+                if (entry.intersectionRatio >= 0.1) {
+                    if (entry.target.classList.contains('init-hidden-normal')) {
+                        entry.target.classList.add('init-hidden-off-normal');
+                        entry.target.classList.remove('init-hidden-normal');
+                    } else if (entry.target.classList.contains('init-hidden-cima')) {
+                        entry.target.classList.add('init-from-cima');
+                    } else if (entry.target.classList.contains('init-hidden-esquerda')) {
+                        entry.target.classList.add('init-from-esquerda');
+                    }
+                }
+            });
+        }, {
+            threshold: [0.1]
+        });
+
+        // Observe os elementos e aplique as classes corretas
+        Array.from(document.querySelectorAll('.init-hidden-normal, .init-hidden-cima, .init-hidden-esquerda')).forEach(element => {
+            observer.observe(element);
+        });
+    </script>
+</body>
+
+</html>
